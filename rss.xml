@@ -1,142 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年1月14日 05:29:03</lastBuildDate><item><title>Firefly 简单使用指南</title><link>https://txn.hangdn.com/posts/guide/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/guide/</guid><description>如何使用 Firefly 博客模板。</description><pubDate>Fri, 02 Jan 1970 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;这个博客模板是基于 &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt; 构建的。对于本指南中未提及的内容，您可以在 &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro 文档&lt;/a&gt; 中找到答案。&lt;/p&gt;
-&lt;h2&gt;文章的 Front-matter&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: 我的第一篇博客文章
-published: 2023-09-09
-description: 这是我新 Astro 博客的第一篇文章。
-image: ./cover.jpg
-tags: [前端, 开发]
-category: 前端开发
-draft: false
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;属性&lt;/th&gt;
-&lt;th&gt;描述&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章标题。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章发布日期。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;updated&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章更新日期。如果未设置，将默认使用发布日期。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;pinned&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;是否将此文章置顶在文章列表顶部。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章的简短描述。显示在首页上。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章封面图片路径。&amp;lt;br/&amp;gt;1. 以 &lt;code&gt;http://&lt;/code&gt; 或 &lt;code&gt;https://&lt;/code&gt; 开头：使用网络图片&amp;lt;br/&amp;gt;2. 以 &lt;code&gt;/&lt;/code&gt; 开头：&lt;code&gt;public&lt;/code&gt; 目录中的图片&amp;lt;br/&amp;gt;3. 不带任何前缀：相对于 markdown 文件的路径&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章标签。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章分类。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;lang&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章语言代码（如 &lt;code&gt;zh-CN&lt;/code&gt;）。仅当文章语言与站点默认语言不同时设置。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;licenseName&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章内容的许可证名称。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;licenseUrl&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章内容的许可证链接。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章作者。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;sourceLink&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;文章内容的来源链接或参考。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;如果这篇文章仍是草稿，则不会显示。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;comment&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;是否启用此文章的评论功能。默认为 &lt;code&gt;true&lt;/code&gt;。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;slug&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;自定义文章 URL 路径。如果不设置，将使用文件名作为 URL。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;文章文件的放置位置&lt;/h2&gt;
-&lt;p&gt;您的文章文件应放置在 &lt;code&gt;src/content/posts/&lt;/code&gt; 目录中。您也可以创建子目录来更好地组织您的文章和资源。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;自定义文章 URL (Slug)&lt;/h2&gt;
-&lt;h3&gt;什么是 Slug？&lt;/h3&gt;
-&lt;p&gt;Slug 是文章 URL 路径的自定义部分。如果不设置 slug，系统将使用文件名作为 URL。&lt;/p&gt;
-&lt;h3&gt;Slug 使用示例&lt;/h3&gt;
-&lt;h4&gt;示例 1：使用文件名作为 URL&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: 我的第一篇博客文章
-published: 2023-09-09
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;文件：&lt;code&gt;src/content/posts/my-first-blog-post.md&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;URL：&lt;code&gt;/posts/my-first-blog-post&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;示例 2：自定义 Slug&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: 我的第一篇博客文章
-published: 2023-09-09
-slug: hello-world
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;文件：&lt;code&gt;src/content/posts/my-first-blog-post.md&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;URL：&lt;code&gt;/posts/hello-world&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;示例 3：其他语言文件名使用Slug&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: 如何使用 Firefly 博客主题
-published: 2023-09-09
-slug: how-to-use-firefly-blog-theme
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;文件：&lt;code&gt;src/content/posts/如何使用Firefly博客主题.md&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;URL：&lt;code&gt;/posts/how-to-use-firefly-blog-theme&lt;/code&gt;&lt;/p&gt;
-&lt;h3&gt;Slug 使用建议&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;使用英文和连字符&lt;/strong&gt;：&lt;code&gt;my-awesome-post&lt;/code&gt; 而不是 &lt;code&gt;my awesome post&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;保持简洁&lt;/strong&gt;：避免过长的 slug&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;具有描述性&lt;/strong&gt;：让 URL 能够反映文章内容&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;避免特殊字符&lt;/strong&gt;：只使用字母、数字和连字符&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;保持一致性&lt;/strong&gt;：在整个博客中使用相似的命名模式&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;注意事项&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年1月14日 05:46:43</lastBuildDate><item><title>石头网讲师实盘讲解</title><link>https://txn.hangdn.com/posts/guide/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/guide/</guid><description>选择股票的步骤,如何选票，分析指数，板块，股票</description><pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;英雄泪&lt;/h2&gt;
+&lt;p&gt;&amp;lt;audio controls style=&quot;width: 100%&quot;&amp;gt;
+&amp;lt;source src=&quot;https://fly.hangdn.com/assets/music/%E8%8B%B1%E9%9B%84%E6%B3%AA2.mp3&quot; type=&quot;audio/flac&quot;&amp;gt;
+您的浏览器不支持播放此音频。
+&amp;lt;/audio&amp;gt;&lt;/p&gt;
+&lt;h2&gt;买入股票时要想明白，“买入是徒弟，卖出是师傅”，这句话是错误的，为什么呢？&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Slug 一旦设置并发布，建议不要随意更改，以免影响 SEO 和已存在的链接&lt;/li&gt;
-&lt;li&gt;如果多个文章使用相同的 slug，后面的文章会覆盖前面的&lt;/li&gt;
-&lt;li&gt;Slug 会自动转换为小写&lt;/li&gt;
+&lt;li&gt;买入时是在该买的时候买进，成功的概率就高，你赚钱了就卖出，这就是对的。&lt;/li&gt;
+&lt;li&gt;买入前的准备工作很关键，买不好，就不会有好的卖点，因为买了亏损。&lt;/li&gt;
+&lt;li&gt;所以买卖无所谓师傅与徒弟，都重要。买入与卖出的共同的师傅是知识。&lt;/li&gt;
+&lt;li&gt;卖出标准就是相对应的买入标准。&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded><author>交易之道</author></item><item><title>选择股票的步骤</title><link>https://txn.hangdn.com/posts/%E9%80%89%E8%82%A1%E7%A5%A8%E7%9A%84%E6%AD%A5%E9%AA%A4/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E9%80%89%E8%82%A1%E7%A5%A8%E7%9A%84%E6%AD%A5%E9%AA%A4/</guid><description>选择股票的步骤,如何选票，分析指数，板块，股票</description><pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;英雄泪&lt;/h2&gt;
+&lt;h2&gt;趋势向上的时候，要找趋势稳定的股票，最好是45度的角度。&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;颈线是多空双方争夺最激烈的地方，各种上边界线也是颈线的一种。颈线突破后，没有80-100%的升幅，主力是赚不到钱的。&lt;/li&gt;
+&lt;li&gt;正在走横盘的股票，当未来趋势向好的时候，上涨的概率大。&lt;/li&gt;
+&lt;li&gt;趋势流畅的个股没有必要每天关注它的阴线阳线，上升趋势以持股为主，下降趋势以持币为主。因为上涨过程中高点不断上涨，所以不要频繁地换股，频繁地换股有可能在行情结束的时候买在一支股票的高位。&lt;/li&gt;
+&lt;li&gt;趋势是指股指和股价在一定时间的运行方向，趋势分上升趋势和下降趋势。又分为主要趋势和次要趋势。趋势的规模很重要，是最基础的。不论是上涨和下跌趋势都分为主要趋势和次要趋势。我们应当做个股的主要趋势，规避次要趋势，不做日常趋势。买股票要注意它的趋势、位置、买卖点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;在上升趋势中压力是次要的，支撑是重要的，要找支撑不要找压力。&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在一轮行情下你能操作的股票也就是一只到二只，能够和大盘保持同步的涨幅也就不错了。&lt;/li&gt;
+&lt;li&gt;突破有真假，与位置有关系，以底部形态突破最为有效、次高位的突破最为有效，如果是高位突破其有效性大大降低。&lt;/li&gt;
+&lt;li&gt;突破一般以大量、长阳、中心值（阳线的1/2以上要站在颈线上）最为有效，买入以后被套纯属活该。&lt;/li&gt;
+&lt;li&gt;机构什么时候进场不重要，关键是机构拉升的时候能及时跟进。机构拉的时候，必须是在成交量的配合下拉升，突破颈线。
+当糟糕的事情发生的时候，它比想像的还要糟糕。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;一只股票，你买不到最低点，股票的最低点一定是在下降的趋势中，在趋势下降的时候，绝对不是买股票的时候，因为它的下降趋势没有改变。&lt;/h2&gt;
+&lt;p&gt;** 技术分析三大假设：**&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1、市场行为涵盖一切信息；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2、价格沿着趋势移动，这一条是技术分析的核心；
+买股票不一定要买在低价格，而是要买在上升趋势过程中的相对低位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3、历史会不断重演。&lt;/p&gt;
+&lt;p&gt;市场或股票的上升和下跌会不断地重复，而且是生生不息的循环。
+技术分析的鼻祖：美国的查尔斯●道。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;画线需要你去记住的要点不多；在观察结果方面它直观明确；画线是为了得到更多的讯号。如果股价突破了上涨的高度，每上涨就会遇到阻力。&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;认识成交量&lt;/li&gt;
+&lt;li&gt;量在价先，没有量就是不涨。成交量热键VOL。&lt;/li&gt;
+&lt;li&gt;成交量的表现形式：缩量、放量。&lt;/li&gt;
+&lt;li&gt;量大成头，量小成底。量缩到底限的时候，就是这个股票到底的时候，地量见地价。&lt;/li&gt;
+&lt;li&gt;ST股票在上涨的时候，说明大盘处于弱势。&lt;/li&gt;
+&lt;li&gt;分析股票的时时候应以大周期为主还是以小周期为主？&lt;/li&gt;
+&lt;li&gt;小周期带动大周期运动，大周期反过来影响小周期。买股的时候最好以小周期为主，持股以大周期为主。大周期走坏小周期走好应当卖出股票。大周期走好小周期走坏应以买股为主。&lt;/li&gt;
+&lt;li&gt;按切线法买入股票的时候，一定要注意买入点与前高之间有足够的空间。&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><author>小史先森</author></item><item><title>选择股票的步骤</title><link>https://txn.hangdn.com/posts/%E9%80%89%E8%82%A1%E7%A5%A8%E7%9A%84%E6%AD%A5%E9%AA%A4/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E9%80%89%E8%82%A1%E7%A5%A8%E7%9A%84%E6%AD%A5%E9%AA%A4/</guid><description>选择股票的步骤,如何选票，分析指数，板块，股票</description><pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;英雄泪&lt;/h2&gt;
 &lt;p&gt;&amp;lt;audio controls style=&quot;width: 100%&quot;&amp;gt;
 &amp;lt;source src=&quot;https://fly.hangdn.com/assets/music/%E8%8B%B1%E9%9B%84%E6%B3%AA2.mp3&quot; type=&quot;audio/flac&quot;&amp;gt;
 您的浏览器不支持播放此音频。
