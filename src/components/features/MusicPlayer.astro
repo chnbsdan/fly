@@ -1139,7 +1139,13 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   }
 
   /* 方案二：拟物黑胶风 */
-  .vinyl-arm {
+/* 隐藏黑胶唱臂 */
+.vinyl-arm {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+.vinyl-arm {
     position: absolute;
     top: -30px;
     left: 50%;
@@ -1195,6 +1201,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   .music-capsule.playing .vinyl-arm .arm-rod {
     transform: translateX(-50%) rotate(25deg);
   }
+ 
 
 /* ===== 右键菜单（毛玻璃半透明） ===== */
 #right-menu {
