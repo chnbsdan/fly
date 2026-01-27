@@ -34,7 +34,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     <link rel="stylesheet" href={aplayerCustomCssPath} />
 
     <!-- 音乐胶囊 -->
-    <div id="music-capsule" class="music-capsule" title="点击鼠标右键使用播放器">
+    <div id="music-capsule" class="music-capsule" title="点击展开播放器">
       <img id="capsule-cover" src="https://p2.music.126.net/4HGEnXVexEfF2M4WdDdfrQ==/109951166354363385.jpg" alt="专辑封面" />
       <!-- 黑胶唱片滑动杆 -->
       <div class="vinyl-arm">
@@ -1081,7 +1081,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
 }
 
 .floating-lyrics .current-line {
-  color: #FFA500; /* 深蓝色代替深绿色#006400 */
+  color: #006400; /* 深蓝色代替深绿色#006400 */
   font-size: 30px;
   margin-bottom: 8px;
   font-weight: bold;
@@ -1089,7 +1089,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
 }
 
 .floating-lyrics .next-line {
-  color: #006400; /* 深蓝代替橙色 */
+  color: #0066cc; /* 深蓝代替橙色 */
   font-size: 18px;
   opacity: 0.8;
   min-height: 18px;
@@ -1117,8 +1117,8 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   }
 
   .music-capsule img {
-    width: 94%;
-    height: 94%;
+    width: 64%;
+    height: 64%;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s;
@@ -1139,13 +1139,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   }
 
   /* 方案二：拟物黑胶风 */
-/* 隐藏黑胶唱臂 */
-.vinyl-arm {
-  display: none !important;
-  pointer-events: none !important;
-}
-
-.vinyl-arm {
+  .vinyl-arm {
     position: absolute;
     top: -30px;
     left: 50%;
@@ -1201,7 +1195,6 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   .music-capsule.playing .vinyl-arm .arm-rod {
     transform: translateX(-50%) rotate(25deg);
   }
- 
 
 /* ===== 右键菜单（毛玻璃半透明） ===== */
 #right-menu {
