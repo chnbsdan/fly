@@ -55,28 +55,101 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       <div id="aplayer-container" class:mobile-hide={config.responsive?.mobile?.hide}></div>
     </div>
 
-    <!-- 右键菜单 -->
-    <ul id="right-menu" role="menu" aria-hidden="true">
-      <!-- 新增的导航图标栏 -->
-      <li class="nav-icons">
-        <span class="nav-icon" id="nav-back">←</span>
-        <span class="nav-icon" id="nav-forward">→</span>
-        <span class="nav-icon" id="nav-refresh">↻</span>
-        <span class="nav-icon" id="nav-top">↑</span>
-      </li>
-      <li id="menu-play">▶ 播放 / 暂停</li>
-      <li id="menu-prev">⏮ 上一首</li>
-      <li id="menu-next">⏭ 下一首</li>
-      <li id="menu-volup">🔊 音量 +</li>
-      <li id="menu-voldown">🔉 音量 -</li>
-      <li id="menu-lyrics">📜 显示/隐藏歌词</li>
-      <!-- 新增的两个菜单项 -->
-      <li id="menu-random">🎲 随变逛逛</li>
-      <li id="menu-home">🏠 回主页</li>
-      <li id="menu-support">💡 技术支持</li>
-      <li id="menu-fullscreen">🖥️ 全屏模式</li>
-      <li id="menu-close">❌ 关闭播放器</li>
-    </ul>
+    <!-- 优化后的右键菜单 -->
+    <div id="right-menu-wrapper">
+      <div id="right-menu" role="menu" aria-hidden="true">
+        <!-- 导航图标栏 -->
+        <div class="menu-section">
+          <div class="nav-icons">
+            <button class="nav-icon" id="nav-back" aria-label="后退">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="nav-icon" id="nav-forward" aria-label="前进">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="nav-icon" id="nav-refresh" aria-label="刷新">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.197 3 16.1829 3.745 17.75 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 3V8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="nav-icon" id="nav-top" aria-label="回到顶部">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 播放控制菜单项 -->
+        <div class="menu-section">
+          <button class="menu-item" id="menu-play">
+            <span class="menu-icon">▶</span>
+            <span class="menu-text">播放 / 暂停</span>
+          </button>
+          <button class="menu-item" id="menu-prev">
+            <span class="menu-icon">⏮</span>
+            <span class="menu-text">上一首</span>
+          </button>
+          <button class="menu-item" id="menu-next">
+            <span class="menu-icon">⏭</span>
+            <span class="menu-text">下一首</span>
+          </button>
+        </div>
+
+        <!-- 音量控制 -->
+        <div class="menu-section">
+          <button class="menu-item" id="menu-volup">
+            <span class="menu-icon">🔊</span>
+            <span class="menu-text">音量 +</span>
+          </button>
+          <button class="menu-item" id="menu-voldown">
+            <span class="menu-icon">🔉</span>
+            <span class="menu-text">音量 -</span>
+          </button>
+        </div>
+
+        <!-- 歌词控制 -->
+        <div class="menu-section">
+          <button class="menu-item" id="menu-lyrics">
+            <span class="menu-icon">📜</span>
+            <span class="menu-text">显示/隐藏歌词</span>
+          </button>
+        </div>
+
+        <!-- 导航功能 -->
+        <div class="menu-section">
+          <button class="menu-item" id="menu-random">
+            <span class="menu-icon">🎲</span>
+            <span class="menu-text">随变逛逛</span>
+          </button>
+          <button class="menu-item" id="menu-home">
+            <span class="menu-icon">🏠</span>
+            <span class="menu-text">回主页</span>
+          </button>
+        </div>
+
+        <!-- 其他功能 -->
+        <div class="menu-section">
+          <button class="menu-item" id="menu-support">
+            <span class="menu-icon">💡</span>
+            <span class="menu-text">技术支持</span>
+          </button>
+          <button class="menu-item" id="menu-fullscreen">
+            <span class="menu-icon">🖥️</span>
+            <span class="menu-text">全屏模式</span>
+          </button>
+          <button class="menu-item" id="menu-close">
+            <span class="menu-icon">❌</span>
+            <span class="menu-text">关闭播放器</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </>
 )}
 
@@ -677,7 +750,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       }
     }
 
-    // 右键菜单功能（保持不变）
+    // 右键菜单功能（优化版）
     function showRightMenuAt(clientX, clientY){
       if (!rightMenu) return;
       
@@ -685,16 +758,19 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       rightMenu.classList.remove('show');
       requestAnimationFrame(()=>{
         const mw = rightMenu.offsetWidth || 220;
-        const mh = rightMenu.offsetHeight || 280;
+        const mh = rightMenu.offsetHeight || 320;
         let left = Math.round(clientX - mw/2);
         left = Math.max(8, Math.min(left, window.innerWidth - mw - 8));
         let top = clientY - mh - 12;
         if (top < 8) top = clientY + 12;
         if (top + mh > window.innerHeight - 8) top = Math.max(8, window.innerHeight - mh - 8);
-        rightMenu.style.left = left + 'px';
-        rightMenu.style.top = top + 'px';
+        
+        // 更新箭头位置
         const arrowLeft = Math.max(12, Math.min(clientX - left, mw - 12));
         rightMenu.style.setProperty('--arrow-left', arrowLeft + 'px');
+        
+        rightMenu.parentElement.style.left = left + 'px';
+        rightMenu.parentElement.style.top = top + 'px';
         rightMenu.classList.add('show');
       });
     }
@@ -730,12 +806,12 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       
       const lyricsMenuItem = document.getElementById('menu-lyrics');
       if (lyricsMenuItem) {
-        lyricsMenuItem.textContent = lyricsVisible ? '📜 隐藏歌词' : '📜 显示歌词';
+        lyricsMenuItem.querySelector('.menu-text').textContent = lyricsVisible ? '隐藏歌词' : '显示歌词';
       }
       localStorage.setItem('lyricsVisible', lyricsVisible.toString());
     }
 
-    // 播放控制函数（保持不变）
+    // 播放控制函数
     function getAPlayerInstance() {
       return aplayer;
     }
@@ -770,22 +846,18 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
 
     // 新增功能：随机跳转和回主页
     function randomNavigate() {
-      // 这里可以替换为您博客的实际文章链接数组
       const randomPages = [
         '/posts/git-pic-ver',
         '/posts/hexo-one', 
         '/posts/lizhi',
         '/posts/markdown-mermaid',
         '/posts/jiaoyizhidao'
-        // 添加更多文章链接...
       ];
       
-      // 如果没有定义页面数组，使用一个简单的随机跳转逻辑
       if (randomPages && randomPages.length > 0) {
         const randomIndex = Math.floor(Math.random() * randomPages.length);
         window.location.href = randomPages[randomIndex];
       } else {
-        // 备用方案：跳转到随机文章页面或归档页面
         window.location.href = '/archives';
       }
     }
@@ -825,7 +897,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       }
     }
 
-    // 事件监听（保持不变）
+    // 事件监听
     document.addEventListener('DOMContentLoaded', function() {
       // 初始化歌词显示状态
       const savedLyricsVisible = localStorage.getItem('lyricsVisible');
@@ -835,7 +907,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       
       const lyricsMenuItem = document.getElementById('menu-lyrics');
       if (lyricsMenuItem) {
-        lyricsMenuItem.textContent = lyricsVisible ? '📜 隐藏歌词' : '📜 显示歌词';
+        lyricsMenuItem.querySelector('.menu-text').textContent = lyricsVisible ? '隐藏歌词' : '显示歌词';
       }
       
       if (!lyricsVisible && floatingLyrics) {
@@ -864,7 +936,8 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       });
       
       document.addEventListener('click', (e) => {
-        if (rightMenu && !rightMenu.contains(e.target)) {
+        const menuWrapper = document.getElementById('right-menu-wrapper');
+        if (menuWrapper && !menuWrapper.contains(e.target)) {
           hideRightMenuImmediate();
         }
       });
@@ -876,7 +949,6 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       const menuVolup = document.getElementById('menu-volup');
       const menuVoldown = document.getElementById('menu-voldown');
       const menuLyrics = document.getElementById('menu-lyrics');
-      // 新增的两个菜单项
       const menuRandom = document.getElementById('menu-random');
       const menuHome = document.getElementById('menu-home');
       const menuSupport = document.getElementById('menu-support');
@@ -895,15 +967,8 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       if (menuVolup) menuVolup.addEventListener('click', ()=>{ volumeUp(); hideRightMenuImmediate(); });
       if (menuVoldown) menuVoldown.addEventListener('click', ()=>{ volumeDown(); hideRightMenuImmediate(); });
       if (menuLyrics) menuLyrics.addEventListener('click', ()=>{ toggleLyricsVisibility(); hideRightMenuImmediate(); });
-      // 新增的菜单事件
-      if (menuRandom) menuRandom.addEventListener('click', ()=>{ 
-        randomNavigate(); 
-        hideRightMenuImmediate(); 
-      });
-      if (menuHome) menuHome.addEventListener('click', ()=>{ 
-        goHome(); 
-        hideRightMenuImmediate(); 
-      });
+      if (menuRandom) menuRandom.addEventListener('click', ()=>{ randomNavigate(); hideRightMenuImmediate(); });
+      if (menuHome) menuHome.addEventListener('click', ()=>{ goHome(); hideRightMenuImmediate(); });
       if (menuSupport) menuSupport.addEventListener('click', ()=>{ window.open('https://1356666.xyz','_blank'); hideRightMenuImmediate(); });
       if (menuFullscreen) menuFullscreen.addEventListener('click', ()=>{ 
         if (!document.fullscreenElement) {
@@ -987,7 +1052,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
 </script>
 
 <style is:global>
- /* ===== 播放器面板（点击胶囊展开） ===== */
+  /* ===== 播放器面板（点击胶囊展开） ===== */
   #player-wrap {
     position: fixed;
     left: 18px;
@@ -1051,51 +1116,50 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
- /* 独立歌词显示样式 */
-.floating-lyrics {
-  position: fixed;
-  left: 100px;
-  bottom: 50px;
-  text-align: left;
-  z-index: 99999;
-  color: #0066cc; /* 道奇蓝代替橙色 */
-  font-size: 18px;
-  font-weight: bold;
-  /* 移除 text-shadow */
-  background: rgba(255, 255, 255, 0.10);
-  padding: 15px 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  max-width: 400px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  pointer-events: none;
-  display: none;
-}
+  /* 独立歌词显示样式 */
+  .floating-lyrics {
+    position: fixed;
+    left: 100px;
+    bottom: 50px;
+    text-align: left;
+    z-index: 99999;
+    color: #0066cc;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 15px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    max-width: 400px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    display: none;
+  }
 
-.floating-lyrics.show {
-  opacity: 1;
-  display: block;
-}
+  .floating-lyrics.show {
+    opacity: 1;
+    display: block;
+  }
 
-.floating-lyrics .current-line {
-  color: #006400; /* 深蓝色代替深绿色#006400 */
-  font-size: 30px;
-  margin-bottom: 8px;
-  font-weight: bold;
-  min-height: 24px;
-}
+  .floating-lyrics .current-line {
+    color: #006400;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    min-height: 24px;
+  }
 
-.floating-lyrics .next-line {
-  color: #0066cc; /* 深蓝代替橙色 */
-  font-size: 18px;
-  opacity: 0.8;
-  min-height: 18px;
-}
+  .floating-lyrics .next-line {
+    color: #0066cc;
+    font-size: 18px;
+    opacity: 0.8;
+    min-height: 18px;
+  }
 
- /* ===== 音乐胶囊（固定左下） ===== */
+  /* ===== 音乐胶囊（固定左下） ===== */
   .music-capsule {
     position: fixed;
     left: 22px;
@@ -1138,7 +1202,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     to { transform: rotate(360deg) }
   }
 
-  /* 方案二：拟物黑胶风 */
+  /* 黑胶唱机手臂 */
   .vinyl-arm {
     position: absolute;
     top: -30px;
@@ -1196,156 +1260,355 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     transform: translateX(-50%) rotate(25deg);
   }
 
-/* ===== 右键菜单（毛玻璃半透明） ===== */
-#right-menu {
-  position: fixed;
-  display: none;
-  z-index: 40000;
-  min-width: 210px; /* 减小最小宽度 */
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #008000;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  padding: 2px 0; /* 进一步减小整体内边距 */
-  opacity: 0;
-  transform: scale(.98);
-  transition: opacity .12s,transform .12s;
-  border: 1px solid #10b981;
-}
-
-#right-menu.show {
-  display: flex;
-  opacity: 1;
-  transform: scale(1);
-  flex-direction: column;
-}
-
-/* 导航图标栏 */
-#right-menu .nav-icons {
-  display: flex;
-  justify-content: space-around;
-  padding: 4px 12px; /* 进一步减小内边距 */
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  margin-bottom: 1px; /* 进一步减小底部间距 */
-  background: transparent !important;
-  border-radius: 8px 8px 0 0;
-}
-
-#right-menu .nav-icons:hover {
-  background: transparent !important;
-}
-
-#right-menu .nav-icon {
-  font-size: 18px; /* 稍微减小字体 */
-  font-weight: 900;
-  color: #008000;
-  cursor: pointer;
-  padding: 4px 8px; /* 进一步减小内边距 */
-  border-radius: 6px;
-  transition: all .15s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 30px; /* 进一步减小最小宽度 */
-  min-height: 30px; /* 进一步减小最小高度 */
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#right-menu .nav-icon:hover {
-  background: #10b981 !important;
-  color: white !important;
-  transform: scale(1.1); /* 减小放大效果 */
-  border-color: #10b981;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3); /* 减小阴影 */
-}
-
-/* 菜单项 - 进一步减小间距，更紧凑 */
-#right-menu li:not(.nav-icons) {
-  list-style: none;
-  padding: 6px 14px; /* 进一步减小内边距 */
-  cursor: pointer;
-  white-space: nowrap;
-  font-weight: 700;
-  transition: background .12s, color .12s;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 6px; /* 进一步减小图标与文字间距 */
-  margin: 0; /* 移除间距 */
-  font-size: 14px; /* 稍微减小字体 */
-}
-
-#right-menu li:not(.nav-icons):hover {
-  background: #10b981 !important;
-  color: white !important;
-  border-radius: 4px; /* 减小圆角 */
-}
-
-#right-menu::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: var(--arrow-left,24px);
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid rgba(255,255,255,0.12);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .music-capsule {
-    left: 18px;
-    bottom: 22px;
-    width: 60px;
-    height: 60px;
+  /* ===== 优化后的右键菜单样式 ===== */
+  #right-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40000;
+    pointer-events: none;
   }
-  
-  .floating-lyrics {
-    left: 90px;
-    bottom: 30px;
-    max-width: 250px;
-    font-size: 16px;
-  }
-  
-  .floating-lyrics .current-line {
-    font-size: 18px;
-  }
-  
-  .floating-lyrics .next-line {
-    font-size: 12px;
-  }
-  
-  #player-wrap {
-    width: calc(100vw - 36px);
-    max-width: 360px;
-  }
-  
-  /* 移动端导航图标 */
-  #right-menu .nav-icon {
-    font-size: 16px;
-    padding: 3px 6px;
-    min-width: 26px;
-    min-height: 26px;
-  }
-  
-  #right-menu .nav-icon:hover {
-    transform: scale(1.05);
-  }
-  
-  /* 移动端菜单项调整 - 更紧凑 */
-  #right-menu li:not(.nav-icons) {
-    padding: 4px 12px;
-    gap: 4px;
-    font-size: 13px;
-  }
-}
 
-/* 移动端隐藏 */
-.mobile-hide {
-  display: none !important;
-}
+  #right-menu {
+    position: absolute;
+    display: none;
+    min-width: 180px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 
+      0 12px 48px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba(255, 255, 255, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.08),
+      0 2px 4px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transform-origin: top left;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    border: 1px solid rgba(0, 100, 0, 0.15);
+  }
+
+  #right-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: menuAppear 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes menuAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* 菜单部分分隔 */
+  .menu-section {
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    transition: border-color 0.2s ease;
+  }
+
+  .menu-section:last-child {
+    border-bottom: none;
+  }
+
+  .menu-section:hover {
+    border-bottom-color: rgba(0, 100, 0, 0.2);
+  }
+
+  /* 导航图标栏 */
+  .nav-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    gap: 6px;
+    background: rgba(0, 100, 0, 0.03);
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  .nav-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 100, 0, 0.15);
+    color: #006400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-icon:hover {
+    background: rgba(0, 100, 0, 0.1);
+    border-color: rgba(0, 100, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.15);
+  }
+
+  .nav-icon:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 100, 0, 0.1);
+  }
+
+  .nav-icon svg {
+    transition: transform 0.2s ease;
+  }
+
+  .nav-icon:hover svg {
+    transform: scale(1.1);
+  }
+
+  /* 菜单项 */
+  .menu-item {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    color: #006400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin: 1px 0;
+  }
+
+  .menu-item:hover {
+    background: linear-gradient(135deg, rgba(0, 100, 0, 0.1), rgba(0, 150, 0, 0.08));
+    color: #004d00;
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(0, 100, 0, 0.1);
+  }
+
+  .menu-item:active {
+    transform: translateX(0);
+    transition: transform 0.1s ease;
+  }
+
+  .menu-icon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    color: #006400;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+  }
+
+  .menu-item:hover .menu-icon {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .menu-text {
+    flex: 1;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #004d00;
+    transition: color 0.2s ease;
+  }
+
+  .menu-item:hover .menu-text {
+    color: #003300;
+    font-weight: 600;
+  }
+
+  /* 指示箭头 */
+  #right-menu::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: var(--arrow-left, 20px);
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transform: rotate(45deg);
+    border-top: 1px solid rgba(0, 100, 0, 0.15);
+    border-left: 1px solid rgba(0, 100, 0, 0.15);
+    z-index: 1;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    #right-menu {
+      min-width: 160px;
+      transform-origin: bottom left;
+      padding: 5px;
+    }
+    
+    .menu-item {
+      padding: 9px 12px;
+      font-size: 13px;
+      gap: 8px;
+    }
+    
+    .nav-icon {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .nav-icons {
+      padding: 6px 8px;
+      gap: 4px;
+    }
+    
+    .menu-icon {
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+    }
+    
+    #right-menu::before {
+      display: none;
+    }
+    
+    /* 移动端音乐胶囊调整 */
+    .music-capsule {
+      left: 18px;
+      bottom: 22px;
+      width: 60px;
+      height: 60px;
+    }
+    
+    .floating-lyrics {
+      left: 90px;
+      bottom: 30px;
+      max-width: 250px;
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+    
+    .floating-lyrics .current-line {
+      font-size: 18px;
+    }
+    
+    .floating-lyrics .next-line {
+      font-size: 12px;
+    }
+    
+    #player-wrap {
+      width: calc(100vw - 36px);
+      max-width: 360px;
+    }
+  }
+
+  /* 黑暗模式支持 */
+  @media (prefers-color-scheme: dark) {
+    #right-menu {
+      background: rgba(30, 30, 30, 0.95);
+      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 
+        0 12px 48px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.08),
+        0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu-item {
+      color: #90ee90;
+    }
+    
+    .menu-item:hover {
+      background: linear-gradient(135deg, rgba(144, 238, 144, 0.15), rgba(152, 251, 152, 0.1));
+      color: #98fb98;
+    }
+    
+    .menu-item .menu-text {
+      color: #90ee90;
+    }
+    
+    .menu-item:hover .menu-text {
+      color: #98fb98;
+    }
+    
+    .menu-icon {
+      color: #90ee90;
+    }
+    
+    .nav-icon {
+      background: rgba(40, 40, 40, 0.9);
+      border-color: rgba(144, 238, 144, 0.2);
+      color: #90ee90;
+    }
+    
+    .nav-icon:hover {
+      background: rgba(144, 238, 144, 0.15);
+      border-color: rgba(144, 238, 144, 0.4);
+      box-shadow: 0 4px 12px rgba(144, 238, 144, 0.2);
+    }
+    
+    .nav-icons {
+      background: rgba(144, 238, 144, 0.05);
+    }
+    
+    .menu-section {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+    
+    .menu-section:hover {
+      border-bottom-color: rgba(144, 238, 144, 0.3);
+    }
+    
+    #right-menu::before {
+      background: rgba(30, 30, 30, 0.95);
+      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* 移动端隐藏 */
+  .mobile-hide {
+    display: none !important;
+  }
+
+  /* 滚动条美化 */
+  @media (min-width: 769px) {
+    #right-menu {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 100, 0, 0.3) transparent;
+    }
+    
+    #right-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    #right-menu::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 3px;
+    }
+    
+    #right-menu::-webkit-scrollbar-thumb {
+      background: rgba(0, 100, 0, 0.3);
+      border-radius: 3px;
+    }
+    
+    #right-menu::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 100, 0, 0.4);
+    }
+  }
 </style>
