@@ -64,11 +64,11 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
         <span class="nav-icon" id="nav-refresh">↻</span>
         <span class="nav-icon" id="nav-top">↑</span>
       </li>
-      <li id="menu-play">音乐播放/暂停</li>
-      <li id="menu-prev">播放上一首</li>
-      <li id="menu-next">播放下一首</li>
-      <li id="menu-volup">音量增加 +</li>
-      <li id="menu-voldown">音量减小 -</li>
+      <li id="menu-play">播放 / 暂停</li>
+      <li id="menu-prev">上一首</li>
+      <li id="menu-next">下一首</li>
+      <li id="menu-volup">音量 +</li>
+      <li id="menu-voldown">音量 -</li>
       <li id="menu-lyrics">显示/隐藏歌词</li>
       <!-- 新增的两个菜单项 -->
       <li id="menu-random">随变逛逛</li>
@@ -1230,11 +1230,11 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   /* 导航图标栏 */
   #right-menu .nav-icons {
     display: flex;
-  justify-content: space-around;
-  padding: 8px 12px; /* 这里可以调整导航栏内边距 */
-  border-bottom: 1px solid #edf2f7;
-  margin-bottom: 4px; /* 这里可以调整导航栏与菜单项的间距 */
-  background: transparent !important;
+    justify-content: space-around;
+    padding: 8px 12px;
+    border-bottom: 1px solid #edf2f7;
+    margin-bottom: 4px;
+    background: transparent !important;
   }
 
   #right-menu .nav-icons:hover {
@@ -1268,7 +1268,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   /* 菜单项样式 - 文字居中 */
   #right-menu li:not(.nav-icons){
     list-style:none;
-    padding: 5px 16px; /* 增加上下内边距 */
+    padding: 10px 16px; /* 增加上下内边距 */
     cursor:pointer;
     white-space:nowrap;
     font-weight: 500;
