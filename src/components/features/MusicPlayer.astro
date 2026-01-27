@@ -57,25 +57,25 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
 
     <!-- 右键菜单 -->
     <ul id="right-menu" role="menu" aria-hidden="true">
-      <!-- 新增的导航图标栏 -->
+      <!-- 导航图标栏 -->
       <li class="nav-icons">
         <span class="nav-icon" id="nav-back">←</span>
         <span class="nav-icon" id="nav-forward">→</span>
         <span class="nav-icon" id="nav-refresh">↻</span>
         <span class="nav-icon" id="nav-top">↑</span>
       </li>
-      <li id="menu-play">▶ 播放 / 暂停</li>
-      <li id="menu-prev">⏮ 上一首</li>
-      <li id="menu-next">⏭ 下一首</li>
-      <li id="menu-volup">🔊 音量 +</li>
-      <li id="menu-voldown">🔉 音量 -</li>
-      <li id="menu-lyrics">📜 显示/隐藏歌词</li>
+      <li id="menu-play">播放 / 暂停</li>
+      <li id="menu-prev">上一首</li>
+      <li id="menu-next">下一首</li>
+      <li id="menu-volup">音量 +</li>
+      <li id="menu-voldown">音量 -</li>
+      <li id="menu-lyrics">显示/隐藏歌词</li>
       <!-- 新增的两个菜单项 -->
-      <li id="menu-random">🎲 随变逛逛</li>
-      <li id="menu-home">🏠 回主页</li>
-      <li id="menu-support">💡 技术支持</li>
-      <li id="menu-fullscreen">🖥️ 全屏模式</li>
-      <li id="menu-close">❌ 关闭播放器</li>
+      <li id="menu-random">随变逛逛</li>
+      <li id="menu-home">回主页</li>
+      <li id="menu-support">技术支持</li>
+      <li id="menu-fullscreen">全屏模式</li>
+      <li id="menu-close">关闭播放器</li>
     </ul>
   </>
 )}
@@ -730,7 +730,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       
       const lyricsMenuItem = document.getElementById('menu-lyrics');
       if (lyricsMenuItem) {
-        lyricsMenuItem.textContent = lyricsVisible ? '📜 隐藏歌词' : '📜 显示歌词';
+        lyricsMenuItem.textContent = lyricsVisible ? '隐藏歌词' : '显示歌词';
       }
       localStorage.setItem('lyricsVisible', lyricsVisible.toString());
     }
@@ -835,7 +835,7 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       
       const lyricsMenuItem = document.getElementById('menu-lyrics');
       if (lyricsMenuItem) {
-        lyricsMenuItem.textContent = lyricsVisible ? '📜 隐藏歌词' : '📜 显示歌词';
+        lyricsMenuItem.textContent = lyricsVisible ? '隐藏歌词' : '显示歌词';
       }
       
       if (!lyricsVisible && floatingLyrics) {
@@ -1201,158 +1201,153 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   .music-capsule.playing .vinyl-arm .arm-rod {
     transform: translateX(-50%) rotate(25deg);
   }
- 
 
-/* ===== 右键菜单（毛玻璃半透明） ===== */
-#right-menu {
-  position: fixed;
-  display: none;
-  z-index: 40000;
-  min-width: 210px; /* 减小最小宽度 */
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #008000;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  padding: 2px 0; /* 进一步减小整体内边距 */
-  opacity: 0;
-  transform: scale(.98);
-  transition: opacity .12s,transform .12s;
-  border: 1px solid #10b981;
-}
-
-#right-menu.show {
-  display: flex;
-  opacity: 1;
-  transform: scale(1);
-  flex-direction: column;
-}
-
-/* 导航图标栏 */
-#right-menu .nav-icons {
-  display: flex;
-  justify-content: space-around;
-  padding: 4px 12px; /* 进一步减小内边距 */
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  margin-bottom: 1px; /* 进一步减小底部间距 */
-  background: transparent !important;
-  border-radius: 8px 8px 0 0;
-}
-
-#right-menu .nav-icons:hover {
-  background: transparent !important;
-}
-
-#right-menu .nav-icon {
-  font-size: 18px; /* 稍微减小字体 */
-  font-weight: 900;
-  color: #008000;
-  cursor: pointer;
-  padding: 4px 8px; /* 进一步减小内边距 */
-  border-radius: 6px;
-  transition: all .15s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 30px; /* 进一步减小最小宽度 */
-  min-height: 30px; /* 进一步减小最小高度 */
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#right-menu .nav-icon:hover {
-  background: #10b981 !important;
-  color: white !important;
-  transform: scale(1.1); /* 减小放大效果 */
-  border-color: #10b981;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3); /* 减小阴影 */
-}
-
-/* 菜单项 - 进一步减小间距，更紧凑 */
-#right-menu li:not(.nav-icons) {
-  list-style: none;
-  padding: 6px 14px; /* 进一步减小内边距 */
-  cursor: pointer;
-  white-space: nowrap;
-  font-weight: 700;
-  transition: background .12s, color .12s;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 6px; /* 进一步减小图标与文字间距 */
-  margin: 0; /* 移除间距 */
-  font-size: 14px; /* 稍微减小字体 */
-}
-
-#right-menu li:not(.nav-icons):hover {
-  background: #10b981 !important;
-  color: white !important;
-  border-radius: 4px; /* 减小圆角 */
-}
-
-#right-menu::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: var(--arrow-left,24px);
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid rgba(255,255,255,0.12);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .music-capsule {
-    left: 18px;
-    bottom: 22px;
-    width: 60px;
-    height: 60px;
+  /* ===== 右键菜单 - 使用新样式并保留导航图标栏 ===== */
+  #right-menu{
+    position:fixed;
+    display:none;
+    z-index:40000;
+    min-width:200px;
+    background: #ffffff;
+    color: #ff8c00;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 
+                0 1px 4px rgba(0, 0, 0, 0.06);
+    padding: 6px 0;
+    opacity:0;
+    transform:scale(.98);
+    transition:opacity .12s,transform .12s;
+    border: 3px solid #10b981;/*边框色*/
+    overflow: hidden;
   }
-  
-  .floating-lyrics {
-    left: 90px;
-    bottom: 30px;
-    max-width: 250px;
-    font-size: 16px;
+  #right-menu.show{
+    display:flex;
+    opacity:1;
+    transform:scale(1);
+    flex-direction:column;
   }
-  
-  .floating-lyrics .current-line {
-    font-size: 18px;
+
+  /* 导航图标栏 */
+  #right-menu .nav-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 12px;
+    border-bottom: 1px solid #edf2f7;
+    margin-bottom: 4px;
+    background: transparent !important;
   }
-  
-  .floating-lyrics .next-line {
-    font-size: 12px;
+
+  #right-menu .nav-icons:hover {
+    background: transparent !important;
   }
-  
-  #player-wrap {
-    width: calc(100vw - 36px);
-    max-width: 360px;
-  }
-  
-  /* 移动端导航图标 */
+
   #right-menu .nav-icon {
-    font-size: 16px;
-    padding: 3px 6px;
-    min-width: 26px;
-    min-height: 26px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #6B238E;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all .15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(112, 219, 147, 0.3);
   }
-  
-  #right-menu .nav-icon:hover {
-    transform: scale(1.05);
-  }
-  
-  /* 移动端菜单项调整 - 更紧凑 */
-  #right-menu li:not(.nav-icons) {
-    padding: 4px 12px;
-    gap: 4px;
-    font-size: 13px;
-  }
-}
 
-/* 移动端隐藏 */
-.mobile-hide {
-  display: none !important;
-}
+  #right-menu .nav-icon:hover {
+    background: #70DB93 !important;
+    color: #0000FF !important;
+    transform: scale(1.1);
+    border-color: #70DB93;
+  }
+
+  /* 菜单项样式 */
+  #right-menu li:not(.nav-icons){
+    list-style:none;
+    padding: 8px 16px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-weight: 500;
+    transition: all .15s;
+    font-size: 15px;
+    color: #6B238E;/*右键菜单里的文字色*/
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #f7fafc;
+  }
+  #right-menu li:last-child {
+    border-bottom: none;
+  }
+  #right-menu li:not(.nav-icons):hover{
+    background: #70DB93;/*悬停背景色*/
+    color: #0000FF;/*悬停文字色*/
+  }
+  #right-menu li:not(.nav-icons):active{
+    background: #edf2f7;
+  }
+  
+  /* 分隔线效果 */
+  #right-menu li:not(.nav-icons):not(:last-child):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background: #edf2f7;
+  }
+
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .music-capsule {
+      left: 18px;
+      bottom: 22px;
+      width: 60px;
+      height: 60px;
+    }
+    
+    .floating-lyrics {
+      left: 90px;
+      bottom: 30px;
+      max-width: 250px;
+      font-size: 16px;
+    }
+    
+    .floating-lyrics .current-line {
+      font-size: 18px;
+    }
+    
+    .floating-lyrics .next-line {
+      font-size: 12px;
+    }
+    
+    #player-wrap {
+      width: calc(100vw - 36px);
+      max-width: 360px;
+    }
+    
+    /* 移动端导航图标 */
+    #right-menu .nav-icon {
+      font-size: 16px;
+      padding: 5px 8px;
+      min-width: 28px;
+      min-height: 28px;
+    }
+    
+    /* 移动端菜单项调整 */
+    #right-menu li:not(.nav-icons) {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+    
+    /* 移动端隐藏 */
+    .mobile-hide {
+      display: none !important;
+    }
+  }
 </style>
