@@ -1265,10 +1265,10 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     border-color: #70DB93;
   }
 
-  /* 菜单项样式 */
+  /* 菜单项样式 - 文字居中 */
   #right-menu li:not(.nav-icons){
     list-style:none;
-    padding: 8px 16px;
+    padding: 10px 16px; /* 增加上下内边距 */
     cursor:pointer;
     white-space:nowrap;
     font-weight: 500;
@@ -1277,16 +1277,22 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
     color: #6B238E;/*右键菜单里的文字色*/
     display: flex;
     align-items: center;
+    justify-content: center; /* 水平居中 */
+    text-align: center; /* 文本居中 */
     position: relative;
     border-bottom: 1px solid #f7fafc;
+    margin: 0 auto; /* 自动居中 */
   }
+  
   #right-menu li:last-child {
     border-bottom: none;
   }
+  
   #right-menu li:not(.nav-icons):hover{
     background: #70DB93;/*悬停背景色*/
     color: #0000FF;/*悬停文字色*/
   }
+  
   #right-menu li:not(.nav-icons):active{
     background: #edf2f7;
   }
@@ -1339,10 +1345,12 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
       min-height: 28px;
     }
     
-    /* 移动端菜单项调整 */
+    /* 移动端菜单项调整 - 保持居中 */
     #right-menu li:not(.nav-icons) {
       padding: 8px 14px;
       font-size: 14px;
+      justify-content: center; /* 保持居中 */
+      text-align: center; /* 保持居中 */
     }
     
     /* 移动端隐藏 */
