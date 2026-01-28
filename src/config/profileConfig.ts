@@ -2,13 +2,13 @@ import type { ProfileConfig } from "../types/config";
 
 export const profileConfig: ProfileConfig = {
 	// 头像
-	avatar: "/assets/images/avatar.webp",
+	avatar: "https://img.hangdn.com/fg/map1.png",
 
 	// 名字
 	name: "交易之道",
 
 	// 个人签名
-	bio: "Hello, I'm fly.",
+	bio: "Hello, I'm txn.",
 
 	// 链接配置
 	// 已经预装的图标集：fa6-brands，fa6-regular，fa6-solid，material-symbols，simple-icons
