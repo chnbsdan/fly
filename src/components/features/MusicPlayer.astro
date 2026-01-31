@@ -1046,13 +1046,13 @@ const processedLocalPlaylist = config.mode === "local" && config.local?.playlist
   /* ===== 播放器面板（点击胶囊展开） ===== */
   #player-wrap {
     position: fixed;
-    left: 18px;
-    bottom: 92px;
+    right: 18px;/*left*/
+    bottom: 70px;
     width: 360px;
     max-width: calc(100% - 36px);
     z-index: 15000;
     display: none;
-    transform-origin: left bottom;
+    transform-origin: right bottom;
   }
   #player-wrap.show {
     display: block;
