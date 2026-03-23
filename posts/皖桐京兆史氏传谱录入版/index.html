@@ -530,25 +530,25 @@ const retryCount = 3;
 		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-fhdapijq> <div class="card-base float-panel p-2 dropdown-content"> <a href="/sponsor/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5  dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:favorite">   <symbol id="ai:material-symbols:favorite" viewBox="0 0 24 24"><path fill="currentColor" d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z"/></symbol><use href="#ai:material-symbols:favorite"></use>  </svg><span data-astro-cid-fhdapijq>赞助</span>  </a><a href="/about/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5  dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:person">   <symbol id="ai:material-symbols:person" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></symbol><use href="#ai:material-symbols:person"></use>  </svg><span data-astro-cid-fhdapijq>关于我</span>  </a><a href="/bangumi/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95   dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:movie">   <symbol id="ai:material-symbols:movie" viewBox="0 0 24 24"><path fill="currentColor" d="m4 4l2 4h3L7 4h2l2 4h3l-2-4h2l2 4h3l-2-4h3q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20H4q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4"/></symbol><use href="#ai:material-symbols:movie"></use>  </svg><span data-astro-cid-fhdapijq>番组计划</span>  </a> </div> </div> </div>   </div> <div class="flex ml-auto"> <!--<SearchPanel client:load>--> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZJOQWg" component-url="/_astro/Search.kVQqVQ_z.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="search-bar" class="hidden lg:flex transition-all items-center h-11 mr-2 rounded-lg bg-black/[0.04] hover:bg-black/[0.06] focus-within:bg-black/[0.06] dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10"><!--[!--><!--]--><!----> <input placeholder="搜索" value="" class="transition-all pl-10 text-sm bg-transparent outline-0 h-full w-40 active:w-60 focus:w-60 text-black/50 dark:text-white/50 svelte-1n2o1uz"/></div> <button aria-label="Search Panel" id="search-switch" class="btn-plain scale-animation lg:!hidden rounded-lg w-11 h-11 active:scale-90"><!--[!--><!--]--><!----></button> <div id="search-panel" class="float-panel float-panel-closed search-panel absolute md:w-[30rem] top-20 left-4 md:left-[unset] right-4 shadow-2xl rounded-2xl p-2 svelte-1n2o1uz"><div id="search-bar-inside" class="flex relative lg:hidden transition-all items-center h-11 rounded-xl bg-black/[0.04] hover:bg-black/[0.06] focus-within:bg-black/[0.06] dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10"><!--[!--><!--]--><!----> <input placeholder="搜索" value="" class="pl-10 absolute inset-0 text-sm bg-transparent outline-0 focus:w-60 text-black/50 dark:text-white/50 svelte-1n2o1uz"/></div> <!--[!--><!--[!--><!--[--><div class="transition first-of-type:mt-2 lg:first-of-type:mt-0 block rounded-xl text-lg px-3 py-2 text-50">找不到相关结果。</div><!--]--><!--]--><!--]--></div><!--]--><!--astro:end--></astro-island> <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:palette-outline">   <symbol id="ai:material-symbols:palette-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.813-3.9t2.2-3.175T8.25 2.788T12.2 2q2 0 3.775.688t3.113 1.9t2.125 2.875T22 11.05q0 2.875-1.75 4.413T16 17h-1.85q-.225 0-.312.125t-.088.275q0 .3.375.863t.375 1.287q0 1.25-.687 1.85T12 22m-5.5-9q.65 0 1.075-.425T8 11.5t-.425-1.075T6.5 10t-1.075.425T5 11.5t.425 1.075T6.5 13m3-4q.65 0 1.075-.425T11 7.5t-.425-1.075T9.5 6t-1.075.425T8 7.5t.425 1.075T9.5 9m5 0q.65 0 1.075-.425T16 7.5t-.425-1.075T14.5 6t-1.075.425T13 7.5t.425 1.075T14.5 9m3 4q.65 0 1.075-.425T19 11.5t-.425-1.075T17.5 10t-1.075.425T16 11.5t.425 1.075T17.5 13M12 20q.225 0 .363-.125t.137-.325q0-.35-.375-.825T11.75 17.3q0-1.05.725-1.675T14.25 15H16q1.65 0 2.825-.962T20 11.05q0-3.025-2.312-5.038T12.2 4Q8.8 4 6.4 6.325T4 12q0 3.325 2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:palette-outline"></use>  </svg> </button>  <astro-island uid="Z1ltqdP" component-url="/_astro/WallpaperSwitch.CO_OUWpC.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;WallpaperSwitch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative z-50" role="menu" tabindex="-1"><button aria-label="Wallpaper Mode" role="menuitem" class="relative btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="wallpaper-mode-switch"><div class="absolute"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div></button> <div id="wallpaper-mode-panel" class="absolute transition float-panel-closed top-11 -right-2 pt-5 z-50"><div class="card-base float-panel p-2"><!--[--><button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5 current-theme-btn"><!--[--><!--[!--><!--]--><!----> 横幅壁纸<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5"><!--[--><!--[!--><!--]--><!----> 全屏透明<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95"><!--[--><!--[!--><!--]--><!----> 纯色背景<!----><!--]--></button><!----><!----><!--]--></div><!----></div></div><!--]--><!--astro:end--></astro-island> <astro-island uid="Zn34p1" component-url="/_astro/LayoutSwitchButton.BBiGMUAh.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{&quot;currentLayout&quot;:[0,&quot;list&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;LayoutSwitchButton&quot;,&quot;value&quot;:true}" await-children><!--[--><!--[!--><!--]--><!--]--><!--astro:end--></astro-island>  <astro-island uid="Z6xc1A" component-url="/_astro/LightDarkSwitch.BEyUkeMs.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;LightDarkSwitch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative z-50" role="menu" tabindex="-1"><button aria-label="Light/Dark Mode" role="menuitem" class="relative btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="scheme-switch"><div class="absolute"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div></button> <div id="theme-mode-panel" class="absolute transition float-panel-closed top-11 -right-2 pt-5 z-50"><div class="card-base float-panel p-2"><!--[--><button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5 current-theme-btn"><!--[--><!--[!--><!--]--><!----> 亮色<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5"><!--[--><!--[!--><!--]--><!----> 暗色<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95"><!--[--><!--[!--><!--]--><!----> 跟随系统<!----><!--]--></button><!----><!----><!--]--></div><!----></div></div><!--]--><!--astro:end--></astro-island> <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 lg:!hidden" id="nav-menu-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:menu-rounded">   <symbol id="ai:material-symbols:menu-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:menu-rounded"></use>  </svg> </button> </div> <div id="nav-menu-panel" class="float-panel float-panel-closed absolute transition-all fixed right-4 px-2 py-2 max-h-[80vh] overflow-y-auto" data-astro-cid-b4siqy5m> <div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ll8r4fklo" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:home" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  主页 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-7g47ygg8n" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-4inn0lkcd" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:home" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  主页 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-490wak92z" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/archive/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-e8p0z6w1z" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:archive" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  归档 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-1mzoarpct" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ubkwrz74v" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:archive" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  归档 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-j3jag9p7v" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
                 <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-b4siqy5m> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
-                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-2dtyd0qhv" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:link" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  链接 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-9pj46y9xe" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="https://github.com/CuteLeaf/Firefly" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-zhrjvmdpf" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:github" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  GitHub </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-7j305ry44" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a><a href="https://space.bilibili.com/38932988" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-sks4782hb" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:bilibili" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  Bilibili </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-11ei2g383" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-6xcfy929w" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:link" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  链接 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-q8bqk2n4j" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="https://github.com/CuteLeaf/Firefly" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-7bq81rr4r" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:github" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  GitHub </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-dt1fbl4g3" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a><a href="https://space.bilibili.com/38932988" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-3wxc2108k" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:bilibili" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  Bilibili </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-ict1pssoh" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/friends/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-3gyrtz2yg" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:group" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  友链 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-avhjb8u2p" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-nhrgq2ok4" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:group" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  友链 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-7ict77aub" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/guestbook/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-pgmk1951f" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chat" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  留言 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-a61bdt5fm" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-hhtf09vs4" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chat" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  留言 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-vblc5i139" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
                 <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-b4siqy5m> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
-                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-jel8ftzwg" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:info" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-tl32vq53m" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="/sponsor/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-t84on71v0" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:favorite" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  赞助 </div>  </a><a href="/about/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-kkn34n2eu" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:person" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于我 </div>  </a><a href="/bangumi/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ehq4o0pv9" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:movie" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  番组计划 </div>  </a> </div> </div> </div> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const r=document.querySelectorAll("[data-mobile-dropdown]");r.forEach(e=>{const t=e.querySelector("[data-mobile-dropdown-trigger]"),d=e.querySelector("[data-mobile-submenu]");!t||!d||t.addEventListener("click",function(o){o.preventDefault();const u=e.getAttribute("data-expanded")==="true";r.forEach(a=>{if(a!==e){a.setAttribute("data-expanded","false");const i=a.querySelector("[data-mobile-dropdown-trigger]");i&&i.setAttribute("aria-expanded","false")}});const n=!u;e.setAttribute("data-expanded",n.toString()),t.setAttribute("aria-expanded",n.toString())})})});</script> <astro-island uid="gcXlz" component-url="/_astro/DisplaySettings.DFS7qFjO.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;DisplaySettings&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="display-setting" class="float-panel float-panel-closed absolute transition-all w-80 right-4 px-4 py-4 svelte-v51mse"><div class="flex flex-row gap-2 mb-3 items-center justify-between"><div class="flex gap-2 font-bold text-lg text-neutral-900 dark:text-neutral-100 transition relative ml-3 before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)] before:absolute before:-left-3 before:top-[0.33rem]">主题色 <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-md active:scale-90 opacity-0 pointer-events-none"><div class="text-[var(--btn-content)]"><!--[!--><!--]--><!----></div></button></div> <div class="flex gap-1"><div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-md flex justify-center font-bold text-sm items-center text-[var(--btn-content)]">250</div></div></div> <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded select-none"><input aria-label="主题色" type="range" min="0" max="360" value="250" class="slider svelte-v51mse" id="colorSlider" step="5" style="width: 100%"/></div></div><!--]--><!--astro:end--></astro-island> </div> </div> <script type="module">function a(){let t=document.getElementById("display-settings-switch");t&&(t.onclick=function(){let e=document.getElementById("display-setting");e&&e.classList.toggle("float-panel-closed")});let n=document.getElementById("nav-menu-switch");n&&(n.onclick=function(){let e=document.getElementById("nav-menu-panel");e&&e.classList.toggle("float-panel-closed")});let o=document.getElementById("wallpaper-mode-switch");o&&(o.onclick=function(){let e=document.getElementById("wallpaper-mode-panel");e&&e.classList.toggle("float-panel-closed")});let l=document.getElementById("scheme-switch");l&&(l.onclick=function(){let e=document.getElementById("theme-mode-panel");e&&e.classList.toggle("float-panel-closed")})}a();function i(){const t=document.getElementById("navbar");if(!t||t.getAttribute("data-transparent-mode")!=="semifull")return;if(!(t.getAttribute("data-is-home")==="true")){window.semifullScrollHandler&&(window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=void 0),t.classList.add("scrolled");return}t.classList.remove("scrolled");let l=!1;function e(){(window.pageYOffset||document.documentElement.scrollTop)>50?t.classList.add("scrolled"):t.classList.remove("scrolled"),l=!1}function s(){l||(requestAnimationFrame(e),l=!0)}window.semifullScrollHandler&&window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=s,window.addEventListener("scroll",s,{passive:!0}),e()}window.initSemifullScrollDetection=i;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i();</script> <script>(function(){const scriptUrl = "/pagefind/pagefind.js";
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-c2o4k9cnh" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:info" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-hjocbyvw6" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="/sponsor/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-z78zqn599" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:favorite" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  赞助 </div>  </a><a href="/about/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-z6ngzy637" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:person" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于我 </div>  </a><a href="/bangumi/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-1dlii7im0" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:movie" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  番组计划 </div>  </a> </div> </div> </div> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const r=document.querySelectorAll("[data-mobile-dropdown]");r.forEach(e=>{const t=e.querySelector("[data-mobile-dropdown-trigger]"),d=e.querySelector("[data-mobile-submenu]");!t||!d||t.addEventListener("click",function(o){o.preventDefault();const u=e.getAttribute("data-expanded")==="true";r.forEach(a=>{if(a!==e){a.setAttribute("data-expanded","false");const i=a.querySelector("[data-mobile-dropdown-trigger]");i&&i.setAttribute("aria-expanded","false")}});const n=!u;e.setAttribute("data-expanded",n.toString()),t.setAttribute("aria-expanded",n.toString())})})});</script> <astro-island uid="gcXlz" component-url="/_astro/DisplaySettings.DFS7qFjO.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;DisplaySettings&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="display-setting" class="float-panel float-panel-closed absolute transition-all w-80 right-4 px-4 py-4 svelte-v51mse"><div class="flex flex-row gap-2 mb-3 items-center justify-between"><div class="flex gap-2 font-bold text-lg text-neutral-900 dark:text-neutral-100 transition relative ml-3 before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)] before:absolute before:-left-3 before:top-[0.33rem]">主题色 <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-md active:scale-90 opacity-0 pointer-events-none"><div class="text-[var(--btn-content)]"><!--[!--><!--]--><!----></div></button></div> <div class="flex gap-1"><div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-md flex justify-center font-bold text-sm items-center text-[var(--btn-content)]">250</div></div></div> <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded select-none"><input aria-label="主题色" type="range" min="0" max="360" value="250" class="slider svelte-v51mse" id="colorSlider" step="5" style="width: 100%"/></div></div><!--]--><!--astro:end--></astro-island> </div> </div> <script type="module">function a(){let t=document.getElementById("display-settings-switch");t&&(t.onclick=function(){let e=document.getElementById("display-setting");e&&e.classList.toggle("float-panel-closed")});let n=document.getElementById("nav-menu-switch");n&&(n.onclick=function(){let e=document.getElementById("nav-menu-panel");e&&e.classList.toggle("float-panel-closed")});let o=document.getElementById("wallpaper-mode-switch");o&&(o.onclick=function(){let e=document.getElementById("wallpaper-mode-panel");e&&e.classList.toggle("float-panel-closed")});let l=document.getElementById("scheme-switch");l&&(l.onclick=function(){let e=document.getElementById("theme-mode-panel");e&&e.classList.toggle("float-panel-closed")})}a();function i(){const t=document.getElementById("navbar");if(!t||t.getAttribute("data-transparent-mode")!=="semifull")return;if(!(t.getAttribute("data-is-home")==="true")){window.semifullScrollHandler&&(window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=void 0),t.classList.add("scrolled");return}t.classList.remove("scrolled");let l=!1;function e(){(window.pageYOffset||document.documentElement.scrollTop)>50?t.classList.add("scrolled"):t.classList.remove("scrolled"),l=!1}function s(){l||(requestAnimationFrame(e),l=!0)}window.semifullScrollHandler&&window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=s,window.addEventListener("scroll",s,{passive:!0}),e()}window.initSemifullScrollDetection=i;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i();</script> <script>(function(){const scriptUrl = "/pagefind/pagefind.js";
 
             {/* 你的 loadPagefind 函数的完整内容放在这里 */}
             async function loadPagefind() {
@@ -771,7 +771,7 @@ const retryCount = 3;
 
   // 初始化左侧边栏管理器
   new LeftSidebarManager();
-})();</script> </div>  <main id="swup-container" class="transition-swup-fade overflow-hidden w-full col-span-2 md:col-start-2 md:col-end-3 lg:col-start-2 lg:col-end-3 transition-main">  <div id="grid-class-carrier" data-grid-class="grid-cols-1 md:grid-cols-[17.5rem_1fr] lg:grid-cols-[17.5rem_1fr_17.5rem]" class="hidden"></div>   <div id="content-wrapper" class="onload-animation transition-leaving">   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4"> <div id="post-container" class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full "> <!-- word count and reading time --> <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation"> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:notes-rounded">   <symbol id="ai:material-symbols:notes-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h10q.425 0 .713.288T15 17t-.288.713T14 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:notes-rounded"></use>  </svg> </div> <div class="text-sm"> 24252  字 </div> </div> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:schedule-outline-rounded">   <symbol id="ai:material-symbols:schedule-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M13 11.6V8q0-.425-.288-.712T12 7t-.712.288T11 8v3.975q0 .2.075.388t.225.337l3.3 3.3q.275.275.7.275T16 16t.275-.7t-.275-.7zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:schedule-outline-rounded"></use>  </svg> </div> <div class="text-sm"> 121  分钟 </div> </div> </div> <!-- title --> <div class="relative onload-animation"> <h1 data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title" class="transition w-full block font-bold mb-3
+})();</script> </div>  <main id="swup-container" class="transition-swup-fade overflow-hidden w-full col-span-2 md:col-start-2 md:col-end-3 lg:col-start-2 lg:col-end-3 transition-main">  <div id="grid-class-carrier" data-grid-class="grid-cols-1 md:grid-cols-[17.5rem_1fr] lg:grid-cols-[17.5rem_1fr_17.5rem]" class="hidden"></div>   <div id="content-wrapper" class="onload-animation transition-leaving">   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4"> <div id="post-container" class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full "> <!-- word count and reading time --> <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation"> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:notes-rounded">   <symbol id="ai:material-symbols:notes-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h10q.425 0 .713.288T15 17t-.288.713T14 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:notes-rounded"></use>  </svg> </div> <div class="text-sm"> 41299  字 </div> </div> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:schedule-outline-rounded">   <symbol id="ai:material-symbols:schedule-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M13 11.6V8q0-.425-.288-.712T12 7t-.712.288T11 8v3.975q0 .2.075.388t.225.337l3.3 3.3q.275.275.7.275T16 16t.275-.7t-.275-.7zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:schedule-outline-rounded"></use>  </svg> </div> <div class="text-sm"> 206  分钟 </div> </div> </div> <!-- title --> <div class="relative onload-animation"> <h1 data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title" class="transition w-full block font-bold mb-3
                     text-3xl md:text-[2.25rem]/[2.75rem]
                     text-black/90 dark:text-white/90
                     md:before:w-1 before:h-5 before:rounded-md before:bg-[var(--primary)]
@@ -1961,7 +1961,1245 @@ const retryCount = 3;
 <p><strong>敬庸公</strong>（义良公幼子）
 迁陕西。</p>
 </li>
-</ol></section></section>  </div> <script type="module">function l(t){const r=t.querySelectorAll("span.line");if(r.length>0){const o=[];for(let e=0;e<r.length;e++){const s=r[e].textContent||"";o.push(s)}return o.join(`
+</ol></section></section>
+<section><h1 id="世系录第十四世至第十五世">世系录（第十四世至第十五世）<a class="anchor" href="#世系录第十四世至第十五世"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h1><section><h2 id="第十四世原派明-新派慈">第十四世（原派：明 新派：慈）<a class="anchor" href="#第十四世原派明-新派慈"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><section><h3 id="慈朱公">慈朱公<a class="anchor" href="#慈朱公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斣公长子</li>
+<li><strong>字号</strong>：字奇有，号孔舞</li>
+<li><strong>配偶</strong>：娶叶氏</li>
+<li><strong>子嗣</strong>：女一，适汪</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>墓葬</strong>：合葬庐江李家铺，丁山癸向</li>
+</ul></section><section><h3 id="慈亮公">慈亮公<a class="anchor" href="#慈亮公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斣公次子</li>
+<li><strong>字号</strong>：字连璧，号时舞</li>
+<li><strong>配偶</strong>：娶江氏</li>
+<li><strong>子嗣</strong>：子二：恒典、恒芝</li>
+<li><strong>生卒</strong>：公妣生卒葬待考</li>
+</ul></section><section><h3 id="慈晓公">慈晓公<a class="anchor" href="#慈晓公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斣公幼子</li>
+<li><strong>字号</strong>：字海曙，号月升</li>
+<li><strong>生卒</strong>：生康熙三十六年丁丑四月十四子时，卒乾隆十九年甲戌九月初八子时</li>
+<li><strong>配偶</strong>：娶陈在中女，生康熙三十九年庚辰九月十六戌时，卒乾隆十八年癸酉十二月十四辰时</li>
+<li><strong>子嗣</strong>：子二：恒寅、恒煌；女一，适方</li>
+<li><strong>墓葬</strong>：合葬龙潭保五甲下萧庄壇基窊，庚山甲向，有碑</li>
+</ul></section><section><h3 id="慈崇公">慈崇公<a class="anchor" href="#慈崇公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斡公长子</li>
+<li><strong>字号</strong>：字卫武</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾宅右白虎山，庚山甲山（注：疑是“向”），附父墓，有碑</li>
+</ul></section><section><h3 id="慈龙公">慈龙公<a class="anchor" href="#慈龙公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斡公幼子</li>
+<li><strong>字号</strong>：字万武</li>
+<li><strong>生卒</strong>：生雍正十二年甲寅七月初八子时，卒失考</li>
+<li><strong>墓葬</strong>：葬下萧庄壇基窊，丙山壬向，有碑</li>
+</ul></section><section><h3 id="慈远公">慈远公<a class="anchor" href="#慈远公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斟公长子</li>
+<li><strong>字号</strong>：字荣臣</li>
+<li><strong>生卒</strong>：生康熙四十六年丁亥十月二十八亥时，卒乾隆三十一年丙戌十一月初四巳时</li>
+<li><strong>配偶</strong>：娶李含青女，生雍正三年乙巳七月十四丑时，卒失考</li>
+<li><strong>子嗣</strong>：子一：恒兴</li>
+<li><strong>墓葬</strong>：公葬下萧庄壇基窊，庚山甲向，有碑，子恒兴附墓；妣葬下萧庄壇基窊</li>
+</ul></section><section><h3 id="慈皙公">慈皙公<a class="anchor" href="#慈皙公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斟公次子</li>
+<li><strong>字号</strong>：字荣久</li>
+<li><strong>生卒</strong>：生康熙五十三年甲午十二月初一巳时，卒乾隆五十四年己酉正月初五未时</li>
+<li><strong>配偶</strong>：娶袁氏，生雍正九年辛亥七月初七戌时，卒乾隆三十年乙酉九月初八亥时；继娶刘氏，生卒失考</li>
+<li><strong>子嗣</strong>：子四：恒昂、恒禄、恒高、恒环；女一，适许</li>
+<li><strong>墓葬</strong>：合葬沈家山祠堂后，庚山甲向，有碑</li>
+</ul></section><section><h3 id="慈仙公">慈仙公<a class="anchor" href="#慈仙公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斟公三子</li>
+<li><strong>字号</strong>：字荣佳</li>
+<li><strong>生卒</strong>：生康熙六十一年壬寅正月十一子时，卒嘉庆九年甲子二月初六巳时</li>
+<li><strong>配偶</strong>：娶许万臣女，生乾隆三年戊午七月二十四？时，卒失考；继娶朱全梓女，生乾隆三年戊午七月二十四？时，卒嘉庆十九年甲戌闰二月十一亥时</li>
+<li><strong>子嗣</strong>：子一：恒翔（许出）；子四：恒明、恒晦、恒耀、恒辉（朱出）；女二：长适陈嘉猷（苦节），幼适胡</li>
+<li><strong>墓葬</strong>：公与许前妣合葬龙潭保五甲下萧庄上园棉地南头，乾山巽向；朱妣葬下萧庄嘴头山，与赵股兴发祖棺同圹，棺在左首，坐东向西</li>
+</ul></section><section><h3 id="慈玉公">慈玉公<a class="anchor" href="#慈玉公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斟公幼子</li>
+<li><strong>荣誉</strong>：例赠文林郎</li>
+<li><strong>字号</strong>：字荣华</li>
+<li><strong>生卒</strong>：生雍正三年乙巳二月二十九申时，享寿九十岁，卒嘉庆十九年甲戌五月二十八申时</li>
+<li><strong>配偶</strong>：娶王天爵女，例赠孺人，生雍正五年丁未九月十五午时，享寿七十有四，卒嘉庆五年辛酉十月初五申时</li>
+<li><strong>子嗣</strong>：子四：恒合、恒哲、恒燦、恒茂</li>
+<li><strong>墓葬</strong>：公葬下萧庄壇基窊，坤山艮向；妣葬下萧庄宅左，卯山酉向</li>
+</ul></section><section><h3 id="慈高公">慈高公<a class="anchor" href="#慈高公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬科公长子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字迈群，号敬武</li>
+<li><strong>生卒</strong>：生康熙三十五年丙子十二月二十七酉时，享寿六十四，卒乾隆二十五年庚辰九月二十巳时</li>
+<li><strong>配偶</strong>：娶朱氏，例赠孺人，生康熙三十八年己卯三月初六卯时，卒乾隆？年十一月二十九寅时</li>
+<li><strong>子嗣</strong>：子三：恒昌、恒来、恒川</li>
+<li><strong>墓葬</strong>：合葬拔茅保五甲林家窊。契兵毁，界载老谱：上下陆丈，左右四丈，以墙埂埋石为界，有碑</li>
+</ul></section><section><h3 id="慈映公">慈映公<a class="anchor" href="#慈映公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬科公幼子</li>
+<li><strong>字号</strong>：字戴天，号王臣</li>
+<li><strong>生卒</strong>：生康熙四十九年庚寅十二月二十卯时，卒乾隆三十二年丁亥六月初一未时</li>
+<li><strong>墓葬</strong>：葬王家园下张家塝松园</li>
+</ul></section><section><h3 id="慈梧公">慈梧公<a class="anchor" href="#慈梧公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬㪹公长子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈桐公">慈桐公<a class="anchor" href="#慈桐公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬㪹公次子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈楼公">慈楼公<a class="anchor" href="#慈楼公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬㪹公三子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈梯公">慈梯公<a class="anchor" href="#慈梯公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬㪹公幼子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈鸾公">慈鸾公<a class="anchor" href="#慈鸾公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斢公长子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈舞公">慈舞公<a class="anchor" href="#慈舞公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬斢公幼子</li>
+<li><strong>字号</strong>：字（注：原文没有下文）</li>
+</ul></section><section><h3 id="慈岑公">慈岑公<a class="anchor" href="#慈岑公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬开公子</li>
+<li><strong>字号</strong>：字年初</li>
+<li><strong>生卒</strong>：生康熙五十八年己亥正月初一巳时，卒乾隆三十二年丁亥六月初一未时</li>
+<li><strong>配偶</strong>：娶江锡九女，生康熙五十七年戊戌九月初五亥时，卒失考</li>
+<li><strong>子嗣</strong>：子三：恒忠、恒恕、恒志</li>
+<li><strong>墓葬</strong>：合葬王家园张家塝松园</li>
+</ul></section><section><h3 id="慈义公">慈义公<a class="anchor" href="#慈义公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬辉公长子</li>
+<li><strong>字号</strong>：字义方</li>
+<li><strong>生卒</strong>：生康熙？年？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶朱氏，生康熙？年？月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：子一：恒宏</li>
+<li><strong>墓葬</strong>：合葬束家山小坟园活石下附祖义鹍公墓，有碑</li>
+</ul></section><section><h3 id="慈恕公">慈恕公<a class="anchor" href="#慈恕公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬辉公次子</li>
+<li><strong>字号</strong>：字恕方</li>
+<li><strong>生卒</strong>：生康熙四十九年庚寅？月？日？时，卒乾隆六年辛酉六月十五巳时</li>
+<li><strong>配偶</strong>：娶汪氏，生康熙五十年辛卯正月三十子时，卒乾隆五十一年丙午二月初三巳时。妣性纯谨，刲股救夫，青年秉节，白首完贞</li>
+<li><strong>子嗣</strong>：子一：恒宽；女一，适张</li>
+<li><strong>墓葬</strong>：葬俱待考</li>
+</ul></section><section><h3 id="慈恒公">慈恒公<a class="anchor" href="#慈恒公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬辉公三子</li>
+<li><strong>字号</strong>：字恒方</li>
+<li><strong>生卒</strong>：生康熙？年？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶朱间友女，生康熙？年？月？日？时，卒失考。妣性贞静，节孝堪称！</li>
+<li><strong>子嗣</strong>：子二：恒寅、恒宸</li>
+<li><strong>墓葬</strong>：合葬史家湾南首白虎山，附父墓右，向南，有碑</li>
+</ul></section><section><h3 id="慈有公">慈有公<a class="anchor" href="#慈有公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬辉公四子</li>
+<li><strong>字号</strong>：字有方</li>
+<li><strong>生卒</strong>：生康熙五十七年戊戌八月十四丑时，卒乾隆二十年乙亥八月二十二巳时</li>
+<li><strong>配偶</strong>：娶太学生左芝配女，生康熙五十七年戊戌二月二十七亥时，卒乾隆五十一年丙午六月初四寅时</li>
+<li><strong>子嗣</strong>：子四：恒文、恒武、恒勤、恒俭</li>
+<li><strong>墓葬</strong>：葬俱待考</li>
+</ul></section><section><h3 id="慈连公">慈连公<a class="anchor" href="#慈连公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬辉公幼子</li>
+<li><strong>字号</strong>：字连方</li>
+<li><strong>生卒</strong>：生康熙？年？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶朱氏，生雍正？年？月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：女二：长适吴，次适杨</li>
+<li><strong>墓葬</strong>：合葬史家湾南首白虎山，向东，有碑</li>
+</ul></section><section><h3 id="慈奇公">慈奇公<a class="anchor" href="#慈奇公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬莹公长子</li>
+<li><strong>字号</strong>：字海峰</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈岚公">慈岚公<a class="anchor" href="#慈岚公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬莹公次子</li>
+<li><strong>字号</strong>：字岚峰</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈灵公">慈灵公<a class="anchor" href="#慈灵公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬莹公三子</li>
+<li><strong>字号</strong>：字灵峰</li>
+<li><strong>生卒</strong>：生乾隆四年己未五月初六卯时，卒乾隆五十年乙巳九月？日？时</li>
+<li><strong>配偶</strong>：娶王氏，生乾隆八年癸亥？月？日？时，卒乾隆五十一年丙午七月十四卯时</li>
+<li><strong>子嗣</strong>：子三：恒宗、恒室、恒官（殇）；女一，适刘</li>
+<li><strong>墓葬</strong>：公葬束家山小园，向东；妣葬史家湾宅右白虎山，向东南</li>
+</ul></section><section><h3 id="慈金公">慈金公<a class="anchor" href="#慈金公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬莹公四子</li>
+<li><strong>字号</strong>：字玉峰</li>
+<li><strong>生卒</strong>：生乾隆八年癸亥正月十三亥时，卒失考</li>
+<li><strong>配偶</strong>：娶刘为香女，生乾隆十三年戊辰二月初七午时，卒失考</li>
+<li><strong>子嗣</strong>：子三：恒祷（殇）、恒祥、恒祈；女一，适江</li>
+<li><strong>墓葬</strong>：合葬团山北首第二塝木匠冈，向北</li>
+</ul></section><section><h3 id="慈珂公">慈珂公<a class="anchor" href="#慈珂公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬莹公幼子</li>
+<li><strong>字号</strong>：字雨峰</li>
+<li><strong>生卒</strong>：生乾隆十年乙丑十一月十四亥时，卒乾隆五十一年丙午五月十四子时</li>
+<li><strong>配偶</strong>：娶钱氏，生乾隆十年乙丑九月十六巳时，卒葬待考</li>
+<li><strong>子嗣</strong>：子三：恒萃、恒類（殇）、恒俦（殇）；女二：长适刘，幼适江</li>
+<li><strong>墓葬</strong>：公葬金鳌保十甲束家山小园，向东</li>
+</ul></section><section><h3 id="慈忠公">慈忠公<a class="anchor" href="#慈忠公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬国公长子</li>
+<li><strong>字号</strong>：字秦书</li>
+<li><strong>生卒</strong>：生乾隆十三年戊辰五月初六？时，卒失考</li>
+<li><strong>墓葬</strong>：葬沈家山来龙冈，向南</li>
+</ul></section><section><h3 id="慈信公">慈信公<a class="anchor" href="#慈信公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬国公次子</li>
+<li><strong>字号</strong>：字载书</li>
+<li><strong>生卒</strong>：生乾隆十八年癸酉十二月二十子时，卒乾隆五十五年庚戌十月十二午时</li>
+<li><strong>配偶</strong>：娶陶氏，生乾隆二十五年庚辰五月十六午时，卒失考</li>
+<li><strong>子嗣</strong>：子三：恒璋、恒瑕、恒瑜；女三：（注：原文没说“适”）</li>
+<li><strong>墓葬</strong>：公葬束家山下小园，戌山辰向；妣葬束家山下小园，次子恒瑕附墓</li>
+</ul></section><section><h3 id="慈习公">慈习公<a class="anchor" href="#慈习公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬国公幼子</li>
+<li><strong>字号</strong>：字全书</li>
+<li><strong>生卒</strong>：生乾隆二十八年癸未二月二十亥时，卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾右首白虎山稻场嘴头</li>
+</ul></section><section><h3 id="慈爽公">慈爽公<a class="anchor" href="#慈爽公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬里公长子</li>
+<li><strong>字号</strong>：字南崖</li>
+<li><strong>生卒</strong>：生乾隆十年乙丑正月二十申时，卒失考</li>
+<li><strong>配偶</strong>：娶刘恒有女，生乾隆十年乙丑十月十五午时，卒失考</li>
+<li><strong>子嗣</strong>：子四：恒勩、恒勷、恒勤、恒动；女一，适仇</li>
+<li><strong>墓葬</strong>：合葬青龙嘴松园曾祖母熊太君墓旁，与弟慈兰同塚，酉山卯向</li>
+</ul></section><section><h3 id="慈朗公">慈朗公<a class="anchor" href="#慈朗公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬里公次子</li>
+<li><strong>字号</strong>：字云峰</li>
+<li><strong>生卒</strong>：生乾隆十四年己巳七月初三亥时，卒失考</li>
+<li><strong>配偶</strong>：娶杨氏，生卒葬待考；继娶李轮车女，生乾隆三十年乙酉正月十四申时，卒乾隆五十四年己酉二月初六卯时；继娶？氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒雅（李出）；子二：恒修、恒彦（继配出）；女一，（注：原文没记“适”）</li>
+<li><strong>墓葬</strong>：李妣葬史家湾宅右白虎山，向东，有碑；公葬青龙嘴附父墓</li>
+</ul></section><section><h3 id="慈芝公">慈芝公<a class="anchor" href="#慈芝公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬里公三子</li>
+<li><strong>字号</strong>：字伏珍</li>
+<li><strong>生卒</strong>：生乾隆二十年乙亥六月初四未时，卒乾隆四十八年癸卯正月二十二巳时</li>
+<li><strong>墓葬</strong>：葬史家湾右首白虎山，向东，有碑</li>
+</ul></section><section><h3 id="慈兰公">慈兰公<a class="anchor" href="#慈兰公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬里公幼子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>名号</strong>：名廷采，字德云，号省齐</li>
+<li><strong>生卒</strong>：生乾隆二十三年戊寅十一月二十五酉时，享寿七十有五，卒道光十二年壬辰正月初一辰时</li>
+<li><strong>配偶</strong>：娶王名宗女，例赠孺人，生乾隆二十六年辛卯十月二十五子时，享寿六十有四，卒道光四年甲申二月二十六酉时</li>
+<li><strong>子嗣</strong>：子五：恒彰、恒彩、恒彬、恒形、恒彪；女三：长适朱，次适王，幼适朱</li>
+<li><strong>墓葬</strong>：公葬青龙嘴松园曾祖母熊太君墓旁，与兄慈爽同塚，酉山卯向；妣葬龙潭保五甲宋家冲罗汉脐，向西，有碑。契刊另簿。公妣行谊另刊传。</li>
+</ul></section><section><h3 id="慈珍公">慈珍公<a class="anchor" href="#慈珍公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬扉公子</li>
+<li><strong>字号</strong>：字方明</li>
+<li><strong>生卒</strong>：生乾隆？年？月？日？时，卒葬待考</li>
+<li><strong>配偶</strong>：娶陶氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒拔</li>
+</ul></section><section><h3 id="慈成公">慈成公<a class="anchor" href="#慈成公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬户公长子</li>
+<li><strong>字号</strong>：字瑞徵</li>
+<li><strong>生卒</strong>：生乾隆六年辛酉十一月初四亥时，卒乾隆三十六年辛卯八月初四卯时</li>
+<li><strong>配偶</strong>：娶章氏，生乾隆二年丁巳十一月初一子时，卒葬待考</li>
+<li><strong>子嗣</strong>：子二：恒耕、恒读；女一，适王</li>
+<li><strong>墓葬</strong>：公葬柏枝树章家月山，附父墓，向东，有碑</li>
+</ul></section><section><h3 id="慈才公">慈才公<a class="anchor" href="#慈才公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬户公幼子</li>
+<li><strong>字号</strong>：字临祥</li>
+<li><strong>生卒</strong>：生乾隆十四年己巳七月二十午时，卒乾隆四十八年癸卯二月二十二戌时</li>
+<li><strong>配偶</strong>：娶吴圣宗女，生乾隆十八年癸酉十二月十四亥时，卒葬待考</li>
+<li><strong>子嗣</strong>：子二：恒发、恒强；女一，适钱</li>
+<li><strong>墓葬</strong>：公葬柏枝树汪家山，附母墓，向东，有碑</li>
+</ul></section><section><h3 id="慈栋公">慈栋公<a class="anchor" href="#慈栋公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬显公长子</li>
+<li><strong>字号</strong>：字昆友</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈梁公">慈梁公<a class="anchor" href="#慈梁公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬显公幼子</li>
+<li><strong>字号</strong>：字质臣</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈鼎公">慈鼎公<a class="anchor" href="#慈鼎公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旼公长子</li>
+<li><strong>字号</strong>：字昆刚</li>
+<li><strong>生卒</strong>：生雍正九年辛亥七月二十六卯时，卒乾隆五十一年丙午？月？日？时</li>
+<li><strong>配偶</strong>：娶黄氏，生乾隆六年辛酉？月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：子二：恒禋、恒祀；女一，适黄</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲束家山小园，向东，幼子恒祀附墓</li>
+</ul></section><section><h3 id="慈鼐公">慈鼐公<a class="anchor" href="#慈鼐公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旼公次子</li>
+<li><strong>字号</strong>：字昆玉</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈烹公">慈烹公<a class="anchor" href="#慈烹公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旼公幼子</li>
+<li><strong>字号</strong>：字昆能</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="慈玲公">慈玲公<a class="anchor" href="#慈玲公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬裕公长子</li>
+<li><strong>字号</strong>：字现元</li>
+<li><strong>生卒</strong>：生雍正六年戊申八月初八未时，卒葬待考</li>
+</ul></section><section><h3 id="慈玷公">慈玷公<a class="anchor" href="#慈玷公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬裕公幼子</li>
+<li><strong>字号</strong>：字凤元</li>
+<li><strong>生卒</strong>：生雍正十一年癸丑六月二十二申时，卒乾隆五十年乙巳？月？日？时</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="慈玶公">慈玶公<a class="anchor" href="#慈玶公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬爵公长子</li>
+<li><strong>字号</strong>：字名阳</li>
+<li><strong>生卒</strong>：生乾隆十七年壬申正月初七卯时，卒乾隆？年？月？日？时</li>
+<li><strong>配偶</strong>：娶杨周南女，生乾隆？年？月？日？时，卒葬待考</li>
+<li><strong>子嗣</strong>：子一：恒恃</li>
+<li><strong>墓葬</strong>：公葬柏枝树太君山</li>
+</ul></section><section><h3 id="慈珆公">慈珆公<a class="anchor" href="#慈珆公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬爵公次子</li>
+<li><strong>字号</strong>：字名万</li>
+<li><strong>生卒</strong>：生乾隆二十二年丁丑七月十五午时，卒乾隆五十年乙巳？月？日？时</li>
+<li><strong>配偶</strong>：娶胡氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒快</li>
+<li><strong>墓葬</strong>：葬柏枝树太君山</li>
+</ul></section><section><h3 id="慈珌公">慈珌公<a class="anchor" href="#慈珌公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬爵公幼子</li>
+<li><strong>字号</strong>：字名有</li>
+<li><strong>生卒</strong>：生乾隆二十五年庚辰十一月十六未时，卒葬待考</li>
+<li><strong>配偶</strong>：娶陈氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒怡</li>
+</ul></section><section><h3 id="慈玎公">慈玎公<a class="anchor" href="#慈玎公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晖公长子</li>
+<li><strong>字号</strong>：字云先</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶杨氏</li>
+<li><strong>子嗣</strong>：子一：恒衡</li>
+<li><strong>墓葬</strong>：合葬舒邑姚家河</li>
+</ul></section><section><h3 id="慈㺪公">慈㺪公<a class="anchor" href="#慈㺪公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晖公幼子</li>
+<li><strong>字号</strong>：字云霞</li>
+<li><strong>生卒</strong>：生雍正十二年甲寅正月二十？时，卒乾隆四十九年甲辰十二月二十一亥时</li>
+<li><strong>配偶</strong>：娶高氏，生雍正十三年乙卯三月初十卯时，卒失考</li>
+<li><strong>子嗣</strong>：子二：恒校、恒恤</li>
+<li><strong>墓葬</strong>：俱葬舒邑姚家河</li>
+</ul></section><section><h3 id="慈玜公">慈玜公<a class="anchor" href="#慈玜公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬皙公长子</li>
+<li><strong>字号</strong>：字云祥</li>
+<li><strong>生卒</strong>：生雍正九年辛亥六月二十四午时，卒葬待考</li>
+<li><strong>配偶</strong>：娶？为德女，生雍正十年壬子四月二十八巳时，卒葬待考</li>
+<li><strong>子嗣</strong>：女一，适刘</li>
+</ul></section><section><h3 id="慈玦公">慈玦公<a class="anchor" href="#慈玦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬皙公次子</li>
+<li><strong>字号</strong>：字云彩</li>
+<li><strong>生卒</strong>：生乾隆三年戊午二月十二巳时，卒乾隆五十年乙巳十月初五午时</li>
+<li><strong>配偶</strong>：娶？氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒恮</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="慈玗公">慈玗公<a class="anchor" href="#慈玗公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬皙公幼子</li>
+<li><strong>字号</strong>：字云秀</li>
+<li><strong>生卒</strong>：生乾隆六年辛酉正月二十四卯时，卒失考</li>
+<li><strong>配偶</strong>：娶朱七彭女，生乾隆十三年戊辰六月初四午时，卒失考</li>
+<li><strong>子嗣</strong>：子一：恒恭（殇）；女一，适许</li>
+<li><strong>墓葬</strong>：合葬军保余家研，与亲弟慈理公夫妇合塚</li>
+</ul></section><section><h3 id="慈珼公">慈珼公<a class="anchor" href="#慈珼公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬映公长子</li>
+<li><strong>字号</strong>：字自祥</li>
+<li><strong>生卒</strong>：生雍正三年乙巳？月？日？时，卒葬待考</li>
+<li><strong>配偶</strong>：娶王氏，生雍正？年？月？日？时</li>
+</ul></section><section><h3 id="慈珺公">慈珺公<a class="anchor" href="#慈珺公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬映公次子</li>
+<li><strong>字号</strong>：字自成</li>
+<li><strong>生卒</strong>：生雍正七年己酉八月三十寅时，卒乾隆四十九年甲辰十二月二十七丑时</li>
+<li><strong>子嗣</strong>：祧胞弟慈现次子恒悒为嗣</li>
+<li><strong>墓葬</strong>：葬耿塘梢</li>
+</ul></section><section><h3 id="慈现公">慈现公<a class="anchor" href="#慈现公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬映公幼子</li>
+<li><strong>字号</strong>：字自正</li>
+<li><strong>生卒</strong>：生雍正十年壬子五月二十四亥时，卒乾隆五十一年丙午六月二十三丑时</li>
+<li><strong>配偶</strong>：娶吴方来女，生乾隆五年庚申十一月十九亥时，卒乾隆五十一年丙午七月十四未时</li>
+<li><strong>子嗣</strong>：子四：恒㤱、恒悒（祧与二兄慈珺为嗣）、恒悦、恒惜</li>
+<li><strong>墓葬</strong>：合葬舒邑姚家河，癸山丁向</li>
+</ul></section><section><h3 id="慈琢公">慈琢公<a class="anchor" href="#慈琢公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晈公子</li>
+<li><strong>字号</strong>：字云成</li>
+<li><strong>生卒</strong>：生雍正十二年甲寅十二月十四亥时，卒乾隆四十五年庚子三月初九未时</li>
+<li><strong>配偶</strong>：娶伍氏，生雍正十一年癸丑五月二十酉时，卒乾隆四十七年壬寅九月十四申时</li>
+<li><strong>子嗣</strong>：子三：恒性、恒情、恒怔；女三：长适王，次适？，幼适徐</li>
+<li><strong>墓葬</strong>：葬俱待考</li>
+</ul></section><section><h3 id="慈璋公">慈璋公<a class="anchor" href="#慈璋公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旺公长子</li>
+<li><strong>字号</strong>：字西成</li>
+<li><strong>生卒</strong>：生乾隆八年癸亥三月二十卯时，卒乾隆五十一年丙午二月二十一子时</li>
+<li><strong>子嗣</strong>：祧胞弟慈理次子恒梽为嗣</li>
+<li><strong>墓葬</strong>：葬太公汪庄</li>
+</ul></section><section><h3 id="慈理公">慈理公<a class="anchor" href="#慈理公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旺公幼子</li>
+<li><strong>字号</strong>：字丰年</li>
+<li><strong>生卒</strong>：生乾隆十四年己巳正月十九亥时，卒失考</li>
+<li><strong>配偶</strong>：娶胡凤三女，生乾隆二十一年丙子七月十五丑时，卒失考</li>
+<li><strong>子嗣</strong>：子四：恒㤔、恒梽（祧与胞兄慈璋为嗣）、恒柏、恒松；女三：长适？，次适？，幼适朱</li>
+<li><strong>墓葬</strong>：合葬军保余家研与亲兄慈玗夫妇同塚，附父墓旁</li>
+</ul></section><section><h3 id="慈无公">慈无公<a class="anchor" href="#慈无公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晓公次子</li>
+<li><strong>字号</strong>：字孔年</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾南首坟湾颈，向南</li>
+</ul></section><section><h3 id="慈封公">慈封公<a class="anchor" href="#慈封公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晓公三子</li>
+<li><strong>字号</strong>：字华封</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶陶氏</li>
+<li><strong>子嗣</strong>：女一，适张</li>
+<li><strong>墓葬</strong>：合葬贵池县清风亭义山</li>
+</ul></section><section><h3 id="慈元公">慈元公<a class="anchor" href="#慈元公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晓公四子</li>
+<li><strong>字号</strong>：字元封</li>
+<li><strong>生卒</strong>：生雍正十二年甲寅？月？日？时，卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾南首坟湾颈，向南</li>
+</ul></section><section><h3 id="慈六公">慈六公<a class="anchor" href="#慈六公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬晓公五子</li>
+<li><strong>字号</strong>：字文韬</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬贵邑清风亭义山</li>
+</ul></section><section><h3 id="慈恰公">慈恰公<a class="anchor" href="#慈恰公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬公六子敬旷公祧子</li>
+<li><strong>字号</strong>：字龙韬</li>
+<li><strong>生卒</strong>：生乾隆九年甲子？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶章氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒广</li>
+<li><strong>墓葬</strong>：公葬贵池清风亭义山；妣卒葬待考</li>
+</ul></section><section><h3 id="慈珠公">慈珠公<a class="anchor" href="#慈珠公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬暻公子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字建典，号秀峰</li>
+<li><strong>生卒</strong>：生雍正三年乙巳十二月初八卯时，享寿六十有九，卒乾隆五十八年癸丑五月初四巳时</li>
+<li><strong>配偶</strong>：娶芮明爽女，例赠孺人，生雍正三年乙巳十月初九丑时，享寿七十有五，卒嘉庆四年己未二月初一卯时</li>
+<li><strong>子嗣</strong>：子二：恒和，恒奇</li>
+<li><strong>墓葬</strong>：公葬拔茅保施家庙西道冠嘴，长子恒和附圹，契另刊簿；妣葬会宫保石马滩，丙山壬向，有碑，契另刊簿。公暨长子恒和行谊合传。</li>
+</ul></section><section><h3 id="慈珍公-1">慈珍公<a class="anchor" href="#慈珍公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬昶公子</li>
+<li><strong>字号</strong>：字建邦，号立峰</li>
+<li><strong>生卒</strong>：生乾隆九年甲子正月初二寅时，卒乾隆五十二年丁未九月二十九辰时</li>
+<li><strong>配偶</strong>：娶张玉立女，生乾隆七年壬戌五月十五酉时，卒嘉庆十九年甲戌九月二十四亥时（盗葬唐庄祖茔，不知何所何向）</li>
+<li><strong>子嗣</strong>：子四：恒春、恒昌、恒三（殇）、恒兴；女一，适刘</li>
+<li><strong>墓葬</strong>：公葬王家园附父母墓</li>
+</ul></section><section><h3 id="慈台公">慈台公<a class="anchor" href="#慈台公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬暖公次子、敬㫓公祧子</li>
+<li><strong>字号</strong>：字同云</li>
+<li><strong>生卒</strong>：生乾隆三十一年丙戌三月十九寅时，卒嘉庆二十四年己卯五月二十八戌时</li>
+<li><strong>配偶</strong>：娶范时万女，生乾隆三十年乙酉九月二十七巳时，卒道光四年甲申八月十一丑时</li>
+<li><strong>子嗣</strong>：子四：恒兰、恒芸、恒薰、恒燦；女一，适唐，待旌表</li>
+<li><strong>墓葬</strong>：公葬南乡拔茅保三甲城山冲周姓宅后，土名䲎鱼嘴，附本生父敬暖公墓；妣葬南乡松茂岭保四甲高家窊，孙渊长、孙媳周氏附墓，坐东向西，有碑。契另刊簿。公妣行谊另刊传。</li>
+</ul></section><section><h3 id="慈珮公">慈珮公<a class="anchor" href="#慈珮公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旭公长子、敬㫓公祧子</li>
+<li><strong>字号</strong>：字开云</li>
+<li><strong>生卒</strong>：生乾隆二十七年壬午闰五月初二辰时，卒嘉庆九年甲子十一月初六酉时</li>
+<li><strong>配偶</strong>：娶胡氏，生乾隆二十二年丁丑十一月初三巳时；侧室刘氏，生乾隆三十七年壬辰五月初七巳时</li>
+<li><strong>子嗣</strong>：祧堂弟慈璜长子恒源为嗣</li>
+<li><strong>墓葬</strong>：公葬竹堍保一甲枫香树冈，子恒源附墓，癸丁兼丑未，有碑，契另刊簿；胡刘妣合葬金鳌保十甲张家嘴宅后瓠子山，长孙渊仁附墓，寅山申向，有碑，契另刊簿</li>
+</ul></section><section><h3 id="慈基公">慈基公<a class="anchor" href="#慈基公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬暖公长子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字启明</li>
+<li><strong>生卒</strong>：生乾隆二十二年丁丑八月初五寅时，享寿六十有八，卒道光四年甲申十二月二十七酉时</li>
+<li><strong>配偶</strong>：娶刘培元女，例赠孺人，生乾隆二十三年丁丑六月二十一午时，享寿八十，卒道光十六年丙申正月十五巳时</li>
+<li><strong>子嗣</strong>：子二：恒芳、恒苏；女一，适太学生章待清子</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲束家山，长媳刘氏附墓，有碑。山系祖遗分授，其界：上齐山顶分水为界，下与双福山毗连；北与士怀山毗连，南齐大折水沟为界。</li>
+</ul></section><section><h3 id="慈堦公">慈堦公<a class="anchor" href="#慈堦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬暖公幼子</li>
+<li><strong>荣誉</strong>：太学生</li>
+<li><strong>名号</strong>：名瓒，字爱云，号福齐</li>
+<li><strong>生卒</strong>：生乾隆三十五年庚寅三月十三午时，卒嘉庆二十三年戊寅四月？日？时</li>
+<li><strong>配偶</strong>：娶太学生王凌云女，生乾隆三十六年辛卯三月二十六巳时，卒道光九年己丑十二月十五亥时</li>
+<li><strong>子嗣</strong>：子二：恒芝、恒茂；女三：长适邑庠生殷保康，次适吴，幼适钱</li>
+<li><strong>墓葬</strong>：公葬金鳌保十甲沈家山东塝徐家园，向东，有碑；妣葬沈家山东塝徐家园，次子恒茂媳王氏附墓，有碑，契另刊簿。公行谊另刊传。</li>
+</ul></section><section><h3 id="慈璜公">慈璜公<a class="anchor" href="#慈璜公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬旮公幼子</li>
+<li><strong>荣誉</strong>：貤封朝议大夫。太学生。</li>
+<li><strong>名号</strong>：名明义，字鹏云，号敦信</li>
+<li><strong>生卒</strong>：生乾隆三十五年庚寅二月初五亥时，享寿七十有四，卒道光二十三年癸卯七月十四戌时</li>
+<li><strong>配偶</strong>：娶朱惟朗女，貤封太恭人，生乾隆三十六年辛卯十二月十二酉时，享寿七十有四，卒道光二十四年甲辰六月三十午时</li>
+<li><strong>子嗣</strong>：子六：恒源（祧与兄慈珮为嗣）、恒芹、恒海、恒英、恒怀（殇）、恒华；女一，适从九品唐逢晟</li>
+<li><strong>墓葬</strong>：合葬南乡青山保古岭脚下小李庄宅后第三凸，土名虎形，艮坤兼寅申，有碑。契另刊簿。公妣行谊合传。</li>
+</ul></section><section><h3 id="慈珇公">慈珇公<a class="anchor" href="#慈珇公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬友公子</li>
+<li><strong>字号</strong>：字彰彩</li>
+<li><strong>生卒</strong>：生乾隆？年？月？日？时，卒葬待考</li>
+<li><strong>配偶</strong>：娶？氏，生失考</li>
+<li><strong>子嗣</strong>：子一：恒久</li>
+</ul></section><section><h3 id="慈玿公">慈玿公<a class="anchor" href="#慈玿公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬华公子</li>
+<li><strong>字号</strong>：字林彩</li>
+<li><strong>生卒</strong>：生乾隆五年庚申？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶朱氏，生乾隆五年庚申？月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：子一：恒贵</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲潭堍圩东梢鲢鱼石上，向南</li>
+</ul></section><section><h3 id="慈烈公">慈烈公<a class="anchor" href="#慈烈公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬庶公子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字文益</li>
+<li><strong>生卒</strong>：生康熙四十一年壬午九月初五辰时，享寿六十有六，卒乾隆四十五年庚子八月初十戌时</li>
+<li><strong>配偶</strong>：娶刘氏，例赠孺人，生康熙四十二年癸未十月初一辰时，享寿六十，卒乾隆三十九年甲午九月十七亥时</li>
+<li><strong>子嗣</strong>：子二：恒劻、恒劼</li>
+<li><strong>墓葬</strong>：合葬北乡下坦冲保虎爪岭，向南。契另刊簿。</li>
+</ul></section><section><h3 id="慈炤公">慈炤公<a class="anchor" href="#慈炤公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬店公子</li>
+<li><strong>字号</strong>：字国益</li>
+<li><strong>生卒</strong>：生康熙四十八年己丑六月十九寅时，卒乾隆九年甲子八月二十九寅时</li>
+<li><strong>配偶</strong>：娶陈氏，生康熙五十二年癸巳三月十四酉时，卒乾隆十一年丙寅正月初四卯时</li>
+<li><strong>子嗣</strong>：子四：恒勀、恒勉、恒勤、恒勋；女一，适江</li>
+<li><strong>墓葬</strong>：合葬闻家湾父茔旁</li>
+</ul></section><section><h3 id="慈熹公">慈熹公<a class="anchor" href="#慈熹公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬庥公长子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字文有</li>
+<li><strong>生卒</strong>：生康熙五十六年丁酉六月初六亥时，享寿七十，卒乾隆五十一年丙午六月初九戌时</li>
+<li><strong>配偶</strong>：娶魏氏，生雍正五年丁未二月十八午时，卒乾隆三十六年辛卯七月二十九未时</li>
+<li><strong>子嗣</strong>：子一：恒乾；女一，适曾泽南</li>
+<li><strong>墓葬</strong>：合葬夜插坂保二甲史家窊祖茔旁，艮山坤向，有碑</li>
+</ul></section><section><h3 id="慈炽公">慈炽公<a class="anchor" href="#慈炽公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬庥公次子</li>
+<li><strong>字号</strong>：字文质</li>
+<li><strong>生卒</strong>：公生卒失考；妣生卒失考</li>
+<li><strong>配偶</strong>：娶张氏</li>
+<li><strong>墓葬</strong>：公葬沈庄窊母茔旁，辰山戌向；妣葬北乡黄公桥保九甲笪家山，土名雨壇基，坤山艮向。契另刊簿。</li>
+</ul></section><section><h3 id="慈熿公">慈熿公<a class="anchor" href="#慈熿公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬庥公幼子</li>
+<li><strong>荣誉</strong>：例赠修职郎</li>
+<li><strong>字号</strong>：字文彬</li>
+<li><strong>生卒</strong>：生雍正九年辛亥五月十四巳时，享寿八十有六，卒嘉庆二十二年丁丑三月十六申时</li>
+<li><strong>配偶</strong>：娶胡氏，生雍正十年壬子二月初十卯时，卒乾隆三十六年辛卯十二月初二辰时</li>
+<li><strong>子嗣</strong>：子二：恒勭、恒勳；女三：长适崔应择，次适王如万，幼适李</li>
+<li><strong>墓葬</strong>：公葬庐邑关脑，酉山卯向；妣葬沈庄窊姑茔旁，辰山戌向</li>
+</ul></section><section><h3 id="慈熠公">慈熠公<a class="anchor" href="#慈熠公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬廂公长子</li>
+<li><strong>字号</strong>：字胜益</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶张氏</li>
+<li><strong>子嗣</strong>：子二：恒勣、恒㔧；女一，适倪田重</li>
+<li><strong>墓葬</strong>：俱葬北乡走马镇保四甲稻场嘴，甲山庚向</li>
+</ul></section><section><h3 id="慈熉公">慈熉公<a class="anchor" href="#慈熉公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬廂公次子</li>
+<li><strong>字号</strong>：字美益</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶张氏</li>
+<li><strong>子嗣</strong>：子三：恒勌、恒隶、恒加；女三：长适张尊远，次适许益如，幼适刘知见</li>
+<li><strong>墓葬</strong>：葬北乡走马镇保四甲稻场嘴</li>
+</ul></section><section><h3 id="慈熀公">慈熀公<a class="anchor" href="#慈熀公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬廂公三子</li>
+<li><strong>字号</strong>：字振益</li>
+<li><strong>生卒</strong>：生雍正八年庚戌二月初三巳时，卒嘉庆十四年己巳二月初五申时</li>
+<li><strong>配偶</strong>：娶魏氏，生雍正九年辛亥二月初五寅时，卒嘉庆十六年辛未二月初七卯时</li>
+<li><strong>子嗣</strong>：子二：恒协、恒㔗；女一，适徐邦尊</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="慈燔公">慈燔公<a class="anchor" href="#慈燔公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬廂公四子</li>
+<li><strong>字号</strong>：字南益</li>
+<li><strong>生卒</strong>：公妣生失考</li>
+<li><strong>配偶</strong>：娶刘氏</li>
+<li><strong>子嗣</strong>：子一，殇</li>
+<li><strong>墓葬</strong>：合葬北乡走马镇保四甲稻场嘴，辛山乙向</li>
+</ul></section><section><h3 id="慈煜公">慈煜公<a class="anchor" href="#慈煜公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：敬廂公幼子</li>
+<li><strong>荣誉</strong>：太学生</li>
+<li><strong>字号</strong>：字德益</li>
+<li><strong>生卒</strong>：生乾隆十二年丁卯十一月初十亥时，卒道光五年乙酉八月初二巳时</li>
+<li><strong>配偶</strong>：娶文氏，生乾隆十二年丁卯十月二十七丑时，卒嘉庆十四年己巳三月十八酉时</li>
+<li><strong>子嗣</strong>：子三：恒勇、恒劽、恒効；女四：长适陈嘉由，次适陶文直，三适张凤举，幼适王圣怀</li>
+<li><strong>墓葬</strong>：公葬北乡麻笃山保金冲山，名金鐘地祖坟上，北首；妣葬北乡夜插坂保二甲史家窊祖茔旁，艮山坤向，有碑</li>
+</ul><hr></section></section><section><h2 id="第十五世原派永-新派恒">第十五世（原派：永 新派：恒）<a class="anchor" href="#第十五世原派永-新派恒"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><section><h3 id="恒典公">恒典公<a class="anchor" href="#恒典公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈亮公长子</li>
+<li><strong>字号</strong>：字崇礼</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="恒芝公">恒芝公<a class="anchor" href="#恒芝公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈亮公幼子</li>
+<li><strong>字号</strong>：字叢茂</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="恒寅公">恒寅公<a class="anchor" href="#恒寅公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈晓公长子</li>
+<li><strong>字号</strong>：字玉彩</li>
+<li><strong>生卒</strong>：生乾隆二年丁巳四月十六丑时，卒乾隆五十一年丙午二月二十寅时</li>
+<li><strong>配偶</strong>：娶陶氏，生雍正十三年乙卯二月初四未时，卒失考</li>
+<li><strong>子嗣</strong>：子二：渊昭、渊筆；女一，适李</li>
+<li><strong>墓葬</strong>：俱葬龙潭保五甲下萧庄壇基窊，庚山甲向，各有碑</li>
+</ul></section><section><h3 id="恒煌公">恒煌公<a class="anchor" href="#恒煌公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈晓公幼子</li>
+<li><strong>字号</strong>：字玉高</li>
+<li><strong>生卒</strong>：生乾隆九年甲子十二月二十九午时，卒葬待考</li>
+<li><strong>配偶</strong>：娶钱氏，生乾隆十四年己巳十二月二十六子时</li>
+<li><strong>子嗣</strong>：女一，适吴</li>
+</ul></section><section><h3 id="恒兴公">恒兴公<a class="anchor" href="#恒兴公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈远公子</li>
+<li><strong>字号</strong>：字敦咸</li>
+<li><strong>生卒</strong>：生乾隆十三年戊辰六月初三卯时，卒失考</li>
+<li><strong>配偶</strong>：娶吴氏，生乾隆？年？月？日？时，卒失考；继娶许氏，生失考</li>
+<li><strong>子嗣</strong>：子一：渊龙（许出）；女一，适周</li>
+<li><strong>墓葬</strong>：公葬下萧庄壇基窊附父墓，有碑；吴妣葬下萧庄壇基窊；许妣葬下萧庄壇基窊</li>
+</ul></section><section><h3 id="恒昂公">恒昂公<a class="anchor" href="#恒昂公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈皙公长子</li>
+<li><strong>字号</strong>：字准相</li>
+<li><strong>生卒</strong>：生乾隆十八年癸酉二月二十一亥时，卒嘉庆二十二年丁丑？月？日？时</li>
+<li><strong>配偶</strong>：娶朱氏，生卒失考；继娶梁氏，生乾隆二十年乙亥八月十五丑时，卒道光五年乙酉正月初十未时</li>
+<li><strong>子嗣</strong>：子三：渊纯（殇）、渊发、渊强；女一，适刘</li>
+<li><strong>墓葬</strong>：朱妣葬史家湾宅后，向东，有碑；公与梁妣合葬桃花保三甲汁塘窊，巽乾兼亥巳，契兵毁，界载老谱。其山原买吴大鹏，上齐山顶，下齐山脚；左以大折水沟为界，右以吴君永公坟圹为界。</li>
+</ul></section><section><h3 id="恒禄公">恒禄公<a class="anchor" href="#恒禄公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈皙公次子</li>
+<li><strong>字号</strong>：字非常</li>
+<li><strong>生卒</strong>：生乾隆二十年乙亥十二月二十五丑时，卒嘉庆十六年辛未六月二十八申时</li>
+<li><strong>配偶</strong>：娶朱氏，生乾隆四十三年戊戌五月初五未时，卒道光六年丙戌正月十七戌时</li>
+<li><strong>子嗣</strong>：子二：渊仁、渊义；女一，适刘</li>
+<li><strong>墓葬</strong>：公葬沈家山祠堂后，向东南；妣葬金鳌保十甲王家园下小园，孙媳胡氏、元孙福满附墓</li>
+</ul></section><section><h3 id="恒高公">恒高公<a class="anchor" href="#恒高公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈皙公三子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字有名</li>
+<li><strong>生卒</strong>：生乾隆二十三年戊寅正月十四寅时，享寿六十有五，卒道光二年壬午六月十八亥时</li>
+<li><strong>配偶</strong>：娶李氏，例赠孺人，生乾隆二十年乙亥六月二十一亥时，享寿九十有一，卒道光二十五年乙亥？月？日？时</li>
+<li><strong>子嗣</strong>：子五：渊起、渊珍、渊质、渊素、渊悉</li>
+<li><strong>墓葬</strong>：合葬沈家山祠堂后，孙硕魁附墓，庚山甲向，有碑</li>
+</ul></section><section><h3 id="恒环公">恒环公<a class="anchor" href="#恒环公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈皙公幼子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>名号</strong>：名维皇，字寅中，号沧崖</li>
+<li><strong>生卒</strong>：生乾隆二十三年戊寅十一月初九未时，享寿七十有三，卒道光十年庚寅三月初一未时</li>
+<li><strong>配偶</strong>：娶方氏，例赠孺人，生乾隆二十三年戊寅十月二十五卯时，享寿七十有三，卒道光十年庚寅三月初二巳时</li>
+<li><strong>子嗣</strong>：子四：渊先、渊祀、渊典、渊意</li>
+<li><strong>墓葬</strong>：合葬拔茅保八甲施家庙后，幼媳吴氏附墓。契另刊簿。</li>
+</ul></section><section><h3 id="恒翔公">恒翔公<a class="anchor" href="#恒翔公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈仙公长子</li>
+<li><strong>字号</strong>：字鹤翥</li>
+<li><strong>生卒</strong>：生乾隆十五年庚午正月十四寅时，卒失考</li>
+<li><strong>配偶</strong>：娶张氏，生失考</li>
+<li><strong>墓葬</strong>：葬下萧庄塘上大园，与堂弟恒合同墓，戌山辰向，有碑</li>
+</ul></section><section><h3 id="恒明公">恒明公<a class="anchor" href="#恒明公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈仙公次子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字贤友</li>
+<li><strong>生卒</strong>：生乾隆二十三年戊寅十二月二十三亥时，享寿七十有五，卒道光十二年壬辰六月初五亥时</li>
+<li><strong>配偶</strong>：娶杨氏，例赠孺人，生乾隆二十三年戊寅十月初三丑时，卒嘉庆十二年丁卯三月十五申时</li>
+<li><strong>子嗣</strong>：子一：渊维（殇），祧三弟恒晦次子渊文为嗣</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊团砲，戌山辰向，有碑</li>
+</ul></section><section><h3 id="恒晦公">恒晦公<a class="anchor" href="#恒晦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈仙公三子</li>
+<li><strong>字号</strong>：字良友</li>
+<li><strong>生卒</strong>：生乾隆二十九年甲申八月十八巳时，卒嘉庆十六年辛未八月二十一午时</li>
+<li><strong>配偶</strong>：娶芮氏，生乾隆二十六年辛巳九月二十二巳时，卒道光八年戊子八月初一戌时</li>
+<li><strong>子嗣</strong>：子四：渊武（殇）、渊文（祧与兄恒明为嗣）、渊佐、渊怡；女二，俱殇</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊，酉山卯向，有碑</li>
+</ul></section><section><h3 id="恒耀公">恒耀公<a class="anchor" href="#恒耀公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈仙公四子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字浣友</li>
+<li><strong>生卒</strong>：生乾隆三十六年辛卯正月二十七巳时，享寿六十有二，卒道光十二年壬辰二月二十四子时</li>
+<li><strong>配偶</strong>：娶鲍氏，例赠孺人，生乾隆三十五年庚寅九月十四酉时，享寿六十有三，卒道光十二年壬辰六月二十未时</li>
+<li><strong>子嗣</strong>：子五：渊谦、渊正、渊上、四五殇；女一，（注：原文未记适）</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊，戌山辰向，有碑</li>
+</ul></section><section><h3 id="恒辉公">恒辉公<a class="anchor" href="#恒辉公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈仙公幼子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字择友</li>
+<li><strong>生卒</strong>：生乾隆四十三年戊戌闰六月初三辰时，享寿六十有五，卒道光二十二年壬寅四月十八辰时</li>
+<li><strong>配偶</strong>：娶朱氏，例赠孺人，生乾隆四十四年己亥十一月二十九巳时，卒道光十年庚寅十二月十三子时</li>
+<li><strong>子嗣</strong>：子五：渊胜（殇）、渊元（殇）、渊祚、渊意（殇）、渊启；女三：长适胡，次适朱，幼适朱</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊团砲山顶，丁山癸向，有碑</li>
+</ul></section><section><h3 id="恒合公">恒合公<a class="anchor" href="#恒合公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玉公长子</li>
+<li><strong>字号</strong>：字保和</li>
+<li><strong>生卒</strong>：生乾隆十五年庚午十一月初七丑时，卒失考</li>
+<li><strong>配偶</strong>：娶陆氏，生失考，卒乾隆三十三年戊子七月二十二午时</li>
+<li><strong>墓葬</strong>：公葬下萧庄塘上地后大园，有碑；妣葬待考</li>
+</ul></section><section><h3 id="恒哲公">恒哲公<a class="anchor" href="#恒哲公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玉公次子</li>
+<li><strong>字号</strong>：字洵美</li>
+<li><strong>生卒</strong>：生乾隆十八年癸酉七月二十三寅时，卒失考</li>
+<li><strong>配偶</strong>：娶张氏，生乾隆十九年甲戌闰六月二十一未时，卒失考；继娶何氏，生乾隆十九年甲戌十一月二十九未时，卒失考</li>
+<li><strong>子嗣</strong>：子四：渊绪、渊芝、渊兰、渊期；女一，适张（张出）；女一，（注：原文未记适，何出）</li>
+<li><strong>墓葬</strong>：张妣葬下萧庄壇基窊，坤山艮向；公与何妣合葬下萧庄壇基窊，次子渊芝附墓</li>
+</ul></section><section><h3 id="恒燦公">恒燦公<a class="anchor" href="#恒燦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玉公三子</li>
+<li><strong>字号</strong>：字应元</li>
+<li><strong>生卒</strong>：生乾隆二十二年丁丑三月二十六亥时，卒乾隆四十五年庚子七月二十五酉时</li>
+<li><strong>配偶</strong>：娶王氏，生乾隆十八年癸酉七月二十八午时，卒嘉庆十一年丙寅十二月十一酉时</li>
+<li><strong>子嗣</strong>：子一：渊宗</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊，子渊宗附墓，坤山艮向</li>
+</ul></section><section><h3 id="恒茂公">恒茂公<a class="anchor" href="#恒茂公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玉公幼子</li>
+<li><strong>字号</strong>：字在山</li>
+<li><strong>生卒</strong>：生乾隆二十五年庚辰正月二十五寅时，卒道光？年十一月初四巳时</li>
+<li><strong>配偶</strong>：娶方氏，生乾隆二十四年己卯十一月十四丑时，卒道光十年庚寅六月？日亥时</li>
+<li><strong>子嗣</strong>：子三：渊阶、渊际、渊有</li>
+<li><strong>墓葬</strong>：合葬下萧庄壇基窊，坐西向东，幼子渊有附墓</li>
+</ul></section><section><h3 id="恒昌公">恒昌公<a class="anchor" href="#恒昌公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈高公长子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字三省</li>
+<li><strong>生卒</strong>：生康熙五十六年丁卯八月初十申时，享寿七十有九，卒乾隆五十年乙巳十二月初三午时</li>
+<li><strong>配偶</strong>：娶方氏，例赠孺人，生雍正十年壬子十二月初三巳时，卒失考</li>
+<li><strong>子嗣</strong>：子三：渊要、渊雅、渊寿</li>
+<li><strong>墓葬</strong>：合葬沈家山来龙冈，向西南</li>
+</ul></section><section><h3 id="恒来公">恒来公<a class="anchor" href="#恒来公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈高公次子</li>
+<li><strong>字号</strong>：字里千</li>
+<li><strong>生卒</strong>：生雍正元年癸卯二月二十八辰时，卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾宅后，向东，有碑</li>
+</ul></section><section><h3 id="恒川公">恒川公<a class="anchor" href="#恒川公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈高公幼子</li>
+<li><strong>字号</strong>：字云南</li>
+<li><strong>生卒</strong>：生雍正五年丁未？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶韩氏，生失考</li>
+<li><strong>子嗣</strong>：子五：渊鬼（殇）、渊秧（殇）、渊广、渊福（殇）渊廉（殇）</li>
+<li><strong>墓葬</strong>：合葬王家园下张家塝松园，三子渊广附墓</li>
+</ul></section><section><h3 id="恒忠公">恒忠公<a class="anchor" href="#恒忠公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈岑公长子</li>
+<li><strong>字号</strong>：字善起</li>
+<li><strong>生卒</strong>：生乾隆六年辛酉正月二十丑时，卒失考</li>
+<li><strong>墓葬</strong>：葬王家园张家塝松园，坐西向东</li>
+</ul></section><section><h3 id="恒恕公">恒恕公<a class="anchor" href="#恒恕公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈岑公次子</li>
+<li><strong>字号</strong>：字若友</li>
+<li><strong>生卒</strong>：生乾隆十二年丁卯三月初八寅时，卒失考</li>
+<li><strong>墓葬</strong>：葬王家园张家塝松园，与弟恒志同圹</li>
+</ul></section><section><h3 id="恒志公">恒志公<a class="anchor" href="#恒志公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈岑公幼子</li>
+<li><strong>字号</strong>：字若圣</li>
+<li><strong>生卒</strong>：生乾隆二十一年丙子四月二十八辰时，卒失考</li>
+<li><strong>配偶</strong>：娶吴氏，生乾隆？年？月？日？时</li>
+<li><strong>子嗣</strong>：子一：渊经</li>
+<li><strong>墓葬</strong>：俱葬王家园下张家塝松园，与兄恒恕同圹</li>
+</ul></section><section><h3 id="恒宏公">恒宏公<a class="anchor" href="#恒宏公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈义公子</li>
+<li><strong>字号</strong>：字勅？（注：原文字迹不清）</li>
+<li><strong>生卒</strong>：生乾隆？年？月？日？时，卒葬待考</li>
+<li><strong>配偶</strong>：娶？氏，生乾隆？年？月？日？时</li>
+<li><strong>子嗣</strong>：子一：渊祊</li>
+</ul></section><section><h3 id="恒宽公">恒宽公<a class="anchor" href="#恒宽公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈恕公子</li>
+<li><strong>字号</strong>：字国贤</li>
+<li><strong>生卒</strong>：生乾隆六年辛酉四月二十四未时，卒失考</li>
+<li><strong>配偶</strong>：娶陈氏，生乾隆二十四年己卯二月二十九子时，卒失考</li>
+<li><strong>子嗣</strong>：子一：渊祧</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲腊树颈小冲东塝，向东</li>
+</ul></section><section><h3 id="恒寅公-1">恒寅公<a class="anchor" href="#恒寅公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈恒公长子</li>
+<li><strong>字号</strong>：字明贤</li>
+<li><strong>生卒</strong>：生乾隆三年戊午？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶邑庠生朱绳祖女，生失考</li>
+<li><strong>子嗣</strong>：女一，（注：原文未记适）</li>
+<li><strong>墓葬</strong>：公葬团山白虎山；妣葬会宫山</li>
+</ul></section><section><h3 id="恒宸公">恒宸公<a class="anchor" href="#恒宸公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈恒公幼子</li>
+<li><strong>字号</strong>：字鑑贤</li>
+<li><strong>生卒</strong>：生乾隆？年？月？日？时，卒乾隆五十一年丙午？月？日？时</li>
+<li><strong>配偶</strong>：娶？氏</li>
+<li><strong>墓葬</strong>：公葬左家冈范庄圩；妣生卒葬待考</li>
+</ul></section><section><h3 id="恒文公">恒文公<a class="anchor" href="#恒文公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈有公长子</li>
+<li><strong>字号</strong>：字秀文</li>
+<li><strong>生卒</strong>：生乾隆六年辛酉七月十九丑时，卒乾隆五十一年丙午五月初六卯时</li>
+<li><strong>配偶</strong>：娶何氏，生乾隆八年癸亥八月二十四子时，卒失考</li>
+<li><strong>子嗣</strong>：子三：渊清、渊澈、渊溋；女一，适周</li>
+<li><strong>墓葬</strong>：合葬左家冈范庄圩</li>
+</ul></section><section><h3 id="恒武公">恒武公<a class="anchor" href="#恒武公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈有公次子</li>
+<li><strong>字号</strong>：字锦文</li>
+<li><strong>生卒</strong>：生乾隆十二年丁卯八月二十六亥时，卒乾隆五十一年丙午七月初二丑时</li>
+<li><strong>配偶</strong>：娶陈氏，生乾隆二十四年己卯二月二十九子时，卒失考</li>
+<li><strong>子嗣</strong>：子一：渊湧</li>
+<li><strong>墓葬</strong>：合葬左家冈范庄圩</li>
+</ul></section><section><h3 id="恒勤公">恒勤公<a class="anchor" href="#恒勤公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈有公三子</li>
+<li><strong>字号</strong>：字彩文</li>
+<li><strong>生卒</strong>：生乾隆十七年壬申八月初三戌时，卒失考</li>
+<li><strong>墓葬</strong>：葬左家冈范庄圩</li>
+</ul></section><section><h3 id="恒俭公">恒俭公<a class="anchor" href="#恒俭公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈有公幼子</li>
+<li><strong>字号</strong>：字雄文</li>
+<li><strong>生卒</strong>：生乾隆二十年乙亥九月二十七巳时，卒失考</li>
+<li><strong>墓葬</strong>：葬左家冈范庄圩</li>
+</ul></section><section><h3 id="恒宗公">恒宗公<a class="anchor" href="#恒宗公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈灵公长子</li>
+<li><strong>字号</strong>：字培祖</li>
+<li><strong>生卒</strong>：生乾隆三十一年丙戌正月初三申时，卒葬待考</li>
+<li><strong>配偶</strong>：娶王氏，生卒葬待考；继娶？氏，生失考</li>
+</ul></section><section><h3 id="恒室公">恒室公<a class="anchor" href="#恒室公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈灵公次子</li>
+<li><strong>字号</strong>：字植祖</li>
+<li><strong>生卒</strong>：生乾隆四十二年丁酉九月初七辰时，卒葬待考</li>
+</ul></section><section><h3 id="恒祥公">恒祥公<a class="anchor" href="#恒祥公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈金公次子</li>
+<li><strong>字号</strong>：字徕松</li>
+<li><strong>生卒</strong>：生乾隆四十三年戊戌二月十一寅时，卒葬待考</li>
+</ul></section><section><h3 id="恒祈公">恒祈公<a class="anchor" href="#恒祈公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈金公幼子</li>
+<li><strong>字号</strong>：字致和</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>配偶</strong>：娶？氏</li>
+<li><strong>墓葬</strong>：公葬陈家洲外甥祖山；妣葬周家潭</li>
+</ul></section><section><h3 id="恒萃公">恒萃公<a class="anchor" href="#恒萃公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珂公长子</li>
+<li><strong>字号</strong>：字观莲</li>
+<li><strong>生卒</strong>：生乾隆三十七年壬辰十二月初三亥时，卒失考</li>
+<li><strong>配偶</strong>：娶钱氏，生卒葬待考；继娶？氏，生失考</li>
+<li><strong>墓葬</strong>：俱葬史家湾右首白虎山稻场嘴头</li>
+</ul></section><section><h3 id="恒璋公">恒璋公<a class="anchor" href="#恒璋公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈信公长子</li>
+<li><strong>字号</strong>：字太山</li>
+<li><strong>生卒</strong>：生乾隆四十四年己亥八月初四申时，卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾右首白虎山，坐西北向东南</li>
+</ul></section><section><h3 id="恒瑕公">恒瑕公<a class="anchor" href="#恒瑕公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈信公次子</li>
+<li><strong>字号</strong>：字观葵</li>
+<li><strong>生卒</strong>：生乾隆五十五年庚戌正月二十一子时，卒失考</li>
+<li><strong>墓葬</strong>：葬束家山小园附母墓，向东南</li>
+</ul></section><section><h3 id="恒瑜公">恒瑜公<a class="anchor" href="#恒瑜公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈信公幼子</li>
+<li><strong>字号</strong>：字观山</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬周家潭</li>
+</ul></section><section><h3 id="恒勩公">恒勩公<a class="anchor" href="#恒勩公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈爽公长子</li>
+<li><strong>字号</strong>：字定一</li>
+<li><strong>生卒</strong>：生乾隆四十年乙未七月十四亥时，卒道光五年乙酉正月十二子时</li>
+<li><strong>配偶</strong>：娶许氏，生乾隆四十一年丙申八月十九申时，卒道光二十一年辛丑七月二十一寅时</li>
+<li><strong>子嗣</strong>：子四：折梅（殇）、占梅（殇）、渊士、双林（殇）；女三：长适刘，次适仇，幼适？</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲牛山头，媳许氏附墓</li>
+</ul></section><section><h3 id="恒勷公">恒勷公<a class="anchor" href="#恒勷公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈爽公次子</li>
+<li><strong>字号</strong>：字应和</li>
+<li><strong>生卒</strong>：生乾隆四十三年戊戌十一月初十亥时，卒失考</li>
+<li><strong>配偶</strong>：娶刘氏，生乾隆四十七年壬寅十月初七申时，卒失考</li>
+<li><strong>子嗣</strong>：子四：预保（殇，葬史家湾宅后）、小和（殇，葬史家湾白虎嘴）、渊玉、渊芳；女二：长适范，幼适丁</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲束家山小园，媳芮氏附墓，辛山乙向</li>
+</ul></section><section><h3 id="恒勤公-1">恒勤公<a class="anchor" href="#恒勤公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈爽公三子</li>
+<li><strong>字号</strong>：字尊三</li>
+<li><strong>生卒</strong>：生乾隆四十七年壬寅正月二十三寅时，卒葬待考</li>
+</ul></section><section><h3 id="恒动公">恒动公<a class="anchor" href="#恒动公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈爽公幼子</li>
+<li><strong>字号</strong>：字森和</li>
+<li><strong>生卒</strong>：生乾隆四十九年甲辰十一月初六戌时，卒失考</li>
+<li><strong>配偶</strong>：娶施氏，生卒失考；继娶舒氏，生卒葬待考</li>
+<li><strong>子嗣</strong>：子一：渊鸣（舒出）；女二：长适？，幼适杨（施出）</li>
+<li><strong>墓葬</strong>：施妣葬束家山小园，向东南；公卒葬六合县山</li>
+</ul></section><section><h3 id="恒雅公">恒雅公<a class="anchor" href="#恒雅公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈朗公长子</li>
+<li><strong>字号</strong>：字培先</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬束家山小园，向东南</li>
+</ul></section><section><h3 id="恒修公">恒修公<a class="anchor" href="#恒修公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈朗公次子</li>
+<li><strong>字号</strong>：字松成</li>
+<li><strong>生卒</strong>：生卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾右首白虎嘴，向东南</li>
+</ul></section><section><h3 id="恒彦公">恒彦公<a class="anchor" href="#恒彦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈朗公幼子</li>
+<li><strong>字号</strong>：字盛先</li>
+<li><strong>生卒</strong>：生嘉庆三年戊午二月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶张氏，生失考</li>
+<li><strong>子嗣</strong>：祧房兄恒发次子渊枚为嗣；女二，（注：原文未记适）</li>
+<li><strong>墓葬</strong>：公葬镇江府奔牛；妣葬池州府西门外义山</li>
+</ul></section><section><h3 id="恒彰公">恒彰公<a class="anchor" href="#恒彰公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈兰公长子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字勤和</li>
+<li><strong>生卒</strong>：生乾隆五十五年庚戌正月二十六巳时，享寿七十有四，卒同治二年癸亥十月二十戌时，未葬</li>
+<li><strong>配偶</strong>：娶张氏，生卒失考；继娶陆氏，例赠孺人，生嘉庆三年戊午十月二十七戌时，卒道光二十六年丙午二月十六巳时</li>
+<li><strong>子嗣</strong>：子一：渊澍；女一，适？</li>
+<li><strong>墓葬</strong>：张妣葬束家山下小园；陆妣葬宋家冲何家窊罗汉脐下，与姑同山同向，契另刊簿</li>
+</ul></section><section><h3 id="恒彩公">恒彩公<a class="anchor" href="#恒彩公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈兰公次子</li>
+<li><strong>字号</strong>：字仁和</li>
+<li><strong>生卒</strong>：生乾隆五十六年辛亥十二月十一亥时，卒失考</li>
+<li><strong>配偶</strong>：娶陆氏，生失考</li>
+<li><strong>子嗣</strong>：祧四弟恒形次子渊有为嗣</li>
+<li><strong>墓葬</strong>：合葬沈家山青龙嘴松园附祖母，与父同山同向</li>
+</ul></section><section><h3 id="恒彬公">恒彬公<a class="anchor" href="#恒彬公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈兰公三子</li>
+<li><strong>字号</strong>：字鸣和</li>
+<li><strong>生卒</strong>：生乾隆六十年乙卯正月十六戌时，卒道光二十六年丙午十二月十七亥时</li>
+<li><strong>配偶</strong>：娶王氏，生嘉庆十四年己巳正月二十三子时，卒道光二十三年癸卯正月初六巳时；继娶王氏，生嘉庆二十年乙亥八月二十三亥时，卒同治八年己巳十一月二十九寅时</li>
+<li><strong>子嗣</strong>：子一：渊恩（祧与五弟恒彪为嗣，王前出）；子一：渊武（王继出）；女一，适王（王前出）；女一，适王（王继出）</li>
+<li><strong>墓葬</strong>：公与王前妣合葬宋家冲何家窊罗汉脐北塝，向西，有碑，契另刊簿；王继妣葬束家山小园，子渊武附墓，辛山乙向，有碑。公妣行谊另刊传。</li>
+</ul></section><section><h3 id="恒形公">恒形公<a class="anchor" href="#恒形公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈兰公四子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字寅和</li>
+<li><strong>生卒</strong>：生嘉庆三年戊午二月初四子时，享寿六十有四，卒同治二年癸亥？月？日？时</li>
+<li><strong>配偶</strong>：娶金氏，例赠孺人，生嘉庆十三年戊辰正月二十二巳时，享寿八十有五，卒光绪十六年庚寅三月十七戌时</li>
+<li><strong>子嗣</strong>：子二：渊叢、渊有（祧与二兄恒彩为嗣）；女三：长适钱，次适？，幼适？</li>
+<li><strong>墓葬</strong>：合葬束家山小园，？山？向，有碑</li>
+</ul></section><section><h3 id="恒彪公">恒彪公<a class="anchor" href="#恒彪公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈兰公幼子</li>
+<li><strong>名号</strong>：名彬，字宗和，号大文</li>
+<li><strong>生卒</strong>：生嘉庆七年壬戌十月十八戌时，卒失考</li>
+<li><strong>配偶</strong>：娶李氏，生嘉庆？年？月？日？时，卒失考；继娶钱氏，生嘉庆二十年乙亥二月二十二午时</li>
+<li><strong>子嗣</strong>：祧兄恒彬长子渊恩为嗣；女一，适王（钱出）</li>
+<li><strong>墓葬</strong>：合葬青龙嘴松园，向东南</li>
+</ul></section><section><h3 id="恒拔公">恒拔公<a class="anchor" href="#恒拔公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珍公子</li>
+<li><strong>字号</strong>：字扶摇</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="恒耕公">恒耕公<a class="anchor" href="#恒耕公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈成公长子</li>
+<li><strong>字号</strong>：字问庄</li>
+<li><strong>生卒</strong>：生乾隆二十八年癸未三月十一寅时，卒葬待考</li>
+</ul></section><section><h3 id="恒读公">恒读公<a class="anchor" href="#恒读公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈成公幼子</li>
+<li><strong>字号</strong>：字麟书</li>
+<li><strong>生卒</strong>：生乾隆三十七年壬辰二月初五酉时，卒葬待考</li>
+</ul></section><section><h3 id="恒发公">恒发公<a class="anchor" href="#恒发公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈才公长子</li>
+<li><strong>字号</strong>：字宗培</li>
+<li><strong>生卒</strong>：生乾隆四十四年己亥十月十七巳时，卒道光十四年甲午？月？日？时</li>
+<li><strong>配偶</strong>：娶孙氏，生嘉庆三年戊午？月？日？时，卒道光二十六年丙午？月？日？时</li>
+<li><strong>子嗣</strong>：子三：渊起、渊梅（祧与房弟恒彦为嗣）、渊秀；女一，适张</li>
+<li><strong>墓葬</strong>：公葬陈家洲宁家墩南首圩埂；妣葬池州西门义山</li>
+</ul></section><section><h3 id="恒强公">恒强公<a class="anchor" href="#恒强公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈才公幼子</li>
+<li><strong>字号</strong>：字雄万</li>
+<li><strong>生卒</strong>：生乾隆四十七年壬寅十一月二十子时，卒葬待考</li>
+</ul></section><section><h3 id="恒禋公">恒禋公<a class="anchor" href="#恒禋公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈鼎公长子</li>
+<li><strong>字号</strong>：字培远</li>
+<li><strong>生卒</strong>：生乾隆三十八年癸巳五月十八丑时，卒葬待考</li>
+</ul></section><section><h3 id="恒祀公">恒祀公<a class="anchor" href="#恒祀公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈鼎公幼子</li>
+<li><strong>字号</strong>：字培先</li>
+<li><strong>生卒</strong>：生乾隆四十四年己亥七月十七丑时，卒失考</li>
+<li><strong>配偶</strong>：娶王氏，生失考</li>
+<li><strong>墓葬</strong>：葬束家山小园附父母墓，向东</li>
+</ul></section><section><h3 id="恒恃公">恒恃公<a class="anchor" href="#恒恃公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玶公子</li>
+<li><strong>字号</strong>：字龙起</li>
+<li><strong>生卒</strong>：生乾隆四十九年甲辰？月？日？时，卒失考</li>
+<li><strong>墓葬</strong>：葬史家湾宅后</li>
+</ul></section><section><h3 id="恒快公">恒快公<a class="anchor" href="#恒快公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珆公子</li>
+<li><strong>字号</strong>：字凤起</li>
+<li><strong>生卒</strong>：生乾隆四十六年辛丑九月十四子时，卒葬待考</li>
+<li><strong>配偶</strong>：娶张氏，生失考</li>
+<li><strong>子嗣</strong>：子一：渊寿</li>
+</ul></section><section><h3 id="恒怡公">恒怡公<a class="anchor" href="#恒怡公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珌公子</li>
+<li><strong>字号</strong>：字岵瞻，亦字长起</li>
+<li><strong>生卒</strong>：生嘉庆十三年戊辰五月初六亥时，卒光绪十三年丁亥三月二十辰时，未葬</li>
+</ul></section><section><h3 id="恒衡公">恒衡公<a class="anchor" href="#恒衡公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玎公子</li>
+<li><strong>字号</strong>：字殿英</li>
+<li><strong>事迹</strong>：迁池州府石埭县</li>
+</ul></section><section><h3 id="恒校公">恒校公<a class="anchor" href="#恒校公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈㺪公长子</li>
+<li><strong>字号</strong>：字锦上</li>
+<li><strong>生卒</strong>：生乾隆十九年甲戌九月十六丑时，卒葬待考</li>
+</ul></section><section><h3 id="恒恤公">恒恤公<a class="anchor" href="#恒恤公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈㺪公幼子</li>
+<li><strong>字号</strong>：字锦芝</li>
+<li><strong>生卒</strong>：生乾隆二十五年庚辰三月十四申时，卒乾隆五十三年戊申八月十七子时，葬待考</li>
+</ul></section><section><h3 id="恒恮公">恒恮公<a class="anchor" href="#恒恮公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玦公子</li>
+<li><strong>字号</strong>：字锦高</li>
+<li><strong>生卒</strong>：生乾隆四十年乙未？月？日？时，卒葬待考</li>
+</ul></section><section><h3 id="恒悒公">恒悒公<a class="anchor" href="#恒悒公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珺公祧子</li>
+<li><strong>字号</strong>：字念上</li>
+<li><strong>生卒</strong>：生乾隆二十七年壬午八月二十亥时，卒葬待考</li>
+</ul></section><section><h3 id="恒㤱公">恒㤱公<a class="anchor" href="#恒㤱公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈现公长子</li>
+<li><strong>字号</strong>：字思上</li>
+<li><strong>生卒</strong>：生乾隆二十五年庚辰十一月二十一亥时，卒葬待考</li>
+<li><strong>配偶</strong>：娶张氏，生乾隆二十六年辛巳九月二十八丑时，卒葬待考</li>
+<li><strong>子嗣</strong>：子二：渊东、渊荣；女二：长适舒邑郭，幼适邹</li>
+</ul></section><section><h3 id="恒悦公">恒悦公<a class="anchor" href="#恒悦公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈现公三子</li>
+<li><strong>字号</strong>：字玉上</li>
+<li><strong>生卒</strong>：生乾隆二十九年甲申十一月十六未时，卒葬待考</li>
+</ul></section><section><h3 id="恒惜公">恒惜公<a class="anchor" href="#恒惜公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈现公幼子</li>
+<li><strong>字号</strong>：字义上</li>
+<li><strong>生卒</strong>：生乾隆三十二年丁亥四月十三亥时，卒葬待考</li>
+<li><strong>配偶</strong>：娶？氏，生失考</li>
+<li><strong>子嗣</strong>：子一：渊科</li>
+</ul></section><section><h3 id="恒性公">恒性公<a class="anchor" href="#恒性公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈琢公长子</li>
+<li><strong>字号</strong>：字有上</li>
+<li><strong>生卒</strong>：生乾隆二十七年壬午十二月十一午时，卒葬待考</li>
+<li><strong>配偶</strong>：娶？氏，生失考</li>
+</ul></section><section><h3 id="恒情公">恒情公<a class="anchor" href="#恒情公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈琢公次子</li>
+<li><strong>字号</strong>：字用上</li>
+<li><strong>生卒</strong>：生乾隆？年？月？日？时，卒葬待考</li>
+</ul></section><section><h3 id="恒怔公">恒怔公<a class="anchor" href="#恒怔公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈琢公幼子</li>
+<li><strong>字号</strong>：字在上</li>
+<li><strong>生卒</strong>：生乾隆四十二年丁酉？月？日？时，卒葬待考</li>
+</ul></section><section><h3 id="恒梽公">恒梽公<a class="anchor" href="#恒梽公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈璋公祧子</li>
+<li><strong>字号</strong>：字能上</li>
+<li><strong>生卒</strong>：生乾隆五十一年丙午三月二十一子时，卒葬待考</li>
+</ul></section><section><h3 id="恒㤔公">恒㤔公<a class="anchor" href="#恒㤔公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈理公长子</li>
+<li><strong>字号</strong>：字松涛</li>
+<li><strong>生卒</strong>：生乾隆三十八年癸巳八月二十三戌时，卒道光十一年辛卯五月三十戌时</li>
+<li><strong>子嗣</strong>：祧弟恒松次子渊寿为嗣</li>
+<li><strong>墓葬</strong>：葬义堍保西峰庙后小冲，朝西</li>
+</ul></section><section><h3 id="恒柏公">恒柏公<a class="anchor" href="#恒柏公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈理公三子</li>
+<li><strong>字号</strong>：字松柏</li>
+<li><strong>生卒</strong>：生乾隆五十三年戊申？月？日？时，卒失考</li>
+<li><strong>墓葬</strong>：葬军保倪庄小团山，朝西南</li>
+</ul></section><section><h3 id="恒松公">恒松公<a class="anchor" href="#恒松公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈理公幼子</li>
+<li><strong>字号</strong>：字松友</li>
+<li><strong>生卒</strong>：生乾隆六十年乙卯十月十八戌时，卒失考</li>
+<li><strong>配偶</strong>：娶王相培女，生嘉庆十一年丙寅九月初七丑时，卒失考</li>
+<li><strong>子嗣</strong>：子三：渊福、渊寿（祧与恒㤔为嗣）、渊喜（殇）；女一，适柏</li>
+<li><strong>墓葬</strong>：公葬军保余家研父母墓旁；妣卒失考，未葬</li>
+</ul></section><section><h3 id="恒广公">恒广公<a class="anchor" href="#恒广公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈恰公子</li>
+<li><strong>字号</strong>：字怀上</li>
+<li><strong>生卒</strong>：生乾隆四十年乙未十一月初五酉时，卒葬待考</li>
+</ul></section><section><h3 id="恒和公">恒和公<a class="anchor" href="#恒和公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珠公长子</li>
+<li><strong>荣誉</strong>：例赠修职郎</li>
+<li><strong>字号</strong>：字絅尚，号茅墅</li>
+<li><strong>生卒</strong>：生乾隆十五年庚午十一月初九辰时，享寿七十有四，卒道光三年癸未八月初一未时</li>
+<li><strong>配偶</strong>：娶刘氏，例赠孺人，生乾隆十三年戊辰十月十九寅时，卒嘉庆十年乙丑闰六月十九巳时</li>
+<li><strong>子嗣</strong>：子四：渊富、渊贵、渊双、渊全；女二：长适吴，幼适方</li>
+<li><strong>墓葬</strong>：公葬道冠嘴附父慈珠公墓；妣葬黄泥冈保施庄宅右陶坟嘴，癸山丁向，有碑，契并清界议字另刊簿</li>
+</ul></section><section><h3 id="恒奇公">恒奇公<a class="anchor" href="#恒奇公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珠公次子</li>
+<li><strong>字号</strong>：字馀上</li>
+<li><strong>生卒</strong>：生乾隆二十八年癸未六月初四丑时，卒嘉庆二十一年丙子十一月十五亥时</li>
+<li><strong>配偶</strong>：娶钱氏，生乾隆三十六年辛卯闰五月十四巳时，卒道光十八年戊戌九月十二戌时</li>
+<li><strong>子嗣</strong>：子三：渊明、渊开、渊长；女二：长适？，幼适吴</li>
+<li><strong>墓葬</strong>：合葬王家园祖茔西，壬山丙向，有碑</li>
+</ul></section><section><h3 id="恒春公">恒春公<a class="anchor" href="#恒春公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珍公长子</li>
+<li><strong>字号</strong>：字春荣</li>
+<li><strong>子嗣</strong>：祧弟恒昌长子渊赤为嗣</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+</ul></section><section><h3 id="恒昌公-1">恒昌公<a class="anchor" href="#恒昌公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珍公次子</li>
+<li><strong>字号</strong>：字复苏</li>
+<li><strong>生卒</strong>：生乾隆三十六年辛卯六月二十二丑时，卒道光五年乙酉三月初七子时</li>
+<li><strong>配偶</strong>：娶张氏，生乾隆三十五年庚寅八月初八酉时，卒道光五年乙酉正月十八寅时</li>
+<li><strong>子嗣</strong>：子二：渊赤（祧与兄恒春为嗣）、渊波；女二：长适束，幼适朱</li>
+<li><strong>墓葬</strong>：合葬王家园祖茔西，亥山巳向，有碑</li>
+</ul></section><section><h3 id="恒兴公-1">恒兴公<a class="anchor" href="#恒兴公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珍公幼子</li>
+<li><strong>字号</strong>：字培青</li>
+<li><strong>生卒</strong>：生乾隆四十四年戊戌五月十八子时，卒道光二十一年辛丑十一月初一未时</li>
+<li><strong>配偶</strong>：娶陈氏，生乾隆四十六年辛丑十月初一寅时，卒道光十八年戊戌十二月十二巳时</li>
+<li><strong>子嗣</strong>：子一：渊良；女四：长适朱，次适王，三适吴，幼适吴</li>
+<li><strong>墓葬</strong>：合葬王家园祖茔，向西南，有碑</li>
+</ul></section><section><h3 id="恒兰公">恒兰公<a class="anchor" href="#恒兰公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈台公长子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字文耀</li>
+<li><strong>生卒</strong>：生乾隆五十九年甲寅十二月十一卯时，享寿六十有七，卒咸丰十一年辛酉十月十一丑时</li>
+<li><strong>配偶</strong>：娶钱氏，例赠孺人，生乾隆五十七年壬子六月二十八丑时，享寿六十有九，卒咸丰十一年辛酉二月初十午时</li>
+<li><strong>子嗣</strong>：子二：渊魁、渊龙；女一，适钱</li>
+<li><strong>墓葬</strong>：合葬南乡羹脍赛保一甲光窊冲庄屋东首，与堂弟恒芹公夫妇同圹，有碑，契另刊簿</li>
+</ul></section><section><h3 id="恒芸公">恒芸公<a class="anchor" href="#恒芸公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈台公次子</li>
+<li><strong>字号</strong>：字殖庭，号恒齐</li>
+<li><strong>生卒</strong>：生嘉庆二年丁巳十二月初三亥时，卒道光九年己丑三月初四？时</li>
+<li><strong>配偶</strong>：娶太学生徐吉公女，生乾隆五十五年庚戌三月初二巳时，卒失考</li>
+<li><strong>子嗣</strong>：子二：渊长、渊荣</li>
+<li><strong>墓葬</strong>：合葬南乡峡埠保一甲长窊中庄西皮中心包后，坐西南向东北，有碑，契另刊簿。公妣行谊另刊传。</li>
+</ul></section><section><h3 id="恒薰公">恒薰公<a class="anchor" href="#恒薰公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈台公三子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字玉庭</li>
+<li><strong>生卒</strong>：生嘉庆五年庚申十一月二十二亥时，享寿七十有五，卒同治九年庚午五月初六午时，未葬</li>
+<li><strong>配偶</strong>：娶钱培举女，生嘉庆四年己未五月二十三未时，卒道光四年甲申七月初七未时，未葬；继娶王择云女，生嘉庆五年庚申五月初一卯时，卒道光十五年乙未五月二十四亥时，（注：原文未记葬）；继娶张氏，生嘉庆十三年戊辰五月十七辰时，卒道光二十四年甲辰八月初四戌时；继娶吴氏，例赠孺人，生嘉庆十年乙丑五月初四丑时，享寿八十有二，卒光绪十四年戊子四月十八未时</li>
+<li><strong>子嗣</strong>：子二：渊悠、渊经（殇，王出）；子二：渊恩、渊松（张出）；子一：渊地（吴出）；女一，适杨（吴出）</li>
+<li><strong>墓葬</strong>：张妣葬金鳌保十甲牛山头，有碑；吴妣与王前妣合葬金鳌保十甲牛山头顶东北颈下，子渊地附墓，向东，有碑</li>
+</ul></section><section><h3 id="恒燦公-1">恒燦公<a class="anchor" href="#恒燦公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈台公幼子</li>
+<li><strong>字号</strong>：字燦庭</li>
+<li><strong>生卒</strong>：生嘉庆十二年丁卯六月二十九亥时，卒道光四年甲申七月？日？时</li>
+<li><strong>墓葬</strong>：葬朱家湾东塝张姓坟园，坐东北向西南，有碑</li>
+</ul></section><section><h3 id="恒源公">恒源公<a class="anchor" href="#恒源公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珮公祧子</li>
+<li><strong>荣誉</strong>：貤封朝议大夫。太学生。</li>
+<li><strong>名号</strong>：名永源，字宗传，号济菴，亦号惠菴</li>
+<li><strong>生卒</strong>：生乾隆五十七年壬子十一月初六戌时，卒道光十四年甲午五月初六戌时</li>
+<li><strong>配偶</strong>：娶太学生疏国栋孙女，貤封恭人，生乾隆五十六年辛亥八月十二卯时，卒嘉庆二十四年己卯十月初三卯时；继娶副举人吴章侄女，邑庠生照炳胞侄女，貤封恭人，生嘉庆二年丁巳二月十六寅时，卒光绪十一年乙酉六月初六未时</li>
+<li><strong>子嗣</strong>：子一：渊仁（疏出）；子三：渊孝、渊节、渊义（吴出）；女二：长适吴，次适疏（疏出）</li>
+<li><strong>墓葬</strong>：公葬竹堍保一甲枫香树冈附父墓，癸丁兼丑未，有碑；疏妣葬金鳌保十甲童家嘴，乾山巽向，有碑；吴妣葬东乡梅子岭保？甲桃霞山杏子岭下，子渊孝、渊义附墓，辛山乙向，有碑，契并清界封禁字另刊簿。公妣行谊另刊簿。</li>
+</ul></section><section><h3 id="恒芳公">恒芳公<a class="anchor" href="#恒芳公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈基公长子</li>
+<li><strong>荣誉</strong>：例赠登仕佐郎</li>
+<li><strong>字号</strong>：字文敏，号柳齐</li>
+<li><strong>生卒</strong>：生乾隆四十四年己亥十一月初五寅时，享寿六十有二，卒道光二十年庚子六月二十子时</li>
+<li><strong>配偶</strong>：娶刘宗连女，例赠孺人，生乾隆四十四年己亥十一月十九午时，享寿六十有二，卒道光二十年庚子四月初三午时</li>
+<li><strong>子嗣</strong>：子一：渊欢</li>
+<li><strong>墓葬</strong>：公葬南乡羹脍赛保一甲沙塘窊宅左烟地窊，与胞弟恒苏夫妇同圹，有碑，契另刊簿；妣葬金鳌保十甲束家山附翁姑墓，有碑</li>
+</ul></section><section><h3 id="恒苏公">恒苏公<a class="anchor" href="#恒苏公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈基公幼子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字文在，号静菴</li>
+<li><strong>生卒</strong>：生乾隆五十四年己酉十一月十二丑时，卒道光十九年己亥三月十九卯时</li>
+<li><strong>配偶</strong>：娶田玉有女，例赠孺人，生乾隆五十四年己酉？月？日？时，卒失考；继娶盛氏，例赠孺人，生嘉庆五年庚申闰四月二十九未时，卒失考</li>
+<li><strong>子嗣</strong>：子一：渊培（盛出）；女一，适朱（田出）；女二：长适殷，幼适方（盛出）</li>
+<li><strong>墓葬</strong>：田妣葬二世祖南塝坟湾上大草园，坐北朝南；公与盛妣合葬南乡羹脍赛保一甲沙塘窊宅左，与兄恒芳公同圹，有碑。公忠厚持家，惠爱及人；父母有疾，克孝克敬。</li>
+</ul></section><section><h3 id="恒芝公-1">恒芝公<a class="anchor" href="#恒芝公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈阶公长子</li>
+<li><strong>字号</strong>：字文祥</li>
+<li><strong>生卒</strong>：生乾隆五十九年甲寅九月十九亥时，卒道光十四年甲午六月二十？时</li>
+<li><strong>配偶</strong>：娶刘遐殷女，生嘉庆元年丙辰六月？日？时，卒嘉庆二十五年庚辰？月？日？时；继娶太学生方鹏飞孙女，生乾隆五十九年甲寅？月？日？时，卒道光？年？月？日？时</li>
+<li><strong>子嗣</strong>：子二：渊酉（殇）、渊恺（继出）</li>
+<li><strong>墓葬</strong>：刘妣葬金鳌保十甲牛山头，向南；公与继妣合葬南乡龙潭保二甲五桂菴右首白杨窊口，子渊恺附墓，坐西南向东北，有碑，契另刊簿</li>
+</ul></section><section><h3 id="恒茂公-1">恒茂公<a class="anchor" href="#恒茂公-1"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈阶公幼子</li>
+<li><strong>字号</strong>：字仞墙</li>
+<li><strong>生卒</strong>：生嘉庆九年甲子十月十六卯时，卒道光十五年乙未十二月十二戌时</li>
+<li><strong>配偶</strong>：娶王观峰女，生嘉庆九年甲子三月二十六子时，卒失考</li>
+<li><strong>子嗣</strong>：子二：渊起、渊法（殇）；女一，适章</li>
+<li><strong>墓葬</strong>：合葬金鳌保十甲沈家山东二塝徐家园附母墓，有碑</li>
+</ul></section><section><h3 id="恒芹公">恒芹公<a class="anchor" href="#恒芹公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈璜公次子</li>
+<li><strong>荣誉</strong>：貤封朝议大夫。国学生。</li>
+<li><strong>名号</strong>：名容，字道安，号尚齐</li>
+<li><strong>生卒</strong>：生嘉庆二年丁巳十一月初二申时，享寿六十有四，卒咸丰十年庚申十月十四戌时</li>
+<li><strong>配偶</strong>：娶从九品汪高攀女，貤封恭人，生嘉庆三年戊午十一月初八寅时，享寿六十有四，卒咸丰十一年辛酉七月二十七申时</li>
+<li><strong>子嗣</strong>：子二：渊功、渊锦；女三：长（殇，葬王庄宅左），次适太学生汤鹤巢胞侄斐然，幼适从九品张达子</li>
+<li><strong>墓葬</strong>：合葬南乡羹脍赛保一甲光窊冲庄屋东首，与服兄恒兰公夫妇同圹，有碑，契另刊簿</li>
+</ul></section><section><h3 id="恒海公">恒海公<a class="anchor" href="#恒海公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈璜公长三子</li>
+<li><strong>字号</strong>：字治安</li>
+<li><strong>生卒</strong>：生嘉庆八年癸亥？月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：兼祧幼弟恒华三子渊翁为嗣</li>
+<li><strong>墓葬</strong>：葬金鳌保十甲童家嘴，亥山巳向，有碑</li>
+</ul></section><section><h3 id="恒英公">恒英公<a class="anchor" href="#恒英公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈璜公长四子</li>
+<li><strong>荣誉</strong>：诰封中宪大夫</li>
+<li><strong>名号</strong>：名英，字靖菴，号鹤亭。湖北榖城县绅士商民公撰谥：朴毅。</li>
+<li><strong>生卒</strong>：生嘉庆十二年丁巳十月十七巳时，享寿七十有五，卒光绪七年辛巳八月二十九申时，（注：原文此处有空白，未记葬）</li>
+<li><strong>配偶</strong>：娶朱氏，诰封恭人，生嘉庆十一年丙寅四月初四子时，享寿八十有七，卒光绪二十年甲午九月十一辰时</li>
+<li><strong>子嗣</strong>：子三：渊典、渊约、渊复</li>
+<li><strong>墓葬</strong>：妣葬湖北宜昌府东湖县河西铺范家湖牌坊坂，癸丁兼子午，有碑，契另刊簿</li>
+</ul></section><section><h3 id="恒华公">恒华公<a class="anchor" href="#恒华公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈璜公长幼子</li>
+<li><strong>荣誉</strong>：太学生。貤封朝议大夫。</li>
+<li><strong>名号</strong>：名永华，字子安，号瀛波</li>
+<li><strong>生卒</strong>：生嘉庆十九年甲戌四月十七午时，享寿六十有五，卒光绪四年戊寅正月十二亥时</li>
+<li><strong>配偶</strong>：娶金丝堂启事厅陈芝楣女，奎文阁典籍泉、邑庠生渭飞、郡庠生之彬妹，浙江开花县典史升用州同方至姑母。诰封恭人，生嘉庆十四年己巳十月十三丑时，享寿四十八，卒咸丰六年丙辰九月二十九申时</li>
+<li><strong>子嗣</strong>：子四：渊汉、渊燮、渊翁（兼祧与兄恒海为嗣）、渊先；女二：长适举人二品封典广西南宁府知府姚翔之子、花翎选用道，名茂田；幼适邑庠生郑腾䑋次子、议叙府经历，名葆堃</li>
+</ul></section><section><h3 id="恒久公">恒久公<a class="anchor" href="#恒久公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈珇公子</li>
+<li><strong>内容</strong>：（注：原文无记录）</li>
+</ul></section><section><h3 id="恒贵公">恒贵公<a class="anchor" href="#恒贵公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈玿公子</li>
+<li><strong>字号</strong>：字兰香</li>
+<li><strong>生卒</strong>：生乾隆四十年乙未五月初七巳时，卒失考</li>
+<li><strong>配偶</strong>：娶马氏，生乾隆三十七年壬辰十月？日？时，卒失考</li>
+<li><strong>子嗣</strong>：子一：渊珍</li>
+<li><strong>墓葬</strong>：公葬竹堍保一甲朱家湾右首，坐北向南；妣葬朱家湾宅后，坐东向西</li>
+</ul></section><section><h3 id="恒劻公">恒劻公<a class="anchor" href="#恒劻公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈烈公长子</li>
+<li><strong>荣誉</strong>：例赠登仕郎</li>
+<li><strong>字号</strong>：字尚志，号耀宗</li>
+<li><strong>生卒</strong>：生雍正三年乙巳十一月初十亥时，享寿七十有一，卒乾隆六十年乙卯十一月初十巳时</li>
+<li><strong>配偶</strong>：娶吴氏，例赠孺人，生雍正十年壬子正月十七午时，享寿七十，卒嘉庆五年庚申五月初四午时</li>
+<li><strong>子嗣</strong>：子五：渊仁、渊义、渊礼、渊智、渊信；女二：长适吴凤州，次适何士枚</li>
+<li><strong>墓葬</strong>：合葬北乡峡关保余家窊内栗树窊，壬山丙向，有碑。契另刊簿。</li>
+</ul></section><section><h3 id="恒劼公">恒劼公<a class="anchor" href="#恒劼公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈烈公幼子</li>
+<li><strong>字号</strong>：字广志，号耀佐</li>
+<li><strong>生卒</strong>：生雍正十一年癸丑？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶闵氏，生乾隆二年丁巳十二月十八戌时，卒嘉庆二十二年丁丑二月十五巳时</li>
+<li><strong>子嗣</strong>：子五：渊嘉、渊哲、渊儨、渊咸、渊周；女二：长适黄道文，幼适？</li>
+<li><strong>墓葬</strong>：俱葬虎爪岭父茔旁</li>
+</ul></section><section><h3 id="恒勀公">恒勀公<a class="anchor" href="#恒勀公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈炤公长子</li>
+<li><strong>字号</strong>：字云怀</li>
+<li><strong>生卒</strong>：生失考，卒失考</li>
+<li><strong>配偶</strong>：娶吴氏，生雍正十年壬子三月二十八巳时，卒嘉庆十三年戊辰正月十一亥时</li>
+<li><strong>子嗣</strong>：子二：渊召、渊璠</li>
+<li><strong>墓葬</strong>：合葬闻家湾祖茔旁，申山寅向</li>
+</ul></section><section><h3 id="恒勉公">恒勉公<a class="anchor" href="#恒勉公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈炤公次子</li>
+<li><strong>字号</strong>：字立怀</li>
+<li><strong>生卒</strong>：生乾隆四十年乙未九月初四酉时，卒嘉庆元年丙辰十一月初六午时</li>
+<li><strong>配偶</strong>：娶吴氏，生乾隆四十一年丙申？月？日？时，卒葬待考</li>
+<li><strong>子嗣</strong>：子三：渊吟、渊名、渊昉（祧与弟恒勋为嗣）；女三：长适王，次适周胜益，幼适崔</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="恒勤公-2">恒勤公<a class="anchor" href="#恒勤公-2"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈炤公三子</li>
+<li><strong>字号</strong>：字晋怀</li>
+<li><strong>生卒</strong>：生乾隆十三年戊辰？月？日？时，卒失考</li>
+<li><strong>配偶</strong>：娶陈氏，生乾隆五年庚申？月？日？时，卒葬待考</li>
+<li><strong>子嗣</strong>：子一：渊瑀；女一，适王</li>
+<li><strong>墓葬</strong>：葬新菴下</li>
+</ul></section><section><h3 id="恒勋公">恒勋公<a class="anchor" href="#恒勋公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈炤公幼子</li>
+<li><strong>字号</strong>：字杏怀</li>
+<li><strong>生卒</strong>：生乾隆十六年辛未四月初七戌时，卒失考</li>
+<li><strong>配偶</strong>：娶余氏，生乾隆二十四年己卯十月十四巳时，卒葬待考</li>
+<li><strong>子嗣</strong>：子三：渊吕、渊璟、渊和，俱殇；祧兄恒勉幼子渊昉为嗣；女一，适戴八师</li>
+<li><strong>墓葬</strong>：葬北乡龙旺山保青苔菴下，土名周家湾。契另刊簿。</li>
+</ul></section><section><h3 id="恒乾公">恒乾公<a class="anchor" href="#恒乾公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熹公子</li>
+<li><strong>字号</strong>：字云现</li>
+<li><strong>生卒</strong>：生乾隆二十六年辛巳十一月十六亥时，卒道光十六年丙申四月十二亥时</li>
+<li><strong>配偶</strong>：娶甘氏，生乾隆二十五年庚辰十二月初九亥时，卒道光十八年戊戌十一月十六丑时</li>
+<li><strong>子嗣</strong>：子五：渊琳、渊璞、渊琪、渊珑、渊璜；女一，适张保和</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="恒勭公">恒勭公<a class="anchor" href="#恒勭公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熿公长子</li>
+<li><strong>字号</strong>：字云章</li>
+<li><strong>生卒</strong>：生乾隆十九年甲戌四月二十六亥时，卒道光九年己丑正月初六亥时</li>
+<li><strong>配偶</strong>：娶陈氏，生乾隆十八年癸酉十二月十六寅时，卒嘉庆二十四年己卯八月十一寅时</li>
+<li><strong>子嗣</strong>：子四：渊琨、渊琪、渊球、渊珊；女一，适蔡云瑞</li>
+<li><strong>墓葬</strong>：俱葬？保？甲竹丝砲，申山寅向</li>
+</ul></section><section><h3 id="恒勳公">恒勳公<a class="anchor" href="#恒勳公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熿公幼子</li>
+<li><strong>字号</strong>：字云龄</li>
+<li><strong>生卒</strong>：生乾隆三十六年辛卯四月十三酉时，卒嘉庆二十一年丙子十月十六戌时</li>
+<li><strong>配偶</strong>：娶王氏，生乾隆三十五年庚寅十月十五亥时，卒道光十一年辛卯五月十五巳时</li>
+<li><strong>子嗣</strong>：子四：渊玺、渊琬、渊培、渊倍；女一，适戴国顺</li>
+<li><strong>墓葬</strong>：葬待考</li>
+</ul></section><section><h3 id="恒勣公">恒勣公<a class="anchor" href="#恒勣公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熠公长子</li>
+<li><strong>字号</strong>：字梦尧</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶张氏</li>
+<li><strong>子嗣</strong>：子一：渊珩（殇）</li>
+<li><strong>墓葬</strong>：合葬夜插坂二甲史家窊祖茔旁</li>
+</ul></section><section><h3 id="恒㔧公">恒㔧公<a class="anchor" href="#恒㔧公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熠公幼子</li>
+<li><strong>字号</strong>：字梦顺</li>
+<li><strong>生卒</strong>：生卒失考，卒乾隆五十一年丙午？月？日？时</li>
+<li><strong>配偶</strong>：娶胡氏</li>
+<li><strong>子嗣</strong>：子二：渊琮、渊斑</li>
+<li><strong>墓葬</strong>：公葬界牌石，子山午向；妣生卒葬待考</li>
+</ul></section><section><h3 id="恒勌公">恒勌公<a class="anchor" href="#恒勌公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熉公长子</li>
+<li><strong>字号</strong>：字梦元</li>
+<li><strong>生卒</strong>：公妣生卒失考</li>
+<li><strong>配偶</strong>：娶方氏</li>
+<li><strong>子嗣</strong>：子四：渊咏、渊咨、渊珏（殇）、渊璁</li>
+<li><strong>墓葬</strong>：葬稻场嘴父茔旁，戌山辰向</li>
+</ul></section><section><h3 id="恒隶公">恒隶公<a class="anchor" href="#恒隶公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熉公次子</li>
+<li><strong>字号</strong>：字梦陵</li>
+<li><strong>生卒</strong>：公妣生卒葬待考</li>
+<li><strong>配偶</strong>：娶李氏</li>
+</ul></section><section><h3 id="恒加公">恒加公<a class="anchor" href="#恒加公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熉公幼子</li>
+<li><strong>字号</strong>：字梦强</li>
+<li><strong>生卒</strong>：公妣生卒葬待考</li>
+<li><strong>配偶</strong>：娶张氏</li>
+<li><strong>子嗣</strong>：子二，俱殇</li>
+</ul></section><section><h3 id="恒协公">恒协公<a class="anchor" href="#恒协公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熀公长子</li>
+<li><strong>字号</strong>：字梦雨</li>
+<li><strong>生卒</strong>：生卒葬待考</li>
+<li><strong>配偶</strong>：娶方氏，生卒葬待考；继娶汪氏，生乾隆二十六年辛巳二月二十八戌时，卒道光四年甲申四月二十五未时，葬待考</li>
+<li><strong>子嗣</strong>：子一：渊瑾（方出）；子二：渊员、渊瑗（汪出）；女二：长适魏，幼适吴（汪出）</li>
+</ul></section><section><h3 id="恒㔗公">恒㔗公<a class="anchor" href="#恒㔗公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈熀公幼子</li>
+<li><strong>字号</strong>：字梦兰</li>
+<li><strong>生卒</strong>：公妣生卒葬待考</li>
+<li><strong>配偶</strong>：娶周氏</li>
+<li><strong>子嗣</strong>：子一：渊燧；女二：长适倪，次适汪</li>
+</ul></section><section><h3 id="恒勇公">恒勇公<a class="anchor" href="#恒勇公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈煜公长子</li>
+<li><strong>字号</strong>：字云万</li>
+<li><strong>生卒</strong>：生乾隆四十一年丙申十月二十九巳时，卒道光二十五年乙巳四月初三子时</li>
+<li><strong>配偶</strong>：娶孙氏，生乾隆三十八年癸巳九月二十五巳时，卒失考</li>
+<li><strong>子嗣</strong>：子四：渊琼、渊瑶、渊瓒、渊璇；女三：长适崔，次适胡，幼适汪</li>
+<li><strong>墓葬</strong>：公葬下坦冲保凤形地附祖母茔，丑山未向；妣葬凤形地在夫塚上左首，同向</li>
+</ul></section><section><h3 id="恒劽公">恒劽公<a class="anchor" href="#恒劽公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈煜公次子</li>
+<li><strong>字号</strong>：字云富</li>
+<li><strong>生卒</strong>：生乾隆四十七年壬寅十一月二十一亥时，卒失考</li>
+<li><strong>配偶</strong>：娶王氏，生乾隆四十六年辛丑五月初六午时，卒道光十五年乙未六月二十九亥时</li>
+<li><strong>子嗣</strong>：子一：渊品；女三：长适方，次适王，幼适王</li>
+<li><strong>墓葬</strong>：公葬北乡黄公桥保九甲陈庄对面烧山嘴，辰山戌向；妣葬下坦冲保凤形地附祖母茔，癸山丁向</li>
+</ul></section><section><h3 id="恒効公">恒効公<a class="anchor" href="#恒効公"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ul>
+<li><strong>父系</strong>：慈煜公幼子</li>
+<li><strong>字号</strong>：字云贵</li>
+<li><strong>生卒</strong>：生乾隆五十七年壬子正月十七亥时，卒道光二十年庚子四月二十八午时</li>
+<li><strong>配偶</strong>：娶方氏，生乾隆五十四年己酉十二月二十九亥时，卒失考</li>
+<li><strong>子嗣</strong>：子二：渊玘（殇）、渊琢（殇）；女三：长适吴，次适陈，幼适张</li>
+<li><strong>墓葬</strong>：合葬北乡下坦冲保三甲护生菴烧山，艮坤兼丑未</li>
+</ul><p><strong>摘录自皖桐京兆史氏微信公众号，后续待补</strong>
+有关于皖桐史家咀宗谱的线索的烦请提供线索，史家咀宗谱因受文革期间破坏损烧以及白荡湖洪水等因素目录缺失。</p></section></section></section>  </div> <script type="module">function l(t){const r=t.querySelectorAll("span.line");if(r.length>0){const o=[];for(let e=0;e<r.length;e++){const s=r[e].textContent||"";o.push(s)}return o.join(`
 `)}const n=t.querySelectorAll(".code:not(summary *)");if(n.length>0){const o=[];for(let e=0;e<n.length;e++){const s=n[e].textContent||"";o.push(s)}return o.join(`
 `)}return t.textContent||""}function i(t){return t.replace(/\n\n\n+/g,r=>{const o=r.length-1;let e;return o%2===0?e=o/2:e=Math.floor((o+1)/2),e<1&&(e=1),`
 `.repeat(e+1)})}async function u(t){try{return await navigator.clipboard.writeText(t),!0}catch(r){console.warn("Clipboard API 失败，尝试备用方案:",r);const n=document.createElement("textarea");n.value=t,n.style.position="fixed",n.style.left="-999999px",n.style.top="-999999px",document.body.appendChild(n),n.focus(),n.select();try{if(!document.execCommand("copy"))throw new Error("execCommand 返回 false");return!0}catch(o){throw console.error("execCommand 也失败了:",o),new Error("所有复制方法都失败了")}finally{document.body.removeChild(n)}}}async function a(t){const n=t.closest("pre")?.querySelector("code");if(!n){console.warn("未找到代码元素");return}let o=l(n);o=i(o);try{await u(o);const e=t.getAttribute("data-timeout-id");e&&clearTimeout(Number.parseInt(e,10)),t.classList.add("success");const c=setTimeout(()=>{t.classList.remove("success")},1e3);t.setAttribute("data-timeout-id",c.toString())}catch(e){console.error("复制失败:",e)}}document.addEventListener("click",function(t){const r=t.target;r&&r.classList.contains("copy-btn")&&a(r)});</script>  <div class="mb-6 rounded-xl onload-animation"> <div class="p-6 bg-[var(--license-block-bg)] rounded-xl"> <div class="flex flex-col sm:flex-row items-center justify-between gap-4"> <div class="flex items-center gap-3 flex-1"> <div class="h-12 w-12 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white dark:text-black/70 flex-shrink-0"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-2xl" data-icon="material-symbols:favorite">   <use href="#ai:material-symbols:favorite"></use>  </svg> </div> <div> <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1"> 支持与分享 </h3> <p class="text-sm text-neutral-600 dark:text-neutral-400"> 如果这篇文章对你有帮助，欢迎分享给更多人或赞助支持！ </p> </div> </div> <div class="flex items-center gap-3"> <astro-island uid="28MrUr" component-url="/_astro/SharePoster.BddW3IiX.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{&quot;title&quot;:[0,&quot;皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐史氏溯源、史氏世系排辈表&quot;],&quot;author&quot;:[0,&quot;交易之道&quot;],&quot;description&quot;:[0,&quot;皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐溯源、世系排辈表,了解史氏文化，根源。&quot;],&quot;pubDate&quot;:[0,&quot;2026-03-22&quot;],&quot;coverImage&quot;:[0,&quot;https://img.hangdn.com/fg/bj6.jpg&quot;],&quot;url&quot;:[0,&quot;https://txn.hangdn.com/posts/%E7%9A%96%E6%A1%90%E4%BA%AC%E5%85%86%E5%8F%B2%E6%B0%8F%E4%BC%A0%E8%B0%B1%E5%BD%95%E5%85%A5%E7%89%88/&quot;],&quot;siteTitle&quot;:[0,&quot;交易之道&quot;],&quot;avatar&quot;:[0,&quot;https://img.hangdn.com/fg/map1.png&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;SharePoster&quot;,&quot;value&quot;:true}" await-children><!--[--><button class="btn-regular rounded-lg h-12 px-6 gap-2 hover:scale-105 active:scale-95 whitespace-nowrap" aria-label="Generate Share Poster"><!--[!--><!--]--><!----> <span>分享</span></button> <!--[!--><!--]--><!--]--><!--astro:end--></astro-island> <a href="/sponsor/" class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-white dark:text-black/70 rounded-lg font-medium hover:bg-[var(--primary)]/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"> <span>赞助</span> <svg width="0.88em" height="1em" class="text-sm" data-icon="fa6-solid:arrow-right">   <symbol id="ai:fa6-solid:arrow-right" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol><use href="#ai:fa6-solid:arrow-right"></use>  </svg> </a> </div> </div> </div> </div> <div class="relative transition overflow-hidden bg-[var(--license-block-bg)] py-5 px-6 mb-6 rounded-xl license-container onload-animation"> <div class="transition font-bold text-black/75 dark:text-white/75"> 皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐史氏溯源、史氏世系排辈表 </div> <a href="https://txn.hangdn.net" class="link text-[var(--primary)]"> https://txn.hangdn.net </a> <div class="flex gap-6 mt-2"> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 作者 </div> <div class="transition text-black/75 dark:text-white/75 line-clamp-2"> 小史先森 </div> </div> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 发布于 </div> <div class="transition text-black/75 dark:text-white/75 line-clamp-2"> 2026-03-22 </div> </div> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 许可协议 </div> <a target="_blank" class="link text-[var(--primary)] line-clamp-2">CC BY 4.0</a> </div> </div> <svg width="0.97em" height="1em" class="transition text-[15rem] absolute pointer-events-none right-6 top-1/2 -translate-y-1/2 text-black/5 dark:text-white/5" data-icon="fa6-brands:creative-commons">   <symbol id="ai:fa6-brands:creative-commons" viewBox="0 0 496 512"><path fill="currentColor" d="m245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93c-22.13 0-33.22 14.61-33.22 43.84c0 23.57 9.21 43.84 33.22 43.84c14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98c-22.6 0-73.96-10.32-73.96-77.05c0-58.69 43-77.06 72.63-77.06c30.72-.01 52.7 11.95 65.99 35.86m143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93c-22.14 0-33.22 14.61-33.22 43.84c0 23.55 9.23 43.84 33.22 43.84c14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98c-22.69 0-73.96-9.87-73.96-77.05c0-58.67 42.97-77.06 72.63-77.06c30.71-.01 52.58 11.95 65.56 35.86M247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248c129.93 0 248.44-100.87 248.44-248c0-137.87-106.62-248-248.44-248m.87 450.81c-112.54 0-203.7-93.04-203.7-202.81c0-105.42 85.43-203.27 203.72-203.27c112.53 0 202.82 89.46 202.82 203.26c-.01 121.69-99.68 202.82-202.84 202.82"/></symbol><use href="#ai:fa6-brands:creative-commons"></use>  </svg> </div> </div> </div>  <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full"> <a href="#" class="w-full font-bold overflow-hidden active:scale-95 pointer-events-none">  </a> <a href="/posts/史姓的起源郡望与堂号详解/" class="w-full font-bold overflow-hidden active:scale-95"> <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center !justify-end gap-4"> <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75"> 史姓的起源、郡望与堂号详解 </div> <svg width="1em" height="1em" class="text-[2rem] text-[var(--primary)]" data-icon="material-symbols:chevron-right-rounded">   <symbol id="ai:material-symbols:chevron-right-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z"/></symbol><use href="#ai:material-symbols:chevron-right-rounded"></use>  </svg> </div> </a> </div>  <div class="card-base p-8 mb-6 relative overflow-hidden"><!-- 评论区装饰性背景 --><div class="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none"><svg viewBox="0 0 100 100" class="w-full h-full"><circle cx="50" cy="50" r="40" fill="currentColor" class="text-[var(--primary)]"></circle><circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--primary)]"></circle><circle cx="50" cy="50" r="10" fill="currentColor" class="text-[var(--primary)]"></circle></svg></div><!-- 评论区标题 --><div class="relative z-10 mb-6"><div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gradient-to-b from-[var(--primary)] to-transparent rounded-full"></div><h3 class="text-xl font-bold text-[var(--btn-content)]">评论区</h3></div><p class="text-sm text-[var(--content-meta)] ml-4">分享你的想法，与大家交流讨论</p></div><!-- 评论内容区域 --><div class="relative z-10"><div id="tcomment"></div> <!-- 使用自编译的 Twikoo 文件，避免点赞等按钮导致页面触发滚动回顶部 https://github.com/twikoojs/twikoo/issues/721 --> <script src="/assets/js/firefly-twikoo-1.6.44.all.min.js"></script> <script>(function(){const config = {"envId":"https://twikoo.hangdn.com","lang":"zh-CN","visitorCount":true,"el":"#tcomment","path":"/posts/皖桐京兆史氏传谱录入版"};
@@ -2046,7 +3284,7 @@ Powered by
       您可以随意在src/config/FooterConfig.html中随意添加自定义内容，不需要修改Footer.astro文件。
     --> </div> </div> </div> </div> </main>    <div id="right-sidebar-static" class="contents"> <div id="right-sidebar" class="mb-4 row-start-3 row-end-4 col-span-2 onload-animation block md:hidden lg:block lg:row-start-1 lg:row-end-2 lg:max-w-[17.5rem] lg:col-start-3 lg:col-end-4  w-full" data-astro-cid-dnkjr6w2> <!-- 顶部固定组件区域 --> <div class="flex flex-col w-full gap-4 mb-4" data-astro-cid-dnkjr6w2> <widget-layout data-id="site-stats" data-is-collapsed="undefined" class="pb-4 card-base onload-animation hidden lg:block" style="animation-delay: 200ms; " data-astro-cid-wbzkcah3="true"> <div class="widget-title font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2
         before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
-        before:absolute before:left-[-16px] before:top-[5.5px] flex items-center justify-between" data-astro-cid-wbzkcah3 style=""> <span class="widget-name" data-astro-cid-wbzkcah3 style="">站点统计</span>  </div> <div id="site-stats" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-wbzkcah3 style="">  <div class="flex flex-col gap-2"> <div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:article-outline">   <symbol id="ai:material-symbols:article-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></symbol><use href="#ai:material-symbols:article-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 文章 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 26 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:folder-outline">   <symbol id="ai:material-symbols:folder-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm0-2h16V8h-8.825l-2-2H4zm0 0V6z"/></symbol><use href="#ai:material-symbols:folder-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 分类 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 8 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:label-outline">   <symbol id="ai:material-symbols:label-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h11q.475 0 .9.213t.7.587L22 12l-5.4 7.2q-.275.375-.7.588T15 20zm0-2h11l4.5-6L15 6H4zm5.5-6"/></symbol><use href="#ai:material-symbols:label-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 标签 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 12 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:text-ad-outline-rounded">   <symbol id="ai:material-symbols:text-ad-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm2-1h12q.425 0 .713-.288T19 16t-.288-.712T18 15H6q-.425 0-.712.288T5 16t.288.713T6 17m0-4h12q.425 0 .713-.288T19 12t-.288-.712T18 11H6q-.425 0-.712.288T5 12t.288.713T6 13m0-4h8q.425 0 .713-.288T15 8t-.288-.712T14 7H6q-.425 0-.712.288T5 8t.288.713T6 9"/></symbol><use href="#ai:material-symbols:text-ad-outline-rounded"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 总字数 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 104,584 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:calendar-clock-outline">   <symbol id="ai:material-symbols:calendar-clock-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M5 8h14V6H5zm0 0V6zm0 14q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v5.675q-.475-.225-.975-.375T19 11.075V10H5v10h6.3q.175.55.413 1.05t.562.95zm13 1q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23m1.675-2.625l.7-.7L18.5 17.8V15h-1v3.2z"/></symbol><use href="#ai:material-symbols:calendar-clock-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 运行时长 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="running-days"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天 </span> </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:ecg-heart-outline">   <symbol id="ai:material-symbols:ecg-heart-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-.45 0-.862-.162t-.738-.488l-6.7-6.725q-.875-.875-1.287-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21m1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.263-.862t.087-.888q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.487.3t-1.238.875l-.675.725q-.125.15-.325.238t-.4.087t-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8m.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19t.088-.012t.087-.063l5.9-5.925H15q-.25 0-.475-.125t-.375-.325z"/></symbol><use href="#ai:material-symbols:ecg-heart-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 最后活动 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="last-update"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天前 </span> </div> </div> </div>  </div>  </widget-layout>   <script>(function(){const siteStartDate = "2026-01-01";
+        before:absolute before:left-[-16px] before:top-[5.5px] flex items-center justify-between" data-astro-cid-wbzkcah3 style=""> <span class="widget-name" data-astro-cid-wbzkcah3 style="">站点统计</span>  </div> <div id="site-stats" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-wbzkcah3 style="">  <div class="flex flex-col gap-2"> <div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:article-outline">   <symbol id="ai:material-symbols:article-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></symbol><use href="#ai:material-symbols:article-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 文章 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 26 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:folder-outline">   <symbol id="ai:material-symbols:folder-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm0-2h16V8h-8.825l-2-2H4zm0 0V6z"/></symbol><use href="#ai:material-symbols:folder-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 分类 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 8 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:label-outline">   <symbol id="ai:material-symbols:label-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h11q.475 0 .9.213t.7.587L22 12l-5.4 7.2q-.275.375-.7.588T15 20zm0-2h11l4.5-6L15 6H4zm5.5-6"/></symbol><use href="#ai:material-symbols:label-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 标签 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 12 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:text-ad-outline-rounded">   <symbol id="ai:material-symbols:text-ad-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm2-1h12q.425 0 .713-.288T19 16t-.288-.712T18 15H6q-.425 0-.712.288T5 16t.288.713T6 17m0-4h12q.425 0 .713-.288T19 12t-.288-.712T18 11H6q-.425 0-.712.288T5 12t.288.713T6 13m0-4h8q.425 0 .713-.288T15 8t-.288-.712T14 7H6q-.425 0-.712.288T5 8t.288.713T6 9"/></symbol><use href="#ai:material-symbols:text-ad-outline-rounded"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 总字数 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 121,605 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:calendar-clock-outline">   <symbol id="ai:material-symbols:calendar-clock-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M5 8h14V6H5zm0 0V6zm0 14q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v5.675q-.475-.225-.975-.375T19 11.075V10H5v10h6.3q.175.55.413 1.05t.562.95zm13 1q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23m1.675-2.625l.7-.7L18.5 17.8V15h-1v3.2z"/></symbol><use href="#ai:material-symbols:calendar-clock-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 运行时长 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="running-days"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天 </span> </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:ecg-heart-outline">   <symbol id="ai:material-symbols:ecg-heart-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-.45 0-.862-.162t-.738-.488l-6.7-6.725q-.875-.875-1.287-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21m1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.263-.862t.087-.888q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.487.3t-1.238.875l-.675.725q-.125.15-.325.238t-.4.087t-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8m.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19t.088-.012t.087-.063l5.9-5.925H15q-.25 0-.475-.125t-.375-.325z"/></symbol><use href="#ai:material-symbols:ecg-heart-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 最后活动 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="last-update"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天前 </span> </div> </div> </div>  </div>  </widget-layout>   <script>(function(){const siteStartDate = "2026-01-01";
 const lastPostDate = "2026-03-22T00:00:00.000Z";
 const todayText = "今天";
 
