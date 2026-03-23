@@ -530,25 +530,25 @@ const retryCount = 3;
 		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-fhdapijq> <div class="card-base float-panel p-2 dropdown-content"> <a href="/sponsor/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5  dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:favorite">   <symbol id="ai:material-symbols:favorite" viewBox="0 0 24 24"><path fill="currentColor" d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z"/></symbol><use href="#ai:material-symbols:favorite"></use>  </svg><span data-astro-cid-fhdapijq>赞助</span>  </a><a href="/about/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5  dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:person">   <symbol id="ai:material-symbols:person" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></symbol><use href="#ai:material-symbols:person"></use>  </svg><span data-astro-cid-fhdapijq>关于我</span>  </a><a href="/bangumi/" class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95   dropdown-item"> <svg width="1em" height="1em" class="text-[1.25rem] mr-3 navbar-icon" data-astro-cid-fhdapijq="true" data-icon="material-symbols:movie">   <symbol id="ai:material-symbols:movie" viewBox="0 0 24 24"><path fill="currentColor" d="m4 4l2 4h3L7 4h2l2 4h3l-2-4h2l2 4h3l-2-4h3q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20H4q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4"/></symbol><use href="#ai:material-symbols:movie"></use>  </svg><span data-astro-cid-fhdapijq>番组计划</span>  </a> </div> </div> </div>   </div> <div class="flex ml-auto"> <!--<SearchPanel client:load>--> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZJOQWg" component-url="/_astro/Search.kVQqVQ_z.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="search-bar" class="hidden lg:flex transition-all items-center h-11 mr-2 rounded-lg bg-black/[0.04] hover:bg-black/[0.06] focus-within:bg-black/[0.06] dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10"><!--[!--><!--]--><!----> <input placeholder="搜索" value="" class="transition-all pl-10 text-sm bg-transparent outline-0 h-full w-40 active:w-60 focus:w-60 text-black/50 dark:text-white/50 svelte-1n2o1uz"/></div> <button aria-label="Search Panel" id="search-switch" class="btn-plain scale-animation lg:!hidden rounded-lg w-11 h-11 active:scale-90"><!--[!--><!--]--><!----></button> <div id="search-panel" class="float-panel float-panel-closed search-panel absolute md:w-[30rem] top-20 left-4 md:left-[unset] right-4 shadow-2xl rounded-2xl p-2 svelte-1n2o1uz"><div id="search-bar-inside" class="flex relative lg:hidden transition-all items-center h-11 rounded-xl bg-black/[0.04] hover:bg-black/[0.06] focus-within:bg-black/[0.06] dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10"><!--[!--><!--]--><!----> <input placeholder="搜索" value="" class="pl-10 absolute inset-0 text-sm bg-transparent outline-0 focus:w-60 text-black/50 dark:text-white/50 svelte-1n2o1uz"/></div> <!--[!--><!--[!--><!--[--><div class="transition first-of-type:mt-2 lg:first-of-type:mt-0 block rounded-xl text-lg px-3 py-2 text-50">找不到相关结果。</div><!--]--><!--]--><!--]--></div><!--]--><!--astro:end--></astro-island> <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:palette-outline">   <symbol id="ai:material-symbols:palette-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.813-3.9t2.2-3.175T8.25 2.788T12.2 2q2 0 3.775.688t3.113 1.9t2.125 2.875T22 11.05q0 2.875-1.75 4.413T16 17h-1.85q-.225 0-.312.125t-.088.275q0 .3.375.863t.375 1.287q0 1.25-.687 1.85T12 22m-5.5-9q.65 0 1.075-.425T8 11.5t-.425-1.075T6.5 10t-1.075.425T5 11.5t.425 1.075T6.5 13m3-4q.65 0 1.075-.425T11 7.5t-.425-1.075T9.5 6t-1.075.425T8 7.5t.425 1.075T9.5 9m5 0q.65 0 1.075-.425T16 7.5t-.425-1.075T14.5 6t-1.075.425T13 7.5t.425 1.075T14.5 9m3 4q.65 0 1.075-.425T19 11.5t-.425-1.075T17.5 10t-1.075.425T16 11.5t.425 1.075T17.5 13M12 20q.225 0 .363-.125t.137-.325q0-.35-.375-.825T11.75 17.3q0-1.05.725-1.675T14.25 15H16q1.65 0 2.825-.962T20 11.05q0-3.025-2.312-5.038T12.2 4Q8.8 4 6.4 6.325T4 12q0 3.325 2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:palette-outline"></use>  </svg> </button>  <astro-island uid="Z1ltqdP" component-url="/_astro/WallpaperSwitch.CO_OUWpC.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;WallpaperSwitch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative z-50" role="menu" tabindex="-1"><button aria-label="Wallpaper Mode" role="menuitem" class="relative btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="wallpaper-mode-switch"><div class="absolute"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div></button> <div id="wallpaper-mode-panel" class="absolute transition float-panel-closed top-11 -right-2 pt-5 z-50"><div class="card-base float-panel p-2"><!--[--><button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5 current-theme-btn"><!--[--><!--[!--><!--]--><!----> 横幅壁纸<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5"><!--[--><!--[!--><!--]--><!----> 全屏透明<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95"><!--[--><!--[!--><!--]--><!----> 纯色背景<!----><!--]--></button><!----><!----><!--]--></div><!----></div></div><!--]--><!--astro:end--></astro-island> <astro-island uid="Zn34p1" component-url="/_astro/LayoutSwitchButton.BBiGMUAh.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{&quot;currentLayout&quot;:[0,&quot;list&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;LayoutSwitchButton&quot;,&quot;value&quot;:true}" await-children><!--[--><!--[!--><!--]--><!--]--><!--astro:end--></astro-island>  <astro-island uid="Z6xc1A" component-url="/_astro/LightDarkSwitch.BEyUkeMs.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;LightDarkSwitch&quot;,&quot;value&quot;:true}" await-children><!--[--><div class="relative z-50" role="menu" tabindex="-1"><button aria-label="Light/Dark Mode" role="menuitem" class="relative btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="scheme-switch"><div class="absolute"><!--[!--><!--]--><!----></div> <div class="absolute opacity-0"><!--[!--><!--]--><!----></div></button> <div id="theme-mode-panel" class="absolute transition float-panel-closed top-11 -right-2 pt-5 z-50"><div class="card-base float-panel p-2"><!--[--><button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5 current-theme-btn"><!--[--><!--[!--><!--]--><!----> 亮色<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95 mb-0.5"><!--[--><!--[!--><!--]--><!----> 暗色<!----><!--]--></button><!----> <button class="flex transition whitespace-nowrap items-center !justify-start w-full btn-plain scale-animation rounded-lg h-9 px-3 font-medium active:scale-95"><!--[--><!--[!--><!--]--><!----> 跟随系统<!----><!--]--></button><!----><!----><!--]--></div><!----></div></div><!--]--><!--astro:end--></astro-island> <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 lg:!hidden" id="nav-menu-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:menu-rounded">   <symbol id="ai:material-symbols:menu-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:menu-rounded"></use>  </svg> </button> </div> <div id="nav-menu-panel" class="float-panel float-panel-closed absolute transition-all fixed right-4 px-2 py-2 max-h-[80vh] overflow-y-auto" data-astro-cid-b4siqy5m> <div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-z4rxjsu1t" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:home" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  主页 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-mb1s0kwc8" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ll8r4fklo" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:home" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  主页 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-7g47ygg8n" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/archive/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-rbzfnaa8x" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:archive" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  归档 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-8ahdzb4rr" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-e8p0z6w1z" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:archive" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  归档 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-1mzoarpct" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
                 <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-b4siqy5m> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
-                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-9i41tl40v" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:link" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  链接 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-0r9cqre5n" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="https://github.com/CuteLeaf/Firefly" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-wqqp4wgae" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:github" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  GitHub </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-7m1a4xrm7" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a><a href="https://space.bilibili.com/38932988" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ff0bt98x5" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:bilibili" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  Bilibili </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-vhia6mjph" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-2dtyd0qhv" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:link" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  链接 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-9pj46y9xe" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="https://github.com/CuteLeaf/Firefly" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-zhrjvmdpf" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:github" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  GitHub </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-7j305ry44" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a><a href="https://space.bilibili.com/38932988" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-sks4782hb" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-brands:bilibili" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  Bilibili </div> <span class="inline-flex items-center justify-center text-base transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" style data-icon-container="icon-11ei2g383" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="fa6-solid:arrow-up-right-from-square" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/friends/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-zq66ajrme" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:group" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  友链 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-xxwp9ejtm" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-3gyrtz2yg" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:group" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  友链 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-avhjb8u2p" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 普通链接项目 -->
                 <a href="/guestbook/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
                     hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
-                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-4jip22qme" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chat" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  留言 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-uirboyvz3" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
+                " data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-pgmk1951f" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chat" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  留言 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)]" style data-icon-container="icon-a61bdt5fm" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:chevron-right-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>   </a> </div><div class="mobile-menu-item" data-astro-cid-b4siqy5m> <!-- 有子菜单的项目 -->
                 <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-b4siqy5m> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
-                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-13j96rrwl" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:info" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-bnke79i65" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="/sponsor/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-f4l3vwo4m" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:favorite" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  赞助 </div>  </a><a href="/about/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-mmi6wlkzk" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:person" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于我 </div>  </a><a href="/bangumi/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
-                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-8rdy02w9a" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:movie" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  番组计划 </div>  </a> </div> </div> </div> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const r=document.querySelectorAll("[data-mobile-dropdown]");r.forEach(e=>{const t=e.querySelector("[data-mobile-dropdown-trigger]"),d=e.querySelector("[data-mobile-submenu]");!t||!d||t.addEventListener("click",function(o){o.preventDefault();const u=e.getAttribute("data-expanded")==="true";r.forEach(a=>{if(a!==e){a.setAttribute("data-expanded","false");const i=a.querySelector("[data-mobile-dropdown-trigger]");i&&i.setAttribute("aria-expanded","false")}});const n=!u;e.setAttribute("data-expanded",n.toString()),t.setAttribute("aria-expanded",n.toString())})})});</script> <astro-island uid="gcXlz" component-url="/_astro/DisplaySettings.DFS7qFjO.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;DisplaySettings&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="display-setting" class="float-panel float-panel-closed absolute transition-all w-80 right-4 px-4 py-4 svelte-v51mse"><div class="flex flex-row gap-2 mb-3 items-center justify-between"><div class="flex gap-2 font-bold text-lg text-neutral-900 dark:text-neutral-100 transition relative ml-3 before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)] before:absolute before:-left-3 before:top-[0.33rem]">主题色 <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-md active:scale-90 opacity-0 pointer-events-none"><div class="text-[var(--btn-content)]"><!--[!--><!--]--><!----></div></button></div> <div class="flex gap-1"><div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-md flex justify-center font-bold text-sm items-center text-[var(--btn-content)]">250</div></div></div> <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded select-none"><input aria-label="主题色" type="range" min="0" max="360" value="250" class="slider svelte-v51mse" id="colorSlider" step="5" style="width: 100%"/></div></div><!--]--><!--astro:end--></astro-island> </div> </div> <script type="module">function a(){let t=document.getElementById("display-settings-switch");t&&(t.onclick=function(){let e=document.getElementById("display-setting");e&&e.classList.toggle("float-panel-closed")});let n=document.getElementById("nav-menu-switch");n&&(n.onclick=function(){let e=document.getElementById("nav-menu-panel");e&&e.classList.toggle("float-panel-closed")});let o=document.getElementById("wallpaper-mode-switch");o&&(o.onclick=function(){let e=document.getElementById("wallpaper-mode-panel");e&&e.classList.toggle("float-panel-closed")});let l=document.getElementById("scheme-switch");l&&(l.onclick=function(){let e=document.getElementById("theme-mode-panel");e&&e.classList.toggle("float-panel-closed")})}a();function i(){const t=document.getElementById("navbar");if(!t||t.getAttribute("data-transparent-mode")!=="semifull")return;if(!(t.getAttribute("data-is-home")==="true")){window.semifullScrollHandler&&(window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=void 0),t.classList.add("scrolled");return}t.classList.remove("scrolled");let l=!1;function e(){(window.pageYOffset||document.documentElement.scrollTop)>50?t.classList.add("scrolled"):t.classList.remove("scrolled"),l=!1}function s(){l||(requestAnimationFrame(e),l=!0)}window.semifullScrollHandler&&window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=s,window.addEventListener("scroll",s,{passive:!0}),e()}window.initSemifullScrollDetection=i;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i();</script> <script>(function(){const scriptUrl = "/pagefind/pagefind.js";
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-jel8ftzwg" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:info" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于 </div> <span class="inline-flex items-center justify-center text-base transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" style data-icon-container="icon-tl32vq53m" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-b4siqy5m> <a href="/sponsor/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-t84on71v0" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:favorite" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  赞助 </div>  </a><a href="/about/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-kkn34n2eu" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:person" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  关于我 </div>  </a><a href="/bangumi/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-b4siqy5m> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-b4siqy5m> <span class="inline-flex items-center justify-center text-base text-[1.1rem] mr-2" style data-icon-container="icon-ehq4o0pv9" data-astro-cid-3i7l2dmc> <!-- 加载状态指示器 --> <span class="icon-loading animate-pulse opacity-50" data-loading-indicator data-astro-cid-3i7l2dmc> ● </span> <!-- 实际图标 --> <iconify-icon icon="material-symbols:movie" class="icon-content opacity-0 transition-opacity duration-200" style="color: currentColor;" data-icon-element="true" loading="lazy" data-astro-cid-3i7l2dmc="true"></iconify-icon> </span>  番组计划 </div>  </a> </div> </div> </div> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const r=document.querySelectorAll("[data-mobile-dropdown]");r.forEach(e=>{const t=e.querySelector("[data-mobile-dropdown-trigger]"),d=e.querySelector("[data-mobile-submenu]");!t||!d||t.addEventListener("click",function(o){o.preventDefault();const u=e.getAttribute("data-expanded")==="true";r.forEach(a=>{if(a!==e){a.setAttribute("data-expanded","false");const i=a.querySelector("[data-mobile-dropdown-trigger]");i&&i.setAttribute("aria-expanded","false")}});const n=!u;e.setAttribute("data-expanded",n.toString()),t.setAttribute("aria-expanded",n.toString())})})});</script> <astro-island uid="gcXlz" component-url="/_astro/DisplaySettings.DFS7qFjO.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;DisplaySettings&quot;,&quot;value&quot;:true}" await-children><!--[--><div id="display-setting" class="float-panel float-panel-closed absolute transition-all w-80 right-4 px-4 py-4 svelte-v51mse"><div class="flex flex-row gap-2 mb-3 items-center justify-between"><div class="flex gap-2 font-bold text-lg text-neutral-900 dark:text-neutral-100 transition relative ml-3 before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)] before:absolute before:-left-3 before:top-[0.33rem]">主题色 <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-md active:scale-90 opacity-0 pointer-events-none"><div class="text-[var(--btn-content)]"><!--[!--><!--]--><!----></div></button></div> <div class="flex gap-1"><div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-md flex justify-center font-bold text-sm items-center text-[var(--btn-content)]">250</div></div></div> <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded select-none"><input aria-label="主题色" type="range" min="0" max="360" value="250" class="slider svelte-v51mse" id="colorSlider" step="5" style="width: 100%"/></div></div><!--]--><!--astro:end--></astro-island> </div> </div> <script type="module">function a(){let t=document.getElementById("display-settings-switch");t&&(t.onclick=function(){let e=document.getElementById("display-setting");e&&e.classList.toggle("float-panel-closed")});let n=document.getElementById("nav-menu-switch");n&&(n.onclick=function(){let e=document.getElementById("nav-menu-panel");e&&e.classList.toggle("float-panel-closed")});let o=document.getElementById("wallpaper-mode-switch");o&&(o.onclick=function(){let e=document.getElementById("wallpaper-mode-panel");e&&e.classList.toggle("float-panel-closed")});let l=document.getElementById("scheme-switch");l&&(l.onclick=function(){let e=document.getElementById("theme-mode-panel");e&&e.classList.toggle("float-panel-closed")})}a();function i(){const t=document.getElementById("navbar");if(!t||t.getAttribute("data-transparent-mode")!=="semifull")return;if(!(t.getAttribute("data-is-home")==="true")){window.semifullScrollHandler&&(window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=void 0),t.classList.add("scrolled");return}t.classList.remove("scrolled");let l=!1;function e(){(window.pageYOffset||document.documentElement.scrollTop)>50?t.classList.add("scrolled"):t.classList.remove("scrolled"),l=!1}function s(){l||(requestAnimationFrame(e),l=!0)}window.semifullScrollHandler&&window.removeEventListener("scroll",window.semifullScrollHandler),window.semifullScrollHandler=s,window.addEventListener("scroll",s,{passive:!0}),e()}window.initSemifullScrollDetection=i;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i();</script> <script>(function(){const scriptUrl = "/pagefind/pagefind.js";
 
             {/* 你的 loadPagefind 函数的完整内容放在这里 */}
             async function loadPagefind() {
@@ -771,7 +771,7 @@ const retryCount = 3;
 
   // 初始化左侧边栏管理器
   new LeftSidebarManager();
-})();</script> </div>  <main id="swup-container" class="transition-swup-fade overflow-hidden w-full col-span-2 md:col-start-2 md:col-end-3 lg:col-start-2 lg:col-end-3 transition-main">  <div id="grid-class-carrier" data-grid-class="grid-cols-1 md:grid-cols-[17.5rem_1fr] lg:grid-cols-[17.5rem_1fr_17.5rem]" class="hidden"></div>   <div id="content-wrapper" class="onload-animation transition-leaving">   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4"> <div id="post-container" class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full "> <!-- word count and reading time --> <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation"> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:notes-rounded">   <symbol id="ai:material-symbols:notes-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h10q.425 0 .713.288T15 17t-.288.713T14 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:notes-rounded"></use>  </svg> </div> <div class="text-sm"> 16371  字 </div> </div> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:schedule-outline-rounded">   <symbol id="ai:material-symbols:schedule-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M13 11.6V8q0-.425-.288-.712T12 7t-.712.288T11 8v3.975q0 .2.075.388t.225.337l3.3 3.3q.275.275.7.275T16 16t.275-.7t-.275-.7zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:schedule-outline-rounded"></use>  </svg> </div> <div class="text-sm"> 82  分钟 </div> </div> </div> <!-- title --> <div class="relative onload-animation"> <h1 data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title" class="transition w-full block font-bold mb-3
+})();</script> </div>  <main id="swup-container" class="transition-swup-fade overflow-hidden w-full col-span-2 md:col-start-2 md:col-end-3 lg:col-start-2 lg:col-end-3 transition-main">  <div id="grid-class-carrier" data-grid-class="grid-cols-1 md:grid-cols-[17.5rem_1fr] lg:grid-cols-[17.5rem_1fr_17.5rem]" class="hidden"></div>   <div id="content-wrapper" class="onload-animation transition-leaving">   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4"> <div id="post-container" class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full "> <!-- word count and reading time --> <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation"> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:notes-rounded">   <symbol id="ai:material-symbols:notes-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h10q.425 0 .713.288T15 17t-.288.713T14 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:notes-rounded"></use>  </svg> </div> <div class="text-sm"> 24252  字 </div> </div> <div class="flex flex-row items-center"> <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"> <svg width="1em" height="1em" data-icon="material-symbols:schedule-outline-rounded">   <symbol id="ai:material-symbols:schedule-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M13 11.6V8q0-.425-.288-.712T12 7t-.712.288T11 8v3.975q0 .2.075.388t.225.337l3.3 3.3q.275.275.7.275T16 16t.275-.7t-.275-.7zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:schedule-outline-rounded"></use>  </svg> </div> <div class="text-sm"> 121  分钟 </div> </div> </div> <!-- title --> <div class="relative onload-animation"> <h1 data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title" class="transition w-full block font-bold mb-3
                     text-3xl md:text-[2.25rem]/[2.75rem]
                     text-black/90 dark:text-white/90
                     md:before:w-1 before:h-5 before:rounded-md before:bg-[var(--primary)]
@@ -1480,7 +1480,488 @@ const retryCount = 3;
 妣卒康熙六年丁未，葬东乡白湖保上二甲侯庄宅后，有碑。</p></section><section><h3 id="文绶公灒公长子">文绶公（灒公长子）<a class="anchor" href="#文绶公灒公长子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>字？，娶？氏。
 公妣生卒葬待考。</p></section><section><h3 id="文绅公灒公次子">文绅公（灒公次子）<a class="anchor" href="#文绅公灒公次子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>字？，号公美，生万历二十四年丙申十二月初三亥时。娶何氏，生万历二十三年乙未正月初一丑时。子一：孝斌。
 公妣卒失考，合葬竹堍保一甲汪圣庙，坐北朝南。</p></section><section><h3 id="文繡公灒公幼子">文繡公（灒公幼子）<a class="anchor" href="#文繡公灒公幼子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>字？，娶？氏。
-公妣生卒葬待考。</p></section></section></section>  </div> <script type="module">function l(t){const r=t.querySelectorAll("span.line");if(r.length>0){const o=[];for(let e=0;e<r.length;e++){const s=r[e].textContent||"";o.push(s)}return o.join(`
+公妣生卒葬待考。</p></section></section></section>
+<section><h1 id="仁一公三房敏公之下克瑸公房派十一世十三世">仁一公三房敏公之下克瑸公房派（十一世—十三世）<a class="anchor" href="#仁一公三房敏公之下克瑸公房派十一世十三世"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h1><section><h2 id="世派对照">世派对照<a class="anchor" href="#世派对照"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><ul>
+<li>原派：正　大　光</li>
+<li>新派：孝　义　敬</li>
+</ul><hr></section><section><h2 id="十一世原派正新派孝">十一世（原派：正　新派：孝）<a class="anchor" href="#十一世原派正新派孝"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><section><h3 id="文书公-子">文书公 子<a class="anchor" href="#文书公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol>
+<li>
+<p><strong>孝袒公</strong>（文书公长子）
+字汉左，生万历二十三年乙未八月二十九辰时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝裼公</strong>（文书公次子）
+字刘左，生崇祯四年辛未九月初六子时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝裸公</strong>（文书公三子）
+字与偕，生崇祯七年甲戌闰八月二十四子时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝裎公</strong>（文书公幼子）
+字轶群，生崇祯十年丁丑六月二十五丑时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+</ol></section><section><h3 id="文祥公-子">文祥公 子<a class="anchor" href="#文祥公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="5">
+<li>
+<p><strong>孝裶公</strong>（文祥公长子）
+字殊度，生天启五年乙丑九月二十九酉时。娶王氏，生天启六年丙寅八月十六未时，卒葬待考。
+继娶范氏，生卒葬待考。
+继娶钱兰田孙女，生崇祯六年癸酉三月十一寅时。子二：义臣、义云。妣卒顺治十三年丙申闰五月初七午时，葬待考。
+继娶夏文仲女，生万历四十六年戊午七月二十三子时。公卒失考，葬金鳌保十甲昝庄塘旁团凸，有碑。妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝袼公</strong>（文祥公次子）
+字闻略，号忠朗，生天启七年丁卯十月十七酉时。娶徐氏，生崇祯？年？月？日？时。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝襜公</strong>（文祥公三子）
+字孔右，生崇祯六年癸酉六月二十四子时。娶吴氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝袂公</strong>（文祥公幼子）
+字淑度，生崇祯十三年庚辰五月初八未时。娶钱乔谷女，生崇祯十一年戊寅三月初三亥时。子二：义磐、义碞（岩）。女一，适丁。公卒康熙七年戊申六月二十四申时，妣卒失考。合葬金鳌保十甲王家园张家塝。</p>
+</li>
+</ol></section><section><h3 id="文林公-子">文林公 子<a class="anchor" href="#文林公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="9">
+<li>
+<p><strong>孝祓公</strong>（文林公长子）
+字赤仪，号仲宣，生天启五年乙丑正月十六子时。娶汪谨廉女，生天启四年甲子五月初三卯时，卒康熙二十二年癸亥七月二十四丑时，葬史家湾宅右白虎嘴，坐北向南，有碑。
+继娶熊氏，生顺治十三年丙申六月初一巳时。子三：义鹍、义鹏、义鹗。女一。
+公卒失考，葬金鳌保十甲束家山山顶，次子义鹏附墓，坐北向南，有碑。
+妣卒失考，葬金鳌保十甲沈家山青龙嘴松园，孙媳杨氏附墓，坐西向东，有碑。</p>
+</li>
+<li>
+<p><strong>孝䙛公</strong>（文林公次子）
+字补宸，号庆先，生崇祯十二年己卯四月初一午时。娶方再含女，生崇祯八年乙亥八月三十辰时。子一：义鹤。女一，适吴。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝袗公</strong>（文林公幼子）
+字舒翼，号羽先，生顺治六年己丑十二月初十子时。娶汪向明女，生顺治七年庚寅七月二十五辰时。子一：义鸢。公妣卒葬待考。</p>
+</li>
+</ol></section><section><h3 id="文正公-子">文正公 子<a class="anchor" href="#文正公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="12">
+<li><strong>孝裘公</strong>（文正公子）
+字天秩，生万历四十四年丙辰十二月二十？时。娶方氏，生万历？年？月？日？时。子一：义受。公妣卒葬待考。</li>
+</ol></section><section><h3 id="文昌公-子">文昌公 子<a class="anchor" href="#文昌公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="13">
+<li>
+<p><strong>孝襮公</strong>（文昌公长子）
+字天章，生崇祯二年己巳七月十六子时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝裔公</strong>（文昌公幼子）
+字天衍，娶？氏。公妣生卒葬待考。</p>
+</li>
+</ol></section><section><h3 id="文瑞公-子">文瑞公 子<a class="anchor" href="#文瑞公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="15">
+<li><strong>孝礼公</strong>（文瑞公子）
+字尔先，生顺治六年己丑十一月初一亥时。娶？氏，生失考。公妣卒葬待考。</li>
+</ol></section><section><h3 id="文星公-子">文星公 子<a class="anchor" href="#文星公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="16">
+<li><strong>孝袨公</strong>（文星公子）
+字君信，生崇祯三年庚午五月二十六丑时。娶？氏，生崇祯十二年己卯十月初四巳时。子一：义瑃。公妣卒失考，合葬十五里坊倪家墩，坐东向西。</li>
+</ol></section><section><h3 id="文炫公-子">文炫公 子<a class="anchor" href="#文炫公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="17">
+<li>
+<p><strong>孝祽公</strong>（文炫公长子）
+字端若，号君宜，生天启六年丙寅闰六月二十七戌时。娶鲍圣宇女，生崇祯八年乙亥四月初十卯时。子三：义璞、义瑄、义班。女一，适张。公妣卒失考，合葬焦马头山，乾山巽向。</p>
+</li>
+<li>
+<p><strong>孝袵公</strong>（文炫公次子）
+字服可，生崇祯五年壬申七月二十五子时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝禶公</strong>（文炫公幼子）
+字羽上，生崇祯十二年己卯三月初五亥时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+</ol></section><section><h3 id="文隆公-子">文隆公 子<a class="anchor" href="#文隆公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="20">
+<li><strong>孝衿公</strong>（文隆公子）
+例赠文林郎。字晋公，生顺治七年庚寅十一月十四子时。娶芮祥甫女，例赠孺人，生顺治七年庚寅十月初一卯时。子二：义琏、义玳。女一，适？。
+公享寿九十二，卒乾隆六年辛酉十月十六巳时，葬南乡桃花保西二甲土名唐庄、祖汘公圹左，癸山丁向，有碑。
+妣享寿九十六，卒乾隆九年甲子十月十三寅时，葬金鳌保十甲沈家山北庄屋冲、王庄对面枝子地上，长子义琏墓，有碑。契另刊簿。</li>
+</ol></section><section><h3 id="文伸公-子">文伸公 子<a class="anchor" href="#文伸公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="21">
+<li>
+<p><strong>孝祈公</strong>（文伸公长子）
+字鉴功，生天启七年丁卯九月二十三未时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>孝祝公</strong>（文伸公幼子）
+字宇文，生崇祯十一年戊寅正月十一午时。娶王心女，生顺治二年乙酉三月十一巳时。子三：义琈、义瑂、义瑓。女三：长适朱康，次适张，幼适王。
+公卒康熙四十三年甲申八月二十午时，葬金鳌保十甲童家嘴，坐北向南。
+妣卒雍正三年乙巳十一月二十七寅时，葬桃花保西二甲唐庄郭家大园下首，幼媳范氏附墓，有碑。</p>
+</li>
+</ol></section><section><h3 id="文徵公-子">文徵公 子<a class="anchor" href="#文徵公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="23">
+<li><strong>孝和公</strong>（文徵公子）
+迁池州府。</li>
+</ol></section><section><h3 id="文焕公-子">文焕公 子<a class="anchor" href="#文焕公-子"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><ol start="24">
+<li>
+<p><strong>孝福公</strong>（文焕公长子）
+邑庠生。字君録，号孟宏。娶秦氏。公妣生卒失考，合葬北乡寺庄沟保？甲姚家桥上，土名稻场嘴。辰山戌向。</p>
+</li>
+<li>
+<p><strong>孝祚公</strong>（文焕公次子）
+字君钦，生崇祯十三年庚辰三月初五未时。娶张氏，生崇祯十三年庚辰七月十八卯时。子二：义頩、义良。女一，适何。
+公卒康熙四十七年戊子六月十八丑时，妣卒康熙五十年辛卯二月二十辰时，合葬北乡寺庄沟保四甲蒋家山，辰山戌向。</p>
+</li>
+<li>
+<p><strong>孝禧公</strong>（文焕公幼子）
+字君鏉，生顺治十年癸巳九月初六辰时。娶袁氏，生顺治九年壬辰十一月十二卯时。公妣卒失考，葬铁家山，酉山卯向。</p>
+</li>
+</ol><hr></section></section><section><h2 id="十二世原派大新派义">十二世（原派：大　新派：义）<a class="anchor" href="#十二世原派大新派义"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><ol>
+<li>
+<p><strong>义臣公</strong>（孝裶公长子）
+字汉杰，号维三，生顺治六年己丑八月十九卯时。娶查氏，生顺治八年辛卯三月初九卯时。子一：敬斣。妣卒康熙八年己酉？月？日？时，葬史家湾宅右稻场嘴。
+继娶吴氏，生顺治二年乙酉正月十五午时。子三：敬斡、敬斟、敬奭。女一，适陶。公妣卒失考，俱葬史家湾宅右稻场嘴，丙山壬向，各有碑。</p>
+</li>
+<li>
+<p><strong>义云公</strong>（孝裶公幼子）
+字陈侯，号周臣，生顺治十年癸巳七月二十八寅时。娶辜从先女，生顺治十三年丙申七月巳时。子三：敬科、敬㪹、敬斢。女二：长适范桥，次适？。公妣卒失考，合葬史家湾宅右稻场嘴，丙山壬向，有碑。</p>
+</li>
+<li>
+<p><strong>义磐公</strong>（孝袂公长子）
+字奠安，号维新，生康熙三年甲辰十月初七丑时。娶姜子胜女，生康熙十一年壬子四月初十巳时。子二：敬前、敬来。公妣卒葬失考。</p>
+</li>
+<li>
+<p><strong>义碞（岩）公</strong>（孝袂公次子）
+字维石，号尔宜，生康熙六年丁未八月二十七午时。娶江元卿女，生康熙十四年乙卯十月二十七酉时。子二：敬亨、敬开。公妣卒失考，合葬王家园张家塝，向南，有碑。</p>
+</li>
+<li>
+<p><strong>义鹍公</strong>（孝祓公长子）
+字扶上，号翔三，生康熙二年癸丑正月十四戌时。娶杨谅臣女，生康熙十一年壬子二月初九酉时。子一：敬辉。女一，适朱。公妣卒失考，合葬束家山小坟园活石下，长孙慈义夫妇附墓，坐西北向东南，有碑。</p>
+</li>
+<li>
+<p><strong>义鹏公</strong>（孝祓公次子）
+字击程，号展玉，生康熙二十一年壬戌十二月二十一寅时。娶邑庠生余迪简侄女，生康熙二十年辛酉四月十八辰时。子三：敬莹、敬国、敬里。女一，适太学生王怀宗。
+公卒康熙五十九年庚子九月二十亥时，葬金鳌保十甲束家山山顶，附父墓，坐北向南。
+妣卒雍正七年己酉十二月二十七亥时，葬史家湾宅右白虎山，坐西向东，有碑。公妣行谊另刊簿。</p>
+</li>
+<li>
+<p><strong>义鹗公</strong>（孝祓公幼子）
+字占万，号表三，生康熙二十六年丁卯八月？日？时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>义鹤公</strong>（孝䙛公子）
+字献瑞，号永吉，生康熙二年癸卯十二月初四戌时。娶韩驹友女，生康熙九年庚戌闰二月初四寅时。子五：敬扉、敬扅、敬扊、敬戾、敬户。
+公卒失考，葬史家湾宅右首白虎山大栗树旁，坐西向东，有碑。
+妣卒乾隆三年戊午九月十七亥时，葬柏枝树吴姓阶堰头，甲山庚向，有碑。</p>
+</li>
+<li>
+<p><strong>义鸢公</strong>（孝袗公子）
+字连九，号炳文，生康熙十三年甲寅九月初一寅时。娶甘西眉女，生失考。子四：敬显、敬旼、敬昭、敬昌。女二，长适刘，幼适章。公妣卒失考，合葬沈家山南首囚地中，坐西向东，有碑。</p>
+</li>
+<li>
+<p><strong>义受公</strong>（孝裘公子）
+字湮祀，号器宗，生崇祯十一年戊寅？月？日？时。卒葬待考。</p>
+</li>
+<li>
+<p><strong>义瑃公</strong>（孝袨公子）
+例赠登仕佐郎。字彝良，号抱璞，生康熙十八年己未二月十三辰时。娶柏氏，例赠孺人，生康熙十八年己未二月二十四亥时。子四：敬裕、敬爵、敬应、敬贵。
+公享寿六十一，卒乾隆五年庚申五月十二丑时。
+妣享寿八十三，卒乾隆二十七年壬午八月二十四午时。合葬柏家庄，丙山壬向。</p>
+</li>
+<li>
+<p><strong>义璞公</strong>（孝祽公长子）
+字含玉，号荆华，生康熙五年丙午八月十五申时。娶邹绣章女，生康熙六年丁未十一月二十一戌时。子一：敬晖。女一，适张元贞。公妣卒失考，合葬桃花保西二甲唐庄祖茔左首。</p>
+</li>
+<li>
+<p><strong>义瑄公</strong>（孝祽公次子）
+字良玉，生康熙九年庚戌十月十六巳时。娶王元章女，生康熙十一年壬子二月十二卯时。子四：敬皙、敬映、敬晈、敬旺。女二：长适王进三，幼适钱定开。
+公卒乾隆七年壬戌九月初一未时，妣卒雍正二年甲辰九月十九子时，合葬桃花保西二甲唐庄祖茔，左首第二塚。</p>
+</li>
+<li>
+<p><strong>义班公</strong>（孝祽公幼子）
+字崇文，生康熙十八年己未八月二十二丑时。娶邹汉三女，生康熙二十年辛酉六月十六寅时。子四：敬晓、敬㞱、敬昺、敬旷。公妣卒失考，合葬桃花保西二甲唐庄祖茔左首。</p>
+</li>
+<li>
+<p><strong>义琏公</strong>（孝衿公长子）
+例赠登仕郎。字鼎玉，生康熙十二年癸丑五月初一申时。娶余全质女，例赠孺人，生康熙十二年癸丑七月十七未时。子三：敬昐、敬暻、敬昶。女一，适施方五。
+公享寿七十四，卒乾隆二十四年己卯六月初十寅时，葬附母芮太君墓。
+妣享寿六十四，卒乾隆十二年丁卯九月二十九亥时，葬史家湾宅右白虎山大栗树旁，坐南向北。</p>
+</li>
+<li>
+<p><strong>义玳公</strong>（孝衿公幼子）
+例赠登仕佐郎。字瑶文，生康熙十八年己未正月二十六卯时。娶吴叔茂女，例赠孺人，生康熙二十一年壬戌二月二十未时。女一，适吴立三。
+副室洪氏，例赠孺人，生康熙三十八年己卯七月十六子时。子三：敬㫓、敬暖、敬旮。女一，适吴立早。
+公享寿六十七，卒乾隆十年乙丑六月二十戌时，葬桃花保西二甲唐庄祖茔右首、汘公墓右，癸山丁向，有碑。
+妣享寿八十二，卒乾隆二十八年癸未九月？日？时。
+洪妣享寿六十五，卒乾隆二十八年癸未二月初三未时。两妣合葬庐邑南乡中保？甲宋家冲，土名怀中抱子。次媳刘氏附墓，有碑。山契并田契另刊簿。吴妣有祭文。</p>
+</li>
+<li>
+<p><strong>义琈公</strong>（孝祝公长子）
+字介臣，亦字瑞臣，生康熙八年己酉十月十三丑时。娶王即生女，生康熙十四年乙卯九月初三亥时。子二：敬恺、敬友。公妣卒失考，合葬十五里坊保四甲傅家院宅旁。</p>
+</li>
+<li>
+<p><strong>义瑂公</strong>（孝祝公次子）
+字清臣，亦字纳川，生康熙十七年戊午五月十九丑时。娶？氏，生失考。公妣卒失考，合葬十五里坊保四甲下檀树嘴田坂，向西。</p>
+</li>
+<li>
+<p><strong>义瑓公</strong>（孝祝公幼子）
+字瑞生，生康熙二十年辛酉九月二十五午时。娶范氏，生康熙二十年辛酉十一月初六子时。子一：敬华。女一，适？。
+公卒乾隆五年庚申五月二十一未时，葬十五里坊保四甲下檀树嘴田坂，向西。
+妣卒失考，葬桃花保西二甲唐庄郭家大园下，附姑墓，坐北向南。</p>
+</li>
+<li>
+<p><strong>义頩公</strong>（孝祚公长子）
+字玉枝，生顺治十六年己亥十一月初三午时。娶余氏，生康熙六年丁未正月初八丑时。子四：敬庶、敬店、敬庥、敬廂。
+公卒乾隆二年丁巳七月十四子时，葬？乡？保光山岭凤形地，庚山甲向，有碑，契另刊簿。
+妣卒雍正十二年甲寅十月十一亥时，葬北乡夜插坂保二甲小乌庄山后虎形，土名史家窊。艮山坤向，有碑，契另刊簿。</p>
+</li>
+<li>
+<p><strong>义良公</strong>（孝祚公幼子）
+字玉祥，生康熙十二年癸丑五月十四卯时。娶吴氏，生康熙十四年乙卯七月十九未时。子四：敬痕、敬庄、敬庭、敬庸。公妣卒葬待考。</p>
+</li>
+</ol><hr></section><section><h2 id="十三世原派光新派敬">十三世（原派：光　新派：敬）<a class="anchor" href="#十三世原派光新派敬"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><ol>
+<li>
+<p><strong>敬斣公</strong>（义臣公长子）
+字派远，生康熙七年戊申六月二十一申时。娶王六生女，生康熙七年戊申十一月初六亥时。子三：慈朱、慈亮、慈晓。公妣卒失考，合葬沙涧河龙潭保五甲下萧庄壇基窊团凸山，酉山卯向。契兵毁，界载老谱。</p>
+</li>
+<li>
+<p><strong>敬斡公</strong>（义臣公次子）
+字杰人，号雋万，生康熙十九年庚申四月二十一巳时。娶陈氏，生康熙十七年戊午八月三十巳时。子二：慈崇、慈龙。女一，适周。公卒失考，葬史家湾宅右白虎山，子慈崇附墓，庚山甲向，有碑。妣卒失考，葬黄花保？甲獾子洞。</p>
+</li>
+<li>
+<p><strong>敬斟公</strong>（义臣公三子）
+例赠登仕佐郎。字寰区，号无疆，生康熙二十一年壬戌十一月二十四巳时。娶曹子霞女，例赠孺人，生康熙二十年辛酉九月十八巳时，卒葬待考。
+继娶许氏，生康熙二十七年戊辰二月二十四辰时。子四：慈远、慈皙、慈仙、慈玉。女一，适吴。
+公享寿六十五，卒乾隆十一年丙寅十二月二十九子时；妣卒失考。合葬南乡羹脍赛保一甲大青山岭、大成庄宅右白虎嘴，与外祖父母许姓同圹，亥山巳向。契并清界字另刊簿。</p>
+</li>
+<li>
+<p><strong>敬奭公</strong>（义臣公幼子）
+字？，号天一，生康熙二十四年乙丑九月十七申时。娶？氏，生失考。公卒失考，葬史家湾宅右白虎山嘴，丙山壬向。妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬科公</strong>（义云公长子）
+字廷一，号辅士，生康熙十三年甲寅正月二十四子时。娶董五先女，生康熙十五年丙辰六月初七子时。子二：慈高、慈映。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬㪹公</strong>（义云公次子）
+字扶九，号凌霄，生康熙二十一年壬戌四月十一亥时。娶？氏，生失考。子四：慈梧、慈桐、慈楼、慈梯。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬斢公</strong>（义云公幼子）
+字忠一，号承先，生康熙五十六年丁酉二月初十寅时。娶？氏，生失考。子二：慈鸾、慈舞。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬前公</strong>（义磐公长子）
+字吉仁。娶？氏。公妣生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬来公</strong>（义磐公幼子）
+字拔云，生康熙？年？月？日？时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬亨公</strong>（义岩公长子）
+字元启，生康熙？年？月？日？时。娶？氏，生失考。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬开公</strong>（义岩公幼子）
+字肇卿，号林长，生康熙三十七年戊寅正月二十一巳时。娶夏氏，生卒失考。继娶朱氏，生失考。子一：慈岑。女一，适吴。公卒失考，与夏前妣合葬王家园张家塝台子田后墈，向东。妣卒失考，葬王家园下杨泗庙，与吴姓坟界毗连。</p>
+</li>
+<li>
+<p><strong>敬辉公</strong>（义鹍公子）
+字公旦，号法喦，生康熙？年？月？日？时。娶朱克亮女，生失考。子五：慈义、慈恕、慈恒、慈有、慈连。女一，适朱。公卒失考，葬史家湾右首白虎嘴，向南，有碑。妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬莹公</strong>（义鹏公长子）
+字公秀，号清喦，生康熙五十一年壬辰二月十二寅时。娶刘可雨女，生康熙五十年辛卯正月十二丑时。子五：慈奇、慈岚、慈灵、慈金、慈珂。女一，适刘。公卒乾隆五十一年丙午二月初十戌时，妣卒乾隆四十二年丁酉三月初五申时，葬俱待考。</p>
+</li>
+<li>
+<p><strong>敬国公</strong>（义鹏公次子）
+字公远，号洪喦，生康熙五十五年丙申四月二十五亥时。娶余氏。女一，适余。妣生卒葬待考。
+继娶汪坤山女，生康熙六十年辛丑十二月十三申时。子三：慈忠、慈信、慈习。女一，适钱。
+公卒乾隆三十四年己丑十月二十子时，妣卒乾隆五十一年丙午六月十七丑时，合葬史家湾右首白虎嘴，向东北。</p>
+</li>
+<li>
+<p><strong>敬里公</strong>（义鹏公幼子）
+字公元，号澄喦，生康熙五十八年己亥五月二十四辰时。娶杨东育女，生雍正元年癸卯正月二十亥时。子四：慈爽、慈朗、慈芝、慈兰。女一，适太学生杨超群。
+公卒乾隆四十八年癸卯四月初十未时，葬金鳌保十甲青龙嘴松园，次子慈朗附墓，向东，有碑。
+妣卒失考，葬青龙嘴松园附祖姑熊太君墓下，向东，有碑。公行谊刊簿。</p>
+</li>
+<li>
+<p><strong>敬扉公</strong>（义鹤公长子）
+字君召，号渚喦，生康熙二十五年丙寅九月初四午时。娶？氏，生失考。子一：慈珍。女一，适孙。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬扅公</strong>（义鹤公次子）
+字君宠，号沛喦，生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬扊公</strong>（义鹤公三子）
+字龙音，号沧喦，生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬戾公</strong>（义鹤公四子）
+字龙升，号海喦，生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬户公</strong>（义鹤公幼子）
+字龙鸣，号洛喦，生康熙三十四年乙亥二月初五辰时。娶刘氏，生失考。女一，适汪。妣卒葬待考。
+继娶刘克明妹，生康熙五十年辛卯八月初五寅时。子二：慈成、慈才。女一，适刘。
+公卒失考，葬柏枝树章家月山，长子慈成附墓，向东，有碑。
+妣卒乾隆四十九年甲辰闰三月二十七申时，葬柏枝树汪家山，幼子慈才附墓，庚山甲向，有碑。</p>
+</li>
+<li>
+<p><strong>敬显公</strong>（义鸢公长子）
+字公正，号泗喦，生康熙？年？月？日？时。娶陶氏，生失考。子二：慈栋、慈梁。女一，适孙。公妣卒失考，合葬孙家坂周家山，有碑。</p>
+</li>
+<li>
+<p><strong>敬旼公</strong>（义鸢公次子）
+例赠登仕郎。字公盛，号滨喦，生康熙四十三年甲申八月初一亥时。娶蒋文臣女，例赠孺人，生康熙四十五年丙戌十二月初三亥时。子三：慈鼎、慈鼐、慈烹。女一，适黄。
+公享寿七十七，卒乾隆四十七年壬寅六月初一寅时；
+妣享寿六十九，卒乾隆四十一年丙申十二月初五巳时，合葬金鳌保十甲束家山小园，有碑。</p>
+</li>
+<li>
+<p><strong>敬昭公</strong>（义鸢公三子）
+字公翼，号浮喦，生康熙五十三年甲午十月十四亥时，卒乾隆四十三年戊戌十月十八丑时，葬待考。</p>
+</li>
+<li>
+<p><strong>敬昌公</strong>（义鸢公幼子）
+字公允，号洞喦，生雍正？年？月？日？时，卒失考，葬鲁家坂周家山。</p>
+</li>
+<li>
+<p><strong>敬裕公</strong>（义瑃公长子）
+字应超，生康熙三十七年戊寅七月十九申时。娶邵氏，生康熙三十七年戊寅九月二十三亥时。子二：慈玲、慈玷。女一，适朱。
+公卒乾隆二十八年癸未十月十三酉时，妣卒乾隆四十四年己亥十月二十三丑时，合葬十五里坊倪家墩，向西。</p>
+</li>
+<li>
+<p><strong>敬爵公</strong>（义瑃公次子）
+字应方，生康熙四十八年己丑九月二十九亥时。娶胡氏，生雍正九年辛亥四月二十一午时。子三：慈玶、慈珆、慈珌。公卒乾隆三十二年丁亥闰七月二十三巳时，葬待考；妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬应公</strong>（义瑃公三子）
+字贵方，生康熙五十一年壬辰十一月二十八申时，卒乾隆五十年乙巳？月？日？时，葬十五里坊倪家墩。</p>
+</li>
+<li>
+<p><strong>敬贵公</strong>（义瑃公幼子）
+字超玉，生康熙五十四年乙未正月二十六亥时，卒失考，葬柏家庄，附父母墓。</p>
+</li>
+<li>
+<p><strong>敬晖公</strong>（义璞公子）
+字会吉，生康熙二十五年丙寅十月初九亥时。娶王超宗女，生失考。子二：慈玎、慈㺪。女一，适张。公妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬皙公</strong>（义瑄公长子）
+字永吉，生康熙三十年辛未五月初二子时。娶尹氏，生康熙四十二年癸未八月初三亥时。子三：慈玜、慈玦、慈玗。女三：长适李，次适潘，幼适施。公卒乾隆二十年乙亥二月十六午时，妣卒乾隆二十八年癸未三月初五亥时，葬俱待考。</p>
+</li>
+<li>
+<p><strong>敬映公</strong>（义瑄公次子）
+字桐吉，生康熙三十六年丁丑五月二十三申时。娶王氏，生康熙三十五年丙子二月二十四午时。子三：慈珼、慈珺、慈现。公卒乾隆二十二年丁丑四月十一申时，葬待考。妣卒乾隆十四年己巳二月十一亥时，葬待考。</p>
+</li>
+<li>
+<p><strong>敬晈公</strong>（义瑄公三子）
+字衡吉，生康熙四十三年甲申四月初十卯时。娶伍氏，生康熙四十五年丙戌十月？日？时。子一：慈琢。女二：长适汪，幼适陈。公卒乾隆二十七年壬午五月二十一午时，妣卒乾隆二年丁巳十月？日？时，葬俱待考。</p>
+</li>
+<li>
+<p><strong>敬旺公</strong>（义瑄公幼子）
+字元吉，生康熙三十八年己卯九月初六亥时。娶胡氏，生康熙五十二年癸巳九月初九亥时。子三：慈玥（殇）、慈璋、慈理。女三：长适胡，次适徐，幼适方。
+公卒乾隆二十二年丁丑正月初六辰时，妣卒乾隆二十九年甲申十一月十一巳时，合葬军保余家研，向东南。</p>
+</li>
+<li>
+<p><strong>敬晓公</strong>（义班公长子）
+字耐寒，号树参，生康熙四十六年丁亥？月？日？时。娶吴氏，生康熙？年？月？日？时。子六：慈仓（殇）、慈无、慈封、慈元、慈六、慈恰（祧与幼弟敬旷为嗣）。女二：长适汪，幼适何。
+公卒失考，葬贵邑清风亭义山。
+妣卒失考，葬史家湾宅右与弟敬㞱妇邹氏同塚。</p>
+</li>
+<li>
+<p><strong>敬㞱公</strong>（义班公次子）
+字方茂，生康熙五十年辛卯二月二十三丑时。娶邹氏，生康熙四十八年己丑？月？日？时。子三：德保（殇）、晋保（殇）、百连（殇）。女二：长适？，幼适陈。
+公卒乾隆三十四年己丑？月？日？时，葬史家湾宅右坟湾东南鲢石凸上，向南。
+妣卒乾隆五十一年丙午？月？日？时，葬史家湾宅右，与兄敬晓妇吴氏同塚。</p>
+</li>
+<li>
+<p><strong>敬昺公</strong>（义班公三子）
+字乐三，生康熙五十七年戊戌？月？日？时。娶吴氏，生失考。女一。公妣卒失考，合葬史家湾坟湾头。</p>
+</li>
+<li>
+<p><strong>敬旷公</strong>（义班公幼子）
+字方升，生雍正二年甲辰？月？日？时。娶邹氏，生雍正二年甲辰？月？日？时。子一：耍保（殇）。祧长兄敬晓幼子慈恰为嗣。
+公卒失考，葬南乡桃花保西二甲唐庄下首附父母墓。
+妣卒失考，葬贵邑清风亭义山。</p>
+</li>
+<li>
+<p><strong>敬昐公</strong>（义琏公长子）
+字会超，生康熙二十八年己巳十二月初三未时。娶张氏，生卒葬待考。继娶余氏，生失考。女二：长适张，幼适张。
+公卒雍正六年戊申六月初六戌时，妣卒雍正六年戊申五月二十五巳时，合葬金鳌保十甲徐家园。</p>
+</li>
+<li>
+<p><strong>敬暻公</strong>（义琏公次子）
+字彦超，号旭旦，生康熙四十年辛巳六月初三寅时。娶芮圣三女，生康熙四十四年乙酉二月十三午时。子一：慈珠。女一，适周。
+公卒雍正七年己酉十二月二十七酉时，葬唐庄祖茔东首、祖孝衿公塚左，亥山巳向。
+妣卒乾隆三十九年甲午四月十四亥时，葬金鳌保十甲王家园宅右首，壬丙兼子午。妣苦节孝，行谊刊传。</p>
+</li>
+<li>
+<p><strong>敬昶公</strong>（义琏公幼子）
+例赠登仕佐郎。字继超，生康熙四十五年丙戌正月十三子时。娶张赤士女，例赠孺人，生康熙四十二年癸未六月二十九亥时。子一：慈珍。女三：长适何，次适陈，幼适钱。
+公享寿六十一，卒乾隆三十一年丙戌十二月初一子时；
+妣享寿七十二，卒乾隆三十九年甲午十月十九巳时。合葬金鳌保十甲王家园，有碑。公妣行谊另刊传。</p>
+</li>
+<li>
+<p><strong>敬㫓公</strong>（义玳公长子）
+太学生。名鸣珂，字天相，生康熙五十八年己亥四月？日？时。娶胡贤益女，生康熙五十四年乙未？月？日？时。祧次弟敬暖次子慈台、幼弟敬旭长子慈珮为嗣。女二：长适太学生张环珠，幼适吴。
+公卒乾隆三十八年癸巳三月十三未时，妣卒乾隆三十四年己丑七月二十二寅时，合葬史家湾宅右白虎山，向北，有碑。</p>
+</li>
+<li>
+<p><strong>敬暖公</strong>（义玳公次子）
+例赠登仕佐郎。字天与，号怀素，生乾隆元年丙辰二月初八亥时。娶刘彦超女，例赠孺人，生雍正九年辛亥正月初十巳时。子三：慈基、慈台（祧与兄敬㫓为嗣）、慈堦。女二：长适钱，幼适太学生刘遐殷。
+公享寿六十四，卒嘉庆四年己未十一月？日戌时，葬拔茅保三甲城山冲周姓宅后，土名䲎鱼嘴降服，子慈台附墓，有碑，契并清界字另刊簿。
+妣享寿六十，卒乾隆五十年乙巳九月初八未时，葬庐邑南乡中保？甲宋家冲，土名怀中抱子，附姑吴洪二老太君墓。辛山乙向，有碑。</p>
+</li>
+<li>
+<p><strong>敬旮公</strong>（义玳公幼子）
+貤封朝议大夫。太学生。名光福，字天球，号怀珍，生乾隆七年壬戌七月初二丑时。娶张千里女，貤封太恭人，生乾隆三年戊午十月二十二巳时。子二：慈珮（祧与长兄敬㫓为嗣）、慈璜。女一，适吴。
+公享寿七十七，卒嘉庆二十三年戊寅十二月二十二亥时；
+妣享寿七十四，卒嘉庆十六年辛未十一月二十七戌时。合葬拔茅保三甲城山冲周姓宅后，土名支虎颈，地形勾兠回龙，与胞兄敬暖公前后同山，子山午向，有碑。契另刊簿。</p>
+</li>
+<li>
+<p><strong>敬恺公</strong>（义琈公长子）
+字仲恺。娶？氏。公妣生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬友公</strong>（义琈公幼子）
+字仲友。娶吴柏章女。子一：慈珇。公妣生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬华公</strong>（义瑓公子）
+字仲方，生康熙五十五年丙申八月二十二亥时。娶繆氏，生失考。子一：慈玿。
+公卒乾隆五年庚申十一月二十子时，葬十五里坊保四甲下檀树嘴田坂，附父墓旁，向西。妣卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬庶公</strong>（义頩公长子）
+例赠登仕佐郎。字弥远，生康熙二十一年壬戌八月十四卯时。娶杨氏，例赠孺人，生康熙二十三年甲子五月初二子时。子一：慈烈。女一，适程。
+公享寿六十二，卒乾隆二十一年丙子三月二十酉时，
+妣享寿七十八，卒康熙三十九年甲午八月初一午时，合葬史家窊母茔旁，艮山坤向，有碑。</p>
+</li>
+<li>
+<p><strong>敬店公</strong>（义頩公次子）
+字弥高，生康熙二十三年甲子十二月初七丑时。娶陈氏，生康熙二十七年戊辰二月十六寅时。子一：慈炤。公妣卒失考，俱葬掛车山保闻家湾。契另刊簿。</p>
+</li>
+<li>
+<p><strong>敬庥公</strong>（义頩公三子）
+例赠登仕郎。字弥日，生康熙三十四年乙亥四月二十巳时。娶李氏，例赠孺人，生康熙三十四年乙亥八月初四卯时。子三：慈熹、慈炽、慈熿。
+公享寿七十四，卒乾隆三十一年丙戌十一月二十三巳时，葬夜插坂保二甲史家窊母茔旁，艮山坤向。
+妣卒失考，葬北乡黄公桥保九甲沈庄窊，辰山戌向。</p>
+</li>
+<li>
+<p><strong>敬廂公</strong>（义頩公幼子）
+字弥达，生康熙四十三年甲申七月十八寅时。娶刘氏，生康熙四十五年丙戌五月二十卯时。子四：慈熠、慈熉、慈熀、慈燔。
+妣卒乾隆四十三年戊戌正月初三亥时。
+继娶张氏，生康熙四十三年甲申十二月初三寅时。子一：慈煜。女一，适张耀宗。
+妣卒失考，葬下坦冲保三甲猫儿尖南窊，凤形，丑山未向，契另刊簿。
+继娶王氏，生失考。
+公卒乾隆四十四年己亥十月初八午时，同刘前妣合葬北乡麻笃山保金冲山，名金鍾地。坤山艮向，契另刊簿。
+妣卒失考，葬北乡走马镇保四甲稻场嘴。</p>
+</li>
+<li>
+<p><strong>敬痕公</strong>（义良公长子）
+字弥张。娶余氏。公妣生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬庄公</strong>（义良公次子）
+字弥原，生卒葬待考。</p>
+</li>
+<li>
+<p><strong>敬庭公</strong>（义良公三子）
+迁陕西。</p>
+</li>
+<li>
+<p><strong>敬庸公</strong>（义良公幼子）
+迁陕西。</p>
+</li>
+</ol></section></section>  </div> <script type="module">function l(t){const r=t.querySelectorAll("span.line");if(r.length>0){const o=[];for(let e=0;e<r.length;e++){const s=r[e].textContent||"";o.push(s)}return o.join(`
 `)}const n=t.querySelectorAll(".code:not(summary *)");if(n.length>0){const o=[];for(let e=0;e<n.length;e++){const s=n[e].textContent||"";o.push(s)}return o.join(`
 `)}return t.textContent||""}function i(t){return t.replace(/\n\n\n+/g,r=>{const o=r.length-1;let e;return o%2===0?e=o/2:e=Math.floor((o+1)/2),e<1&&(e=1),`
 `.repeat(e+1)})}async function u(t){try{return await navigator.clipboard.writeText(t),!0}catch(r){console.warn("Clipboard API 失败，尝试备用方案:",r);const n=document.createElement("textarea");n.value=t,n.style.position="fixed",n.style.left="-999999px",n.style.top="-999999px",document.body.appendChild(n),n.focus(),n.select();try{if(!document.execCommand("copy"))throw new Error("execCommand 返回 false");return!0}catch(o){throw console.error("execCommand 也失败了:",o),new Error("所有复制方法都失败了")}finally{document.body.removeChild(n)}}}async function a(t){const n=t.closest("pre")?.querySelector("code");if(!n){console.warn("未找到代码元素");return}let o=l(n);o=i(o);try{await u(o);const e=t.getAttribute("data-timeout-id");e&&clearTimeout(Number.parseInt(e,10)),t.classList.add("success");const c=setTimeout(()=>{t.classList.remove("success")},1e3);t.setAttribute("data-timeout-id",c.toString())}catch(e){console.error("复制失败:",e)}}document.addEventListener("click",function(t){const r=t.target;r&&r.classList.contains("copy-btn")&&a(r)});</script>  <div class="mb-6 rounded-xl onload-animation"> <div class="p-6 bg-[var(--license-block-bg)] rounded-xl"> <div class="flex flex-col sm:flex-row items-center justify-between gap-4"> <div class="flex items-center gap-3 flex-1"> <div class="h-12 w-12 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white dark:text-black/70 flex-shrink-0"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-2xl" data-icon="material-symbols:favorite">   <use href="#ai:material-symbols:favorite"></use>  </svg> </div> <div> <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1"> 支持与分享 </h3> <p class="text-sm text-neutral-600 dark:text-neutral-400"> 如果这篇文章对你有帮助，欢迎分享给更多人或赞助支持！ </p> </div> </div> <div class="flex items-center gap-3"> <astro-island uid="28MrUr" component-url="/_astro/SharePoster.BddW3IiX.js" component-export="default" renderer-url="/_astro/client.svelte.w2Zk3rJ6.js" props="{&quot;title&quot;:[0,&quot;皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐史氏溯源、史氏世系排辈表&quot;],&quot;author&quot;:[0,&quot;交易之道&quot;],&quot;description&quot;:[0,&quot;皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐溯源、世系排辈表,了解史氏文化，根源。&quot;],&quot;pubDate&quot;:[0,&quot;2026-03-22&quot;],&quot;coverImage&quot;:[0,&quot;https://img.hangdn.com/fg/bj6.jpg&quot;],&quot;url&quot;:[0,&quot;https://txn.hangdn.com/posts/%E7%9A%96%E6%A1%90%E4%BA%AC%E5%85%86%E5%8F%B2%E6%B0%8F%E4%BC%A0%E8%B0%B1%E5%BD%95%E5%85%A5%E7%89%88/&quot;],&quot;siteTitle&quot;:[0,&quot;交易之道&quot;],&quot;avatar&quot;:[0,&quot;https://img.hangdn.com/fg/map1.png&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;SharePoster&quot;,&quot;value&quot;:true}" await-children><!--[--><button class="btn-regular rounded-lg h-12 px-6 gap-2 hover:scale-105 active:scale-95 whitespace-nowrap" aria-label="Generate Share Poster"><!--[!--><!--]--><!----> <span>分享</span></button> <!--[!--><!--]--><!--]--><!--astro:end--></astro-island> <a href="/sponsor/" class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-white dark:text-black/70 rounded-lg font-medium hover:bg-[var(--primary)]/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"> <span>赞助</span> <svg width="0.88em" height="1em" class="text-sm" data-icon="fa6-solid:arrow-right">   <symbol id="ai:fa6-solid:arrow-right" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol><use href="#ai:fa6-solid:arrow-right"></use>  </svg> </a> </div> </div> </div> </div> <div class="relative transition overflow-hidden bg-[var(--license-block-bg)] py-5 px-6 mb-6 rounded-xl license-container onload-animation"> <div class="transition font-bold text-black/75 dark:text-white/75"> 皖桐京兆史氏传谱录入版，京兆史氏传承、皖桐史氏溯源、史氏世系排辈表 </div> <a href="https://txn.hangdn.net" class="link text-[var(--primary)]"> https://txn.hangdn.net </a> <div class="flex gap-6 mt-2"> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 作者 </div> <div class="transition text-black/75 dark:text-white/75 line-clamp-2"> 小史先森 </div> </div> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 发布于 </div> <div class="transition text-black/75 dark:text-white/75 line-clamp-2"> 2026-03-22 </div> </div> <div> <div class="transition text-black/30 dark:text-white/30 text-sm"> 许可协议 </div> <a target="_blank" class="link text-[var(--primary)] line-clamp-2">CC BY 4.0</a> </div> </div> <svg width="0.97em" height="1em" class="transition text-[15rem] absolute pointer-events-none right-6 top-1/2 -translate-y-1/2 text-black/5 dark:text-white/5" data-icon="fa6-brands:creative-commons">   <symbol id="ai:fa6-brands:creative-commons" viewBox="0 0 496 512"><path fill="currentColor" d="m245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93c-22.13 0-33.22 14.61-33.22 43.84c0 23.57 9.21 43.84 33.22 43.84c14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98c-22.6 0-73.96-10.32-73.96-77.05c0-58.69 43-77.06 72.63-77.06c30.72-.01 52.7 11.95 65.99 35.86m143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93c-22.14 0-33.22 14.61-33.22 43.84c0 23.55 9.23 43.84 33.22 43.84c14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98c-22.69 0-73.96-9.87-73.96-77.05c0-58.67 42.97-77.06 72.63-77.06c30.71-.01 52.58 11.95 65.56 35.86M247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248c129.93 0 248.44-100.87 248.44-248c0-137.87-106.62-248-248.44-248m.87 450.81c-112.54 0-203.7-93.04-203.7-202.81c0-105.42 85.43-203.27 203.72-203.27c112.53 0 202.82 89.46 202.82 203.26c-.01 121.69-99.68 202.82-202.84 202.82"/></symbol><use href="#ai:fa6-brands:creative-commons"></use>  </svg> </div> </div> </div>  <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full"> <a href="#" class="w-full font-bold overflow-hidden active:scale-95 pointer-events-none">  </a> <a href="/posts/史姓的起源郡望与堂号详解/" class="w-full font-bold overflow-hidden active:scale-95"> <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center !justify-end gap-4"> <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75"> 史姓的起源、郡望与堂号详解 </div> <svg width="1em" height="1em" class="text-[2rem] text-[var(--primary)]" data-icon="material-symbols:chevron-right-rounded">   <symbol id="ai:material-symbols:chevron-right-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z"/></symbol><use href="#ai:material-symbols:chevron-right-rounded"></use>  </svg> </div> </a> </div>  <div class="card-base p-8 mb-6 relative overflow-hidden"><!-- 评论区装饰性背景 --><div class="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none"><svg viewBox="0 0 100 100" class="w-full h-full"><circle cx="50" cy="50" r="40" fill="currentColor" class="text-[var(--primary)]"></circle><circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--primary)]"></circle><circle cx="50" cy="50" r="10" fill="currentColor" class="text-[var(--primary)]"></circle></svg></div><!-- 评论区标题 --><div class="relative z-10 mb-6"><div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gradient-to-b from-[var(--primary)] to-transparent rounded-full"></div><h3 class="text-xl font-bold text-[var(--btn-content)]">评论区</h3></div><p class="text-sm text-[var(--content-meta)] ml-4">分享你的想法，与大家交流讨论</p></div><!-- 评论内容区域 --><div class="relative z-10"><div id="tcomment"></div> <!-- 使用自编译的 Twikoo 文件，避免点赞等按钮导致页面触发滚动回顶部 https://github.com/twikoojs/twikoo/issues/721 --> <script src="/assets/js/firefly-twikoo-1.6.44.all.min.js"></script> <script>(function(){const config = {"envId":"https://twikoo.hangdn.com","lang":"zh-CN","visitorCount":true,"el":"#tcomment","path":"/posts/皖桐京兆史氏传谱录入版"};
@@ -1565,7 +2046,7 @@ Powered by
       您可以随意在src/config/FooterConfig.html中随意添加自定义内容，不需要修改Footer.astro文件。
     --> </div> </div> </div> </div> </main>    <div id="right-sidebar-static" class="contents"> <div id="right-sidebar" class="mb-4 row-start-3 row-end-4 col-span-2 onload-animation block md:hidden lg:block lg:row-start-1 lg:row-end-2 lg:max-w-[17.5rem] lg:col-start-3 lg:col-end-4  w-full" data-astro-cid-dnkjr6w2> <!-- 顶部固定组件区域 --> <div class="flex flex-col w-full gap-4 mb-4" data-astro-cid-dnkjr6w2> <widget-layout data-id="site-stats" data-is-collapsed="undefined" class="pb-4 card-base onload-animation hidden lg:block" style="animation-delay: 200ms; " data-astro-cid-wbzkcah3="true"> <div class="widget-title font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2
         before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
-        before:absolute before:left-[-16px] before:top-[5.5px] flex items-center justify-between" data-astro-cid-wbzkcah3 style=""> <span class="widget-name" data-astro-cid-wbzkcah3 style="">站点统计</span>  </div> <div id="site-stats" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-wbzkcah3 style="">  <div class="flex flex-col gap-2"> <div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:article-outline">   <symbol id="ai:material-symbols:article-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></symbol><use href="#ai:material-symbols:article-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 文章 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 26 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:folder-outline">   <symbol id="ai:material-symbols:folder-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm0-2h16V8h-8.825l-2-2H4zm0 0V6z"/></symbol><use href="#ai:material-symbols:folder-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 分类 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 8 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:label-outline">   <symbol id="ai:material-symbols:label-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h11q.475 0 .9.213t.7.587L22 12l-5.4 7.2q-.275.375-.7.588T15 20zm0-2h11l4.5-6L15 6H4zm5.5-6"/></symbol><use href="#ai:material-symbols:label-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 标签 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 12 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:text-ad-outline-rounded">   <symbol id="ai:material-symbols:text-ad-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm2-1h12q.425 0 .713-.288T19 16t-.288-.712T18 15H6q-.425 0-.712.288T5 16t.288.713T6 17m0-4h12q.425 0 .713-.288T19 12t-.288-.712T18 11H6q-.425 0-.712.288T5 12t.288.713T6 13m0-4h8q.425 0 .713-.288T15 8t-.288-.712T14 7H6q-.425 0-.712.288T5 8t.288.713T6 9"/></symbol><use href="#ai:material-symbols:text-ad-outline-rounded"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 总字数 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 96,717 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:calendar-clock-outline">   <symbol id="ai:material-symbols:calendar-clock-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M5 8h14V6H5zm0 0V6zm0 14q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v5.675q-.475-.225-.975-.375T19 11.075V10H5v10h6.3q.175.55.413 1.05t.562.95zm13 1q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23m1.675-2.625l.7-.7L18.5 17.8V15h-1v3.2z"/></symbol><use href="#ai:material-symbols:calendar-clock-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 运行时长 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="running-days"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天 </span> </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:ecg-heart-outline">   <symbol id="ai:material-symbols:ecg-heart-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-.45 0-.862-.162t-.738-.488l-6.7-6.725q-.875-.875-1.287-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21m1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.263-.862t.087-.888q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.487.3t-1.238.875l-.675.725q-.125.15-.325.238t-.4.087t-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8m.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19t.088-.012t.087-.063l5.9-5.925H15q-.25 0-.475-.125t-.375-.325z"/></symbol><use href="#ai:material-symbols:ecg-heart-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 最后活动 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="last-update"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天前 </span> </div> </div> </div>  </div>  </widget-layout>   <script>(function(){const siteStartDate = "2026-01-01";
+        before:absolute before:left-[-16px] before:top-[5.5px] flex items-center justify-between" data-astro-cid-wbzkcah3 style=""> <span class="widget-name" data-astro-cid-wbzkcah3 style="">站点统计</span>  </div> <div id="site-stats" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-wbzkcah3 style="">  <div class="flex flex-col gap-2"> <div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:article-outline">   <symbol id="ai:material-symbols:article-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></symbol><use href="#ai:material-symbols:article-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 文章 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 26 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:folder-outline">   <symbol id="ai:material-symbols:folder-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm0-2h16V8h-8.825l-2-2H4zm0 0V6z"/></symbol><use href="#ai:material-symbols:folder-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 分类 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 8 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:label-outline">   <symbol id="ai:material-symbols:label-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h11q.475 0 .9.213t.7.587L22 12l-5.4 7.2q-.275.375-.7.588T15 20zm0-2h11l4.5-6L15 6H4zm5.5-6"/></symbol><use href="#ai:material-symbols:label-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 标签 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 12 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:text-ad-outline-rounded">   <symbol id="ai:material-symbols:text-ad-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm2-1h12q.425 0 .713-.288T19 16t-.288-.712T18 15H6q-.425 0-.712.288T5 16t.288.713T6 17m0-4h12q.425 0 .713-.288T19 12t-.288-.712T18 11H6q-.425 0-.712.288T5 12t.288.713T6 13m0-4h8q.425 0 .713-.288T15 8t-.288-.712T14 7H6q-.425 0-.712.288T5 8t.288.713T6 9"/></symbol><use href="#ai:material-symbols:text-ad-outline-rounded"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 总字数 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 104,584 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:calendar-clock-outline">   <symbol id="ai:material-symbols:calendar-clock-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M5 8h14V6H5zm0 0V6zm0 14q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v5.675q-.475-.225-.975-.375T19 11.075V10H5v10h6.3q.175.55.413 1.05t.562.95zm13 1q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23m1.675-2.625l.7-.7L18.5 17.8V15h-1v3.2z"/></symbol><use href="#ai:material-symbols:calendar-clock-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 运行时长 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="running-days"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天 </span> </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:ecg-heart-outline">   <symbol id="ai:material-symbols:ecg-heart-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-.45 0-.862-.162t-.738-.488l-6.7-6.725q-.875-.875-1.287-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21m1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.263-.862t.087-.888q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.487.3t-1.238.875l-.675.725q-.125.15-.325.238t-.4.087t-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8m.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19t.088-.012t.087-.063l5.9-5.925H15q-.25 0-.475-.125t-.375-.325z"/></symbol><use href="#ai:material-symbols:ecg-heart-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> 最后活动 </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="last-update"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  天前 </span> </div> </div> </div>  </div>  </widget-layout>   <script>(function(){const siteStartDate = "2026-01-01";
 const lastPostDate = "2026-03-22T00:00:00.000Z";
 const todayText = "今天";
 
