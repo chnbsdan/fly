@@ -186,6 +186,10 @@ export default defineConfig({
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {
+					// 忽略图片找不到的警告
+        if (warning.message?.includes('Could not find requested image')) {
+          return;
+        }
 					// temporarily suppress this warning
 					if (
 						warning.message.includes("is dynamically imported by") &&
