@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月25日 02:59:57</lastBuildDate><item><title>枞阳十大名族，影响中国历史的家族与人物.</title><link>https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</guid><description>枞阳十大名族，影响中国历史的家族与人物.。</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;枞阳十大名族：影响中国历史的家族与人物&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月25日 03:30:40</lastBuildDate><item><title>枞阳十大名族，影响中国历史的家族与人物.</title><link>https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</guid><description>枞阳十大名族，影响中国历史的家族与人物.。</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;枞阳十大名族：影响中国历史的家族与人物&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;著名学者吴孟复先生曰：“枞阳，学术之府，气节之乡，诗歌之囿也。”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -11185,56 +11185,6 @@ observer.observe(section);
 &lt;/ul&gt;
 &lt;h2&gt;8-11月份夸克网盘&lt;/h2&gt;
 &lt;h2&gt;7月份夸克网盘&lt;/h2&gt;
-</content:encoded><author>小史先森</author></item><item><title>GitHub + PicList + Vercel 免费搭建高速图床</title><link>https://txn.hangdn.com/posts/piclist-github-vercel%E5%9B%BE%E5%BA%8A/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/piclist-github-vercel%E5%9B%BE%E5%BA%8A/</guid><description>用GitHub + PicList + Vercel 免费搭建高速图床，今天以笔记的形式记录搭建时的操作步骤并记录下来，此方法大多人都能用得上，重点是稳定且免费。</description><pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;code&gt; GitHub + PicList + Vercel 免费搭建高速图床，还可以使用 CDN 轻松加速访问！&lt;/code&gt;&lt;/h1&gt;
-&lt;p&gt;今天在一博友的博文中看到用GitHub + PicList + Vercel 免费搭建高速图床，今天以笔记的形式记录搭建时的操作步骤并记录下来，此方法大多人都能用得上，重点是稳定且免费。&lt;/p&gt;
-&lt;p&gt;采用更简单的方案——利用 GitHub 作为存储。&lt;/p&gt;
-&lt;p&gt;通常情况下，GitHub 并不会主动审查私有仓库的内容或大小，只要不影响 GitHub 基础设施或违反服务条款，就不会被干预。因此，它可以成为一个不错的存储选择。&lt;/p&gt;
-&lt;h1&gt;事前准备&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;域名（非必须，你也可以使用免费域名，或者Vercel分配的域名也可以）&lt;/li&gt;
-&lt;li&gt;GitHub（必须，你需要注册一个GitHub帐号）&lt;/li&gt;
-&lt;li&gt;Vercel（必须，你需要注册一个Vercel帐号，你也可以直接使用Vercel分配的域名，当然你也可以使用Cloudflare部署，基本步骤流程一样。）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;创建Github私库并获取Token&lt;/h1&gt;
-&lt;h2&gt;1.创建一个Github仓库的私库,打开：https://github.com/new 看图设置，项目名称随你设置，最后点击 Create repository 完成创建！&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-5.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;2.获取 Github Token 打开：https://github.com/settings/tokens，然后点击 Generate new Token(Classic) ，把 repo 的勾打上，根据自己的需要设定过期时间(我设置的不过期)。然后翻到页面最底部，点击 Generate Token 的绿色按钮生成token。&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-3.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;3.Token只会显示一次，请复制Token后存到安全的地方，稍后设置软件需要用到，Github的相关设置完成！&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-4.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;Vercel部署&lt;/h1&gt;
-&lt;h2&gt;1.使用Vercel部署 打开：https://vercel.com/new 选择你刚创建的私库！&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-5.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;2.直接点击 Deploy 部署即可，项目名称随你设置，我就默认了，等待部署完成。&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-6.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;3.给项目设置自定义域名，套上 CDN 加速。&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-8.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;4.完成上一步操作后你设置的自定义域名，稍后设置软件需要用到，Vercel的相关设置完成！&lt;/h2&gt;
-&lt;h1&gt;Cloudflare部署&lt;/h1&gt;
-&lt;p&gt;可选项！！！这两个部署选一个就行，因为Vercel部署有现成的加速方案，我一般偏向使用Vercel进行部署，Cloudflare部署，我是没有什么好的加速方案，所以就不详细演示了。基本同理操作就是没有上方的套 CDN 加速的步骤。&lt;/p&gt;
-&lt;h2&gt;1.选择你刚创建的私库。&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-9.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;2.保存并部署。&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-10.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;PicList相关设置&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Kuingsmile/PicList/releases&quot;&gt;Piclist为开源项目&lt;/a&gt;，操作界面很贴心，下面为设置操作：&lt;/p&gt;
-&lt;h2&gt;1.点击软件界面中的 图床 → Gihub → 设置修改&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-11.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;2.按照下方图片进行设置，设置完成最后点击确定保存！&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;&quot;图床配置名&quot; = 图床配置名，你自己随意设置
-&quot;设定仓库名&quot; = 格式是username/reponame，你的Github用户名/仓库地址，例如:zrf/images
-&quot;设定分支名&quot; = 分支名，默认是main
-&quot;设定Token&quot; = Github token
-&quot;设定储存路径&quot; = 用于指定图片存储位置，不填写则默认存储在默认位置，自定义存储路径，例如:img/
-&quot;设定自定义域名&quot; = 用于指定图片自定义域名，一般用于CDN加速。自定义域名，注意要加http://或者https://，域名最后面的/不要加
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-12.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;3.软件首页 上传区 切换使用你的Github图床，也可在 图床 → Gihub → 设置为默认图床&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-13.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;4.你可以使用 PicList 上传图片视频以及压缩包等，Github 支持很多上传格式，到此就完成了图床的所有设置！&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.myso.dpdns.org/20250723-14.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h4&gt;选择 Vercel （或 Cloudflare） 进行项目部署并配置自定义域名，实现 CDN 加速，该方案不仅满足了图片、视频和压缩包等多种格式的云存储需求，同时也提高了资源加载速度和使用体验，本文使用的图片就是采这种方搭建的图床，效果见本文图片。通过本教程，用户将能够高效构建一个具备完整图床服务的云存储平台。&lt;/h4&gt;
-&lt;p&gt;原文&lt;a href=&quot;https://blog.zrf.me/p/Notes-GitHub-PicList-Vercel/&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
 </content:encoded><author>小史先森</author></item><item><title>100条金句摘录，励志句子欣赏</title><link>https://txn.hangdn.com/posts/%E7%BB%8F%E5%85%B8%E5%8A%B1%E5%BF%97%E5%8F%A5%E5%AD%90%E6%AC%A3%E8%B5%8F/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E7%BB%8F%E5%85%B8%E5%8A%B1%E5%BF%97%E5%8F%A5%E5%AD%90%E6%AC%A3%E8%B5%8F/</guid><description>励志句子赏析，金句摘录，收藏，欢迎评论区分享好词好句子。</description><pubDate>Tue, 11 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&amp;lt;style&amp;gt;
 * {
 margin: 0;
