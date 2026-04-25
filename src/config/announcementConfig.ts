@@ -5,12 +5,10 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "交易之道",
 
 	// 公告内容
-	content: "顺其势，止其亏，纵其利。心无贪惧，行依规矩。不测而应，小损大盈，复利自生。
-
-",
+	content: "顺其势，止其亏，纵其利。心无贪惧，行依规矩。不测而应，小损大盈，复利自生。",
 
 	// 是否允许用户关闭公告
-	closable: true,
+	closable: false,
 
 	link: {
 		// 启用链接
