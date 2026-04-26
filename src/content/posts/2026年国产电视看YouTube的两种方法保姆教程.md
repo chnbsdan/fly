@@ -9,7 +9,7 @@ category: "电视"
 draft: false
 ---
 
-# 2026年国产电视看YouTube的两种方法保姆教程
+## 2026年国产电视看YouTube的两种方法保姆教程
 
 
 我们的国产电视没有谷歌框架，不能安装正常的YouTube，就算安装了也不能正常打开,我这里提供了两种方法,保证你能在电视上观看YouTube,总有一种适合你.
@@ -18,8 +18,14 @@ draft: false
 
 ## 1.下载fire TV YouTube
 
-可以去https://www.apkmirror.com/apk/google-inc/youtube-for-fire-tv/
-可以去我的谷歌云盘下载https://drive.google.com/drive/folders/1CToD35DoYKa4hQcHVXnkM_grCfpWQDJH?usp=sharing
+**可以去**
+https://www.apkmirror.com/apk/google-inc/youtube-for-fire-tv/
+
+**可以去我的谷歌云盘下载**
+https://drive.google.com/drive/folders/1CToD35DoYKa4hQcHVXnkM_grCfpWQDJH?usp=sharing
+
+**还有这个也可以用：**
+https://tv.aptoide.com/howtoinstall.html
 
 ## 2.下载browsehere电视浏览器
 https://browsehere.net/zh/
