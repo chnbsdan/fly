@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年5月7日 10:31:41</lastBuildDate><item><title>枞阳十大名族，影响中国历史的家族与人物.</title><link>https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</guid><description>枞阳十大名族，影响中国历史的家族与人物.。</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;枞阳十大名族：影响中国历史的家族与人物&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交易之道</title><description>趋势跟踪交易系统</description><link>https://txn.hangdn.com/</link><language>zh_CN</language><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.7</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年6月3日 03:14:18</lastBuildDate><item><title>枞阳十大名族，影响中国历史的家族与人物.</title><link>https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/%E6%9E%9E%E9%98%B3%E5%8D%81%E5%A4%A7%E5%90%8D%E6%97%8F%E5%BD%B1%E5%93%8D%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%AE%B6%E6%97%8F%E4%B8%8E%E4%BA%BA%E7%89%A9/</guid><description>枞阳十大名族，影响中国历史的家族与人物.。</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;枞阳十大名族：影响中国历史的家族与人物&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;著名学者吴孟复先生曰：“枞阳，学术之府，气节之乡，诗歌之囿也。”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -13521,4 +13521,365 @@ Text formatting: [1mBold[0m [2mDimmed[0m [3mItalic[0m [4mUnderline[0m
 &lt;p&gt;&lt;a href=&quot;https://pan.quark.cn/s/353c2c680e2f#/list/share&quot;&gt;月风先生20250709：日内交易解析133&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded><author>小史先森</author></item></channel></rss>
+</content:encoded><author>小史先森</author></item><item><title>Firefly 主题在导航栏Material Symbols 官方图标库</title><link>https://txn.hangdn.com/posts/material-symbols%E5%AE%98%E6%96%B9%E5%9B%BE%E6%A0%87%E5%BA%93/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/material-symbols%E5%AE%98%E6%96%B9%E5%9B%BE%E6%A0%87%E5%BA%93/</guid><description>Firefly 主题在导航栏添加新菜单和页面的完整流程,修改配置文件，增加MD文件路由</description><pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;根据 Material Symbols 官方图标库，我为你整理了适合你导航栏使用的图标及其名称：&lt;/p&gt;
+&lt;h2&gt;📌 公益项目相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 公益项目主图标
+icon: &quot;material-symbols:favorite&quot;           // 爱心（推荐）
+icon: &quot;material-symbols:favorite-outline&quot;   // 爱心（空心）
+icon: &quot;material-symbols:volunteer-activism&quot; // 志愿活动（握手+爱心）
+icon: &quot;material-symbols:handshake&quot;          // 握手（合作）
+icon: &quot;material-symbols:diversity-3&quot;        // 多样性/社群
+icon: &quot;material-symbols:charity&quot;            // 慈善
+icon: &quot;material-symbols:social-leaderboard&quot; // 社会影响力
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🏫 教育相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:school&quot;              // 学校/教育
+icon: &quot;material-symbols:menu-book&quot;           // 书本
+icon: &quot;material-symbols:auto-stories&quot;        // 自动故事/阅读
+icon: &quot;material-symbols:castle&quot;              // 城堡（学习乐园）
+icon: &quot;material-symbols:psychology&quot;          // 心理学/思维
+icon: &quot;material-symbols:science&quot;             // 科学
+icon: &quot;material-symbols:history-edu&quot;         // 历史教育
+icon: &quot;material-symbols:book&quot;                // 书本
+icon: &quot;material-symbols:library-books&quot;       // 图书馆
+icon: &quot;material-symbols:local-library&quot;       // 本地图书馆
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🌿 环保相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:forest&quot;              // 森林
+icon: &quot;material-symbols:park&quot;                // 公园
+icon: &quot;material-symbols:tree&quot;                // 树木
+icon: &quot;material-symbols:grass&quot;               // 草地
+icon: &quot;material-symbols:water-drop&quot;          // 水滴
+icon: &quot;material-symbols:recycling&quot;           // 回收利用
+icon: &quot;material-symbols:solar-power&quot;         // 太阳能
+icon: &quot;material-symbols:eco&quot;                 // 生态
+icon: &quot;material-symbols:earthquake&quot;          // 地球（环保）
+icon: &quot;material-symbols:climate-mini&quot;        // 气候
+icon: &quot;material-symbols:clean-hands&quot;         // 清洁双手/环保
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🐾 动物相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:pets&quot;                // 宠物/动物
+icon: &quot;material-symbols:paw&quot;                 // 爪子
+icon: &quot;material-symbols:dog&quot;                 // 狗
+icon: &quot;material-symbols:cat&quot;                 // 猫
+icon: &quot;material-symbols:wild-animal&quot;         // 野生动物
+icon: &quot;material-symbols:bird&quot;                // 鸟
+icon: &quot;material-symbols:raven&quot;               // 乌鸦/鸟类
+icon: &quot;material-symbols:butterfly&quot;           // 蝴蝶
+icon: &quot;material-symbols:fish&quot;                // 鱼
+icon: &quot;material-symbols:marine-life&quot;         // 海洋生物
+icon: &quot;material-symbols:koala&quot;               // 考拉
+icon: &quot;material-symbols:hamster&quot;             // 仓鼠
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;💝 捐赠/赞助相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:volunteer-activism&quot;  // 志愿活动
+icon: &quot;material-symbols:handshake&quot;           // 握手
+icon: &quot;material-symbols:paypal&quot;              // PayPal
+icon: &quot;material-symbols:credit-card&quot;         // 信用卡
+icon: &quot;material-symbols:qr-code&quot;             // 二维码
+icon: &quot;material-symbols:receipt&quot;             // 收据
+icon: &quot;material-symbols:donation&quot;            // 捐赠
+icon: &quot;material-symbols:heart-plus&quot;          // 爱心+
+icon: &quot;material-symbols:favorite&quot;            // 爱心
+icon: &quot;material-symbols:redeem&quot;              // 兑换/礼品
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;👤 个人相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:person&quot;              // 个人
+icon: &quot;material-symbols:account-circle&quot;      // 账户圆形
+icon: &quot;material-symbols:badge&quot;               // 徽章
+icon: &quot;material-symbols:id-card&quot;             // 身份证
+icon: &quot;material-symbols:settings&quot;            // 设置
+icon: &quot;material-symbols:manage-accounts&quot;     // 管理账户
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;📷 相册/画廊相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:photo-library&quot;       // 照片库
+icon: &quot;material-symbols:collections&quot;         // 收藏集
+icon: &quot;material-symbols:wallpaper&quot;           // 壁纸
+icon: &quot;material-symbols:camera&quot;              // 相机
+icon: &quot;material-symbols:image&quot;               // 图片
+icon: &quot;material-symbols:album&quot;               // 相册
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🎬 番组/Bangumi相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:tv&quot;                  // 电视
+icon: &quot;material-symbols:movie&quot;               // 电影
+icon: &quot;material-symbols:live-tv&quot;             // 直播电视
+icon: &quot;material-symbols:play-circle&quot;         // 播放圆形
+icon: &quot;material-symbols:video-library&quot;       // 视频库
+icon: &quot;material-symbols:subscriptions&quot;       // 订阅
+icon: &quot;material-symbols:theaters&quot;            // 剧院
+icon: &quot;material-symbols:smart-display&quot;       // 智能显示
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🔗 链接相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:link&quot;                // 链接
+icon: &quot;material-symbols:open-in-new&quot;         // 新窗口打开
+icon: &quot;material-symbols:share&quot;               // 分享
+icon: &quot;material-symbols:ios-share&quot;           // iOS分享
+icon: &quot;material-symbols:add-link&quot;            // 添加链接
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🏠 主页相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:home&quot;                // 主页
+icon: &quot;material-symbols:house&quot;               // 房子
+icon: &quot;material-symbols:cottage&quot;             // 小屋
+icon: &quot;material-symbols:other-houses&quot;        // 其他房子
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;📦 归档相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:archive&quot;             // 归档
+icon: &quot;material-symbols:inbox&quot;               // 收件箱
+icon: &quot;material-symbols:folder&quot;              // 文件夹
+icon: &quot;material-symbols:folder-open&quot;         // 打开文件夹
+icon: &quot;material-symbols:database&quot;            // 数据库
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;👥 友链相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:people&quot;              // 人们
+icon: &quot;material-symbols:group&quot;               // 群组
+icon: &quot;material-symbols:communities&quot;         // 社区
+icon: &quot;material-symbols:diversity-1&quot;         // 多样性
+icon: &quot;material-symbols:handshake&quot;           // 握手
+icon: &quot;material-symbols:link&quot;                // 链接
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;💬 留言板相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:chat&quot;                // 聊天
+icon: &quot;material-symbols:comment&quot;             // 评论
+icon: &quot;material-symbols:forum&quot;               // 论坛
+icon: &quot;material-symbols:message&quot;             // 消息
+icon: &quot;material-symbols:feedback&quot;            // 反馈
+icon: &quot;material-symbols:question-answer&quot;     // 问答
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;📝 关于/内容相关图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;icon: &quot;material-symbols:info&quot;                // 信息
+icon: &quot;material-symbols:about&quot;               // 关于
+icon: &quot;material-symbols:help&quot;                // 帮助
+icon: &quot;material-symbols:description&quot;         // 描述
+icon: &quot;material-symbols:article&quot;             // 文章
+icon: &quot;material-symbols:fact-check&quot;          // 事实核查
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;🎨 使用示例&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 在你的 navBarConfig.ts 中
+links.push({
+    name: &quot;公益项目&quot;,
+    icon: &quot;material-symbols:volunteer-activism&quot;,  // 志愿活动图标
+    children: [
+        {
+            name: &quot;乡村教育支持&quot;,
+            url: &quot;/welfare/rural-education/&quot;,
+            icon: &quot;material-symbols:school&quot;,       // 学校图标
+        },
+        {
+            name: &quot;环境保护计划&quot;,
+            url: &quot;/welfare/environment/&quot;,
+            icon: &quot;material-symbols:forest&quot;,       // 森林图标
+        },
+        {
+            name: &quot;动物救助行动&quot;,
+            url: &quot;/welfare/animal-rescue/&quot;,
+            icon: &quot;material-symbols:pets&quot;,         // 宠物图标
+        },
+        {
+            name: &quot;捐赠渠道&quot;,
+            url: &quot;https://hangdn.com&quot;,
+            external: true,
+            icon: &quot;material-symbols:favorite&quot;,     // 爱心图标
+        },
+    ],
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;💡 提示&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;图标风格变体&lt;/strong&gt;：Material Symbols 支持三种风格&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;material-symbols:图标名&lt;/code&gt; - 默认样式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;material-symbols-rounded:图标名&lt;/code&gt; - 圆角样式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;material-symbols-sharp:图标名&lt;/code&gt; - 锐利样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;填充效果&lt;/strong&gt;：部分图标支持填充变体&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;material-symbols:favorite&lt;/code&gt;（实心爱心）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;material-symbols:favorite-outline&lt;/code&gt;（空心爱心）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;图标数量&lt;/strong&gt;：Material Symbols 库包含 &lt;strong&gt;3,800+&lt;/strong&gt; 个图标，涵盖几乎所有场景&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;你可以访问 &lt;a href=&quot;https://fonts.google.com/icons&quot;&gt;Material Symbols 官方目录&lt;/a&gt; 浏览和搜索更多图标。&lt;/p&gt;
+</content:encoded><author>交易之道</author></item><item><title>Firefly 主题在导航栏添加新菜单和页面的完整流程</title><link>https://txn.hangdn.com/posts/firefly-%E4%B8%BB%E9%A2%98%E5%9C%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E6%B7%BB%E5%8A%A0%E6%96%B0%E8%8F%9C%E5%8D%95%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%AE%8C%E6%95%B4%E6%B5%81%E7%A8%8B/</link><guid isPermaLink="true">https://txn.hangdn.com/posts/firefly-%E4%B8%BB%E9%A2%98%E5%9C%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E6%B7%BB%E5%8A%A0%E6%96%B0%E8%8F%9C%E5%8D%95%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%AE%8C%E6%95%B4%E6%B5%81%E7%A8%8B/</guid><description>Firefly 主题在导航栏添加新菜单和页面的完整流程,修改配置文件，增加MD文件路由</description><pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;📁 需要修改/创建的 4 个文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;项目根目录/
+├── src/
+│   ├── config/
+│   │   ├── navBarConfig.ts          # 1️⃣ 导航栏配置
+│   │   └── LinkPresets.ts           # 2️⃣ 链接预设（可选）
+│   ├── content/
+│   │   ├── config.ts                # 3️⃣ 内容集合配置
+│   │   └── welfare/                 # 4️⃣ 内容文件夹
+│   │       ├── rural-education.md
+│   │       ├── environment.md
+│   │       └── animal-rescue.md
+│   └── pages/
+│       └── welfare/                 # 5️⃣ 页面路由文件夹
+│           ├── rural-education.astro
+│           ├── environment.astro
+│           └── animal-rescue.astro
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;1️⃣ 导航栏配置 (src/config/navBarConfig.ts)&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 添加公益项目菜单
+links.push({
+    name: &quot;公益项目&quot;,
+    icon: &quot;material-symbols:favorite&quot;,
+    children: [
+        {
+            name: &quot;乡村教育支持&quot;,
+            url: &quot;/rural-education/&quot;,
+            icon: &quot;material-symbols:school&quot;,
+        },
+        {
+            name: &quot;环境保护计划&quot;,
+            url: &quot;/environment/&quot;,
+            icon: &quot;material-symbols:forest&quot;,
+        },
+        {
+            name: &quot;动物救助行动&quot;,
+            url: &quot;/animal-rescue/&quot;,
+            icon: &quot;material-symbols:pets&quot;,
+        },
+        {
+            name: &quot;捐赠渠道&quot;,
+            url: &quot;https://hangdn.com&quot;,
+            external: true,
+            icon: &quot;material-symbols:volunteer-activism&quot;,
+        },
+    ],
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;关键点：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;内部链接：url: &quot;/welfare/xxx/&quot;&lt;/li&gt;
+&lt;li&gt;外部链接：加上 external: true&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2️⃣ 链接预设映射 (src/config/LinkPresets.ts) - 可选&lt;/h2&gt;
+&lt;p&gt;如果需要像 LinkPreset.Welfare 那样使用，添加：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[LinkPreset.Welfare]: {
+    name: &quot;公益项目&quot;,
+    url: &quot;/welfare/&quot;,
+    icon: &quot;material-symbols:favorite&quot;,
+},
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;3️⃣ 内容集合配置 (src/content/config.ts)&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 添加 welfare 集合
+const welfareCollection = defineCollection({
+    loader: glob({ pattern: &quot;**/*.{md,mdx}&quot;, base: &quot;./src/content/welfare&quot; }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        published: z.date().optional(),
+        tags: z.array(z.string()).optional(),
+    }),
+});
+
+export const collections = {
+    posts: postsCollection,
+    spec: specCollection,
+    welfare: welfareCollection,  // ← 必须注册
+};
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;4️⃣ 内容文件 (src/content/welfare/xxx.md)&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &quot;乡村教育支持&quot;
+description: &quot;为偏远山区儿童提供教育资源&quot;
+published: 2025-06-01
+tags: [&quot;公益&quot;, &quot;教育&quot;]
+---
+
+# 乡村教育支持
+
+这里是文章内容...
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;5️⃣ 页面路由文件 (src/pages/welfare/xxx.astro)&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+import { getEntry, render } from &quot;astro:content&quot;;
+import Markdown from &quot;@components/common/Markdown.astro&quot;;
+import MainGridLayout from &quot;@/layouts/MainGridLayout.astro&quot;;
+
+const post = await getEntry(&quot;welfare&quot;, &quot;rural-education&quot;); // 修改 slug
+
+if (!post) {
+    throw new Error(&quot;Page not found&quot;);
+}
+
+const { Content } = await render(post);
+---
+
+&amp;lt;MainGridLayout title={post.data.title} description={post.data.description}&amp;gt;
+    &amp;lt;div class=&quot;flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32&quot;&amp;gt;
+        &amp;lt;div class=&quot;card-base z-10 px-9 py-6 relative w-full&quot;&amp;gt;
+            &amp;lt;Markdown class=&quot;mt-2&quot;&amp;gt;
+                &amp;lt;Content /&amp;gt;
+            &amp;lt;/Markdown&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/MainGridLayout&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;关键点：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;getEntry(&quot;集合名&quot;, &quot;slug&quot;)&lt;/li&gt;
+&lt;li&gt;集合名必须与 src/content.config.ts 中注册的一致&lt;/li&gt;
+&lt;li&gt;slug 对应 .md 文件名（不含扩展名）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎯 核心要点&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;文件类型&lt;/td&gt;
+&lt;td&gt;位置&lt;/td&gt;
+&lt;td&gt;作用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.astro 路由&lt;/td&gt;
+&lt;td&gt;src/pages/&lt;/td&gt;
+&lt;td&gt;布局、获取内容、渲染页面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.md 内容&lt;/td&gt;
+&lt;td&gt;src/content/welfare/&lt;/td&gt;
+&lt;td&gt;实际的文章/页面内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content.config.ts&lt;/td&gt;
+&lt;td&gt;src/content/&lt;/td&gt;
+&lt;td&gt;注册内容集合，定义数据结构&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;navBarConfig.ts&lt;/td&gt;
+&lt;td&gt;src/config/&lt;/td&gt;
+&lt;td&gt;配置导航栏菜单项&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;🔄 完整工作流程&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1.在 navBarConfig.ts 中添加菜单项（URL 路径）&lt;/li&gt;
+&lt;li&gt;2.在 content/config.ts 中注册集合（如 welfare）&lt;/li&gt;
+&lt;li&gt;3.创建 .md 文件 在 src/content/集合名/ 下&lt;/li&gt;
+&lt;li&gt;4.创建 .astro 文件 在 src/pages/集合名/ 下&lt;/li&gt;
+&lt;li&gt;5.重启开发服务器 测试&lt;/li&gt;
+&lt;li&gt;6.部署 到生产环境&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><author>交易之道</author></item></channel></rss>
